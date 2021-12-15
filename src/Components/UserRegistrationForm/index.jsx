@@ -7,7 +7,7 @@ export default function UserRegistrationForm({ errors, touched }) {
     <Form>
       <article className={style.input_container}>
         <label className={style.label}>Email </label>
-        <Field className={style.input} name='email' autoFocus={true} />
+        <Field className={style.input} name='email' />
         {errors.email && touched.email && <p className={style.error}>{errors.email}</p>}
       </article>
 
