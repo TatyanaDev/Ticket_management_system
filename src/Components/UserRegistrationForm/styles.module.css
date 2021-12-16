@@ -1,27 +1,26 @@
 .input_container {
-  margin-bottom: 18px;
+  margin: 0 auto;
+  margin-bottom: 19px;
   position: relative;
-}
-
-.input_container:last-of-type {
-  margin-bottom: 50px;
+  max-width: 350px;
+  padding: 0;
 }
 
 .label {
   color: #6c757d;
-  display: block;
+  margin-bottom: 0;
 }
 
 .input {
   border: 1px solid #dfdfdf;
   padding: 9px 16px;
   min-height: 44px;
-  width: 100%;
 }
 
 .input_container,
 .input,
-.wrapper_link_login {
+.before_link,
+.link_login {
   font-family: "Poppins-Regular";
   font-weight: normal;
   font-style: normal;
@@ -29,33 +28,37 @@
   font-size: 14px;
 }
 
-.error {
-  position: absolute;
-  line-height: 20px;
-  font-size: 12px;
-  bottom: -29px;
-  color: red;
+.wrapper_button {
+  margin: 0 auto;
+  margin-bottom: 16px;
+  max-width: 350px;
+  margin-top: 32px;
 }
 
 .button {
   background-color: #001689;
   font-family: "Poppins-Bold";
   padding: 16px 111px;
-  margin-bottom: 16px;
-  font-style: normal;
   border-radius: 4px;
+  font-style: normal;
   font-weight: bold;
   line-height: 24px;
   font-size: 15.5px;
   color: #ffffff;
+  min-width: 100%;
   cursor: pointer;
   border: none;
-  width: 100%;
+}
+
+.before_link {
+  padding-right: 8px;
+  color: #616161;
+  text-align: end;
 }
 
 .wrapper_link_login {
-  text-align: center;
-  color: #616161;
+  text-align: start;
+  padding: 0;
 }
 
 .link_login {

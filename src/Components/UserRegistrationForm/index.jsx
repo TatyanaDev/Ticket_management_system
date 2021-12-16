@@ -1,43 +1,89 @@
+import { Button, Container, Row, Col, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { Form, Field } from "formik";
+import { Formik } from "formik";
+import * as Yup from "yup";
 import style from "./styles.module.css";
 
-export default function UserRegistrationForm({ errors, touched }) {
+export default function UserRegistrationForm() {
+  const validationSchema = Yup.object().shape({
+    email: Yup.string().trim().email('Must contain @ and "."').required("Email is required"),
+    createPassword: Yup.string().trim().min(6, "Password has to be longer than 6 characters!").required("Create password is required!"),
+    repeatPassword: Yup.string()
+      .trim()
+      .oneOf([Yup.ref("createPassword")], "Passwords are not the same!")
+      .required("Repeat password is required!"),
+  });
+
+  const initialValues = {
+    email: "",
+    createPassword: "",
+    repeatPassword: "",
+  };
+
+  const createUser = async (values, formikBag) => {
+    console.log(values);
+    formikBag.resetForm();
+    try {
+    } catch (err) {}
+  };
+
   return (
-    <Form>
-      <article className={style.input_container}>
-        <label className={style.label}>Email </label>
-        <Field className={style.input} name='email' />
-        {errors.email && touched.email && <p className={style.error}>{errors.email}</p>}
-      </article>
+    <>
+      <Formik validationSchema={validationSchema} onSubmit={createUser} initialValues={initialValues}>
+        {({ handleSubmit, handleChange, values, touched, errors }) => (
+          <Form noValidate onSubmit={handleSubmit}>
+            <Row>
+              <Form.Group as={Col} className={style.input_container}>
+                <Form.Label className={style.label}>Email</Form.Label>
+                <Form.Control className={style.input} type='text' name='email' value={values.email} onChange={handleChange} isValid={touched.email && !errors.email} isInvalid={errors.email} />
+                <Form.Control.Feedback type='invalid' tooltip>
+                  {errors.email}
+                </Form.Control.Feedback>
+              </Form.Group>
+            </Row>
 
-      <article className={style.input_container}>
-        <label className={style.label}>Create Password </label>
-        <Field className={style.input} name='createPassword' type='password' />
-        {errors.createPassword && touched.createPassword && <p className={style.error}>{errors.createPassword}</p>}
-      </article>
+            <Row>
+              <Form.Group as={Col} className={style.input_container}>
+                <Form.Label className={style.label}>Create Password </Form.Label>
+                <Form.Control className={style.input} type='password' name='createPassword' value={values.createPassword} onChange={handleChange} isValid={touched.createPassword && !errors.createPassword} isInvalid={errors.createPassword} />
+                <Form.Control.Feedback type='invalid' tooltip>
+                  {errors.createPassword}
+                </Form.Control.Feedback>
+              </Form.Group>
+            </Row>
 
-      <article className={style.input_container}>
-        <label className={style.label}>Repeat Password</label>
-        <Field className={style.input} name='repeatPassword' type='password' />
-        {errors.repeatPassword && touched.repeatPassword && <p className={style.error}>{errors.repeatPassword}</p>}
-      </article>
+            <Row>
+              <Form.Group as={Col} className={style.input_container}>
+                <Form.Label className={style.label}>Repeat Password</Form.Label>
+                <Form.Control className={style.input} type='password' name='repeatPassword' value={values.repeatPassword} onChange={handleChange} isValid={touched.repeatPassword && !errors.repeatPassword} isInvalid={errors.repeatPassword} />
+                <Form.Control.Feedback type='invalid' tooltip>
+                  {errors.repeatPassword}
+                </Form.Control.Feedback>
+              </Form.Group>
+            </Row>
 
-      <nav>
-        <ul>
-          <li>
-            <button className={style.button} type='submit'>
-              Create account
-            </button>
-          </li>
-          <li className={style.wrapper_link_login}>
-            <span>Already have an account? </span>
+            <Row className={style.wrapper_button}>
+              <Button className={style.button} type='submit'>
+                Create account
+              </Button>
+            </Row>
+          </Form>
+        )}
+      </Formik>
+
+      <Container>
+        <Row>
+          <Col className={style.before_link} xxl={8}>
+            Already have an account?
+          </Col>
+
+          <Col className={style.wrapper_link_login}>
             <Link className={style.link_login} to='/login'>
               Login here
             </Link>
-          </li>
-        </ul>
-      </nav>
-    </Form>
+          </Col>
+        </Row>
+      </Container>
+    </>
   );
 }
