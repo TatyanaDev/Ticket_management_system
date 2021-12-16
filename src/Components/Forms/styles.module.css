@@ -18,8 +18,8 @@
 }
 
 .link_forgot_password,
-.before_link_login,
 .input_container,
+.before_link,
 .remember_me,
 .link_login,
 .input {
@@ -31,7 +31,6 @@
 }
 
 .wrapper_button {
-  margin: 47px auto 16px;
   max-width: 350px;
 }
 
@@ -41,15 +40,17 @@
   padding: 16px 111px;
   border-radius: 4px;
   font-style: normal;
+  font-size: 15.5px;
   font-weight: bold;
   line-height: 24px;
   min-width: 100%;
   border: none;
 }
 
-.before_link_login {
+.before_link {
   padding-right: 8px;
   color: #616161;
+  text-align: end;
 }
 
 .wrapper_link_login {
@@ -68,12 +69,11 @@
 }
 
 .wrapper_link_forgot_password,
-.before_link_login {
+.before_link {
   text-align: end;
 }
 
 .link_forgot_password,
-.remember_me,
-.button {
+.remember_me {
   font-size: 16px;
 }

@@ -1,10 +1,11 @@
 import { Button, Container, Row, Col, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { Formik } from "formik";
+import cn from "classnames";
 import * as Yup from "yup";
-import style from "./styles.module.css";
+import style from "../styles.module.css";
 
-export default function UserRegistrationForm() {
+export default function UserRegistrationForm({ margin }) {
   const validationSchema = Yup.object().shape({
     email: Yup.string().trim().email('Must contain @ and "."').required("Email is required"),
     createPassword: Yup.string().trim().min(6, "Password has to be longer than 6 characters!").required("Create password is required!"),
@@ -62,7 +63,7 @@ export default function UserRegistrationForm() {
               </Form.Group>
             </Row>
 
-            <Row className={style.wrapper_button}>
+            <Row className={cn(style.wrapper_button, margin)}>
               <Button className={style.button} type='submit'>
                 Create account
               </Button>
