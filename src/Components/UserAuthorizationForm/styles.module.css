@@ -1,27 +1,28 @@
 .input_container {
-  margin-bottom: 18px;
+  margin: 0 auto;
+  margin-bottom: 19px;
   position: relative;
-}
-
-.input_container:last-of-type {
-  margin-bottom: 48px;
+  max-width: 350px;
+  padding: 0;
 }
 
 .label {
   color: #6c757d;
-  display: block;
+  margin-bottom: 0;
 }
 
 .input {
   border: 1px solid #dfdfdf;
   padding: 9px 16px;
   min-height: 44px;
-  width: 100%;
 }
 
+.link_forgot_password,
+.before_link_login,
 .input_container,
-.input,
-.wrapper_link_login {
+.remember_me,
+.link_login,
+.input {
   font-family: "Poppins-Regular";
   font-weight: normal;
   font-style: normal;
@@ -29,52 +30,50 @@
   font-size: 14px;
 }
 
-.error {
-  position: absolute;
-  line-height: 20px;
-  font-size: 12px;
-  bottom: -29px;
-  color: red;
-}
-
-.checkbox {
-  margin: 0;
-}
-
-.remember_me {
-  color: #212529;
-  margin-left: 7px;
-  font-size: 16px;
-}
-
-.forgot_password {
-  margin-left: 69px;
-  font-size: 16px;
+.wrapper_button {
+  margin: 47px auto 16px;
+  max-width: 350px;
 }
 
 .button {
   background-color: #001689;
   font-family: "Poppins-Bold";
   padding: 16px 111px;
-  margin-bottom: 16px;
-  font-style: normal;
   border-radius: 4px;
+  font-style: normal;
   font-weight: bold;
   line-height: 24px;
-  font-size: 16px;
-  color: #ffffff;
-  cursor: pointer;
+  min-width: 100%;
   border: none;
-  width: 100%;
 }
 
-.wrapper_link_login {
-  text-align: center;
+.before_link_login {
+  padding-right: 8px;
   color: #616161;
 }
 
-.forgot_password,
+.wrapper_link_login {
+  text-align: start;
+  padding: 0;
+}
+
+.link_forgot_password,
 .link_login {
   text-decoration: none;
   color: #001689;
+}
+
+.remember_me {
+  color: var(--bs-dark);
+}
+
+.wrapper_link_forgot_password,
+.before_link_login {
+  text-align: end;
+}
+
+.link_forgot_password,
+.remember_me,
+.button {
+  font-size: 16px;
 }
