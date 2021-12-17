@@ -1,3 +1,7 @@
+:root {
+  --primary-color: #001689;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -6,17 +10,6 @@ html,
 body {
   padding: 0;
   margin: 0;
-}
-
-.nav-link,
-.container,
-.card-body,
-.container-fluid {
-  padding: 0;
-}
-
-.card {
-  border: none;
 }
 
 @font-face {

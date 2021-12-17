@@ -11,8 +11,8 @@ export default function BackgroundOfForms({ form, padding }) {
           <Col className={style.wrapper_logo}>
             <Image className={cn(style.logo, "img-fluid")} src={logo} alt='shoplab' />
             <Col className={cn(style.wrapper_form, padding)}>
-              <Card>
-                <Card.Body>
+              <Card className={style.wrapper_card}>
+                <Card.Body className={style.wrapper_body}>
                   <Card.Title className={style.heading}>Welcome to</Card.Title>
                   <Card.Subtitle className={style.sub_heading}>Shoplab ticketing system</Card.Subtitle>
                   {form}

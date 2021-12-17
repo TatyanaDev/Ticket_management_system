@@ -1,13 +1,15 @@
 import { Button, Container, Row, Col, Form } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Formik } from "formik";
 import cn from "classnames";
 import * as Yup from "yup";
 import style from "../styles.module.css";
 
 export default function UserAuthorizationForm({ margin }) {
+  const navigate = useNavigate();
+
   const validationSchema = Yup.object().shape({
-    email: Yup.string().trim().email('Must contain @ and "."').required("Email is required"),
+    email: Yup.string().trim().email('Must contain @ and "."').required("Email is required!"),
     password: Yup.string().trim().min(6, "Password has to be longer than 6 characters!").required("Password is required!"),
     rememberMe: Yup.boolean(),
   });
@@ -21,6 +23,7 @@ export default function UserAuthorizationForm({ margin }) {
   const checkUser = async (values, formikBag) => {
     console.log(values);
     formikBag.resetForm();
+    navigate("/dashboard");
     try {
     } catch (err) {}
   };
@@ -34,7 +37,7 @@ export default function UserAuthorizationForm({ margin }) {
               <Form.Group as={Col} className={style.input_container}>
                 <Form.Label className={style.label}>Email</Form.Label>
                 <Form.Control className={style.input} type='text' name='email' value={values.email} onChange={handleChange} isValid={touched.email && !errors.email} isInvalid={errors.email} />
-                <Form.Control.Feedback type='invalid' tooltip>
+                <Form.Control.Feedback className={style.error} type='invalid' tooltip>
                   {errors.email}
                 </Form.Control.Feedback>
               </Form.Group>
@@ -44,7 +47,7 @@ export default function UserAuthorizationForm({ margin }) {
               <Form.Group as={Col} className={style.input_container}>
                 <Form.Label className={style.label}>Password </Form.Label>
                 <Form.Control className={style.input} type='password' name='password' value={values.password} onChange={handleChange} isValid={touched.password && !errors.password} isInvalid={errors.password} />
-                <Form.Control.Feedback type='invalid' tooltip>
+                <Form.Control.Feedback className={style.error} type='invalid' tooltip>
                   {errors.password}
                 </Form.Control.Feedback>
               </Form.Group>
