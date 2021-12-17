@@ -12,8 +12,8 @@ export default function Register() {
           <Col className={style.wrapper_logo}>
             <Image className={cn("img-fluid", style.logo)} src={logo} alt='shoplab' />
             <Col className={style.wrapper_form}>
-              <Card>
-                <Card.Body>
+              <Card className={style.wrapper_card}>
+                <Card.Body className={style.wrapper_body}>
                   <Card.Title className={style.heading}>Welcome to</Card.Title>
                   <Card.Subtitle className={style.sub_heading}>Shoplab ticketing system</Card.Subtitle>
                   <UserRegistrationForm />

@@ -12,7 +12,6 @@
   position: relative;
   max-width: 1000px;
   margin: 0 auto;
-  padding: 0;
 }
 
 .logo {
@@ -28,6 +27,15 @@
   padding: 161px 75px;
   margin-left: auto;
   max-width: 500px;
+}
+
+.wrapper_card {
+  border: none;
+}
+
+.wrapper_logo,
+.wrapper_body {
+  padding: 0;
 }
 
 .heading {

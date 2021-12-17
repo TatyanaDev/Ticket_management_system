@@ -8,17 +8,6 @@ body {
   margin: 0;
 }
 
-.nav-link,
-.container,
-.card-body,
-.container-fluid {
-  padding: 0;
-}
-
-.card {
-  border: none;
-}
-
 @font-face {
   font-family: "Poppins-Regular";
   src: url("../src/fonts/Poppins-Regular.ttf");
