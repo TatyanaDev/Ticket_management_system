@@ -32,3 +32,8 @@
   text-align: end;
   padding: 0;
 }
+
+.icon_notification {
+  color: #ffffff;
+  font-size: 30px;
+}
