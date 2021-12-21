@@ -1,3 +1,98 @@
 .wrapper_sidebar {
   padding: 0;
 }
+
+.container_dashboard_content {
+  padding-right: 0;
+}
+
+.wrapper_dashboard {
+  background-color: #f8f9fa;
+  padding: 20px 47px;
+}
+
+.ticket_summary,
+.ticket_history {
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  line-height: 24px;
+  font-weight: bold;
+  color: #1f2937;
+  font-size: 20px;
+}
+
+.wrapper_button_create_ticket {
+  text-align: end;
+}
+
+.button_create_ticket {
+  background-color: var(--primary-color);
+  font-family: "Poppins-Regular";
+  margin-bottom: 12px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 24px;
+  padding: 8px 16px;
+  font-size: 20px;
+  border: none;
+}
+
+.icon_plus {
+  vertical-align: -3px;
+  color: var(--bs-white);
+}
+
+.info {
+  color: var(--bs-danger);
+}
+
+.progress {
+  color: var(--bs-yellow);
+}
+
+.check {
+  color: #28a745;
+}
+
+.wrapper_link_ticket_list {
+  text-align: end;
+}
+
+.link_ticket_list {
+  text-decoration: none;
+}
+
+.wrapper_button_recent_activity {
+  text-align: end;
+}
+
+.button_recent_activity {
+  font-family: "Poppins-Regular";
+  border-radius: 4.8px;
+  font-weight: normal;
+  padding: 8px 26.5px;
+  font-style: normal;
+  line-height: 24px;
+  max-width: 259px;
+  font-size: 20px;
+}
+
+.wrapper_arrow_button {
+  max-height: 30px;
+  max-width: 30px;
+}
+
+.arrow_button {
+}
+
+.recent_activity {
+  padding: 0;
+}
+
+.value_recent_activity {
+  background-color: var(--bs-white);
+  color: var(--bs-danger);
+  border-radius: 50%;
+  max-height: 20px;
+  max-width: 20px;
+}
