@@ -1,0 +1,38 @@
+.dropdown {
+  padding: 0px;
+}
+
+.dropdown > a::after {
+  display: none;
+}
+
+.avatar {
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.dropdown_item {
+  font-family: "Poppins-Regular";
+  padding: 10px 16px 10px 10px;
+  letter-spacing: -0.011em;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 24px;
+  color: #1f2937;
+  font-size: 12px;
+}
+
+.icon {
+  color: #1f2937;
+  font-size: 20px;
+  margin-right: 4px;
+}
+
+.divider {
+  border: 1px solid #e5e7eb;
+  margin: 0;
+}
+
+.logout {
+  line-height: 18px;
+}

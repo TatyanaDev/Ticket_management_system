@@ -24,3 +24,19 @@
   font-family: "Poppins-Bold";
   src: url("../src/fonts/Poppins-Bold.ttf");
 }
+
+a.navbar-expand.navbar-nav.nav-link,
+a.dropdown-toggle.nav-link,
+.dropdown-menu {
+  padding: 0;
+  outline: none;
+}
+
+.navbar-expand .navbar-nav {
+  flex-direction: column;
+}
+
+.dropdown-menu[data-bs-popper] {
+  top: 150%;
+  left: 18%;
+}
