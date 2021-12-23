@@ -6,6 +6,11 @@
   display: none;
 }
 
+.button_dropdown {
+  margin-left: 22px;
+  max-width: 170px;
+}
+
 .avatar {
   margin-right: 8px;
 }
