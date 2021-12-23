@@ -1,14 +1,21 @@
+.wrapper_sidebar {
+  transition: all 0.2s linear;
+  max-width: 220px;
+  padding: 0;
+}
+
 .container_sidebar {
   background-color: var(--primary-color);
   justify-content: space-between;
   transition: all 0.2s linear;
   flex-direction: column;
   display: flex;
-  height: 95vh;
+  height: 100%;
 }
 
 .container_sidebar_min {
-  width: 5vh;
+  transition: all 0.2s linear;
+  max-width: 56px;
 }
 
 .toggle:hover {
