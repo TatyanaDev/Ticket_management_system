@@ -1,7 +1,7 @@
 import { Container, Row, Col, Image, Card } from "react-bootstrap";
 import cn from "classnames";
 import UserRegistrationForm from "../../Components/UserRegistrationForm";
-import logo from "../../icons/Logo.svg";
+import logo from "../../icons/shared/Logo.svg";
 import style from "./styles.module.css";
 
 export default function Register() {
