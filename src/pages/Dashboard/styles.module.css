@@ -1,9 +1,9 @@
-.wrapper_sidebar {
-  padding: 0;
+.test {
+  max-width: 100%;
 }
 
 .container_dashboard_content {
-  padding-right: 0;
+  padding: 0;
 }
 
 .wrapper_dashboard {
@@ -19,6 +19,10 @@
   font-weight: bold;
   color: #1f2937;
   font-size: 20px;
+}
+
+.ticket_history {
+  margin-bottom: 14px;
 }
 
 .wrapper_button_create_ticket {
@@ -37,20 +41,29 @@
   border: none;
 }
 
+.button_create_ticket:focus {
+  background-color: var(--primary-color);
+  background-color: var(--primary-color);
+  box-shadow: none;
+}
+
 .icon_plus {
   vertical-align: -3px;
   color: var(--bs-white);
 }
 
-.info {
+.info,
+.link_info:hover {
   color: var(--bs-danger);
 }
 
-.progress {
+.progress,
+.link_progress:hover {
   color: var(--bs-yellow);
 }
 
-.check {
+.check,
+.link_check:hover {
   color: #28a745;
 }
 
@@ -59,11 +72,194 @@
 }
 
 .link_ticket_list {
+  font-family: "Poppins-Regular";
   text-decoration: none;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 36px;
+  color: #1f2937;
+  font-size: 16px;
+}
+
+.link_ticket_list:hover {
+  color: var(--primary-color);
+}
+
+.arrow_see_all {
+  vertical-align: -2px;
+  margin-right: 2px;
+  margin-left: 8px;
+  font-size: 15px;
+}
+
+.wrapper_table {
+  background-color: var(--bs-white);
+  margin-bottom: 45px;
+}
+
+.wrapper_thead {
+  box-shadow: inset 0px -2px 0px #dfdfdf;
+  color: var(--primary-color);
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  line-height: 24px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.wrapper_thead_item {
+  padding: 16px 12px 16px 16px !important;
+}
+
+.arrow_thead {
+  text-align: end;
+  max-width: 38px;
+  cursor: pointer;
+}
+
+.arrow_thead_active {
+  transform: rotate(180deg);
 }
 
 .wrapper_button_recent_activity {
   text-align: end;
+}
+
+.recent_activity {
+  padding: 36px 47px 0px 0px;
+  max-width: 289px;
+
+  /* display: none; */
+}
+
+.recent_activity_active {
+  display: block;
+}
+
+.empty {
+  width: 38px;
+}
+
+.wrapper_tbody {
+  box-shadow: inset 0px -2px 0px #dfdfdf;
+  font-family: "Poppins-Regular";
+  font-weight: normal;
+  font-style: normal;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+.wrapper_tbody_image {
+  margin-left: 1px;
+}
+
+.wrapper_tbody_item {
+  padding: 11px 16px !important;
+  vertical-align: middle;
+  height: 66px;
+}
+
+.wrapper_arrow_tbody {
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+}
+
+.arrow_tbody {
+  color: #1f2937;
+  font-size: 12px;
+}
+
+.wrapper_thead_inner {
+  box-shadow: inset 0px -1px 0px #dfdfdf;
+  background-color: #f1f3f6;
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  line-height: 21px;
+  font-weight: bold;
+  color: #1f2937;
+  font-size: 14px;
+}
+
+.wrapper_thead_item_inner {
+  padding: 8px 12px 8px 16px !important;
+}
+
+.wrapper_tbody_inner {
+  box-shadow: inset 0px -1px 0px #dfdfdf;
+  font-family: "Poppins-Regular";
+  background: #f1f3f6;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 21px;
+  color: #343a40;
+  font-size: 12px;
+}
+
+.wrapper_tbody_item_inner {
+  padding: 5px 16px !important;
+}
+
+.button_add_ticket {
+  border: 2px solid var(--primary-color);
+  font-family: "Poppins-Regular";
+  background-color: #f1f3f6;
+  color: var(--primary-color);
+  font-weight: normal;
+  font-style: normal;
+  line-height: 21px;
+  font-size: 14px;
+  padding: 5px;
+}
+
+.button_add_ticket:hover,
+.button_add_ticket:focus {
+  border: 2px solid var(--primary-color);
+  background-color: var(--primary-color);
+  box-shadow: none;
+}
+
+.icon_plus_add {
+  vertical-align: -5px;
+  font-size: 20px;
+}
+
+.content {
+  text-align: end;
+  color: #1c1c28;
+}
+
+.gray {
+  color: #1f2937;
+}
+
+.width_1 {
+  width: 15%;
+}
+
+.width_2 {
+  width: 45%;
+}
+
+.width_3 {
+  width: 20%;
+}
+
+.width_4 {
+  width: 60%;
+}
+
+.text_end {
+  text-align: end;
+}
+
+.tbody_image {
+  max-width: 24px;
+  padding: 0;
+}
+
+.wrapper_tbody_approver {
+  padding-left: 4px;
 }
 
 .button_recent_activity {
@@ -73,7 +269,8 @@
   padding: 8px 26.5px;
   font-style: normal;
   line-height: 24px;
-  max-width: 259px;
+  min-height: 46px;
+  min-width: 259px;
   font-size: 20px;
 }
 
@@ -83,16 +280,32 @@
 }
 
 .arrow_button {
+  vertical-align: -2px;
+  font-size: 18px;
 }
 
 .recent_activity {
+  font-family: "Poppins-Regular";
+  font-weight: normal;
+  font-style: normal;
+  line-height: 24px;
+  font-size: 20px;
   padding: 0;
 }
 
 .value_recent_activity {
   background-color: var(--bs-white);
+  font-family: "Poppins-Bold";
   color: var(--bs-danger);
+  margin-right: 17px;
+  text-align: center;
+  font-style: normal;
   border-radius: 50%;
+  line-height: 24px;
+  font-weight: bold;
   max-height: 20px;
+  font-size: 12px;
   max-width: 20px;
+  margin-top: 2px;
+  padding: 0px;
 }
