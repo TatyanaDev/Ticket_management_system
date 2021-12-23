@@ -1,7 +1,7 @@
 import { Col, Navbar, Row, Image } from "react-bootstrap";
-import headerAvatar from "../../../icons/common/HeaderAvatar.svg";
+import headerAvatar from "../../../icons/shared/HeaderAvatar.svg";
 import { Icon } from "@iconify/react/dist/iconify";
-import logo from "../../../icons/common/Logo.svg";
+import logo from "../../../icons/shared/Logo.svg";
 import ProfileDropdown from "./ProfileDropdown/";
 import style from "./styles.module.css";
 

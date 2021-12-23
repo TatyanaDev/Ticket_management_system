@@ -28,8 +28,8 @@
 a.navbar-expand.navbar-nav.nav-link,
 a.dropdown-toggle.nav-link,
 .dropdown-menu {
-  padding: 0;
   outline: none;
+  padding: 0;
 }
 
 .navbar-expand .navbar-nav {
@@ -39,4 +39,12 @@ a.dropdown-toggle.nav-link,
 .dropdown-menu[data-bs-popper] {
   top: 150%;
   left: 18%;
+}
+
+.table > :not(:first-child) {
+  border-top: 2px solid #dfdfdf;
+}
+
+.table > :not(caption) > * > * {
+  border-bottom-width: 0;
 }

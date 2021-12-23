@@ -10,7 +10,7 @@ export default function ProfileDropdown({ avatar, userName }) {
       <NavDropdown
         className={style.dropdown}
         title={
-          <Container className={text}>
+          <Container className={cn(text, style.button_dropdown)}>
             <Image src={avatar} className={style.avatar} />
             {userName}
           </Container>
