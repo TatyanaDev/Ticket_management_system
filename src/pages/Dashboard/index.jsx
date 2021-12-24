@@ -69,23 +69,23 @@ export default function Dashboard() {
                     <tr className={style.wrapper_thead}>
                       <th className={cn(style.wrapper_thead_item, style.width_1)}>
                         <Row>
-                          <Col>Ticket ID</Col>
+                          <Col className={style.content_thead}>Ticket ID</Col>
                           <Col className={cn(style.arrow_thead, currentFilter === "ticketId" && style.arrow_thead_active)} onClick={() => sortTicketId({ data, flag, setFlag, setCurrentFilter })}>
+                            <Icon icon='ep:arrow-up-bold' />
+                          </Col>
+                        </Row>
+                      </th>
+                      <th className={style.wrapper_thead_item}>
+                        <Row>
+                          <Col className={style.content_thead}>Ticket Name</Col>
+                          <Col className={cn(style.arrow_thead, currentFilter === "ticketName" && style.arrow_thead_active)} id='ticketName' onClick={() => sortTicketName({ data, flag, setFlag, setCurrentFilter })}>
                             <Icon icon='ep:arrow-up-bold' />
                           </Col>
                         </Row>
                       </th>
                       <th className={cn(style.wrapper_thead_item, style.width_2)}>
                         <Row>
-                          <Col>Ticket Name</Col>
-                          <Col className={cn(style.arrow_thead, currentFilter === "ticketName" && style.arrow_thead_active)} id='ticketName' onClick={() => sortTicketName({ data, flag, setFlag, setCurrentFilter })}>
-                            <Icon icon='ep:arrow-up-bold' />
-                          </Col>
-                        </Row>
-                      </th>
-                      <th className={cn(style.wrapper_thead_item, style.width_3)}>
-                        <Row>
-                          <Col>Approver</Col>
+                          <Col className={style.content_thead}>Approver</Col>
                           <Col className={cn(style.arrow_thead, currentFilter === "approver" && style.arrow_thead_active)} id='approver' onClick={() => sortApprover({ data, flag, setFlag, setCurrentFilter })}>
                             <Icon icon='ep:arrow-up-bold' />
                           </Col>
@@ -93,7 +93,7 @@ export default function Dashboard() {
                       </th>
                       <th className={cn(style.wrapper_thead_item, style.width_3)}>
                         <Row>
-                          <Col>Resolved date</Col>
+                          <Col className={style.content_thead}>Resolved date</Col>
                           <Col className={cn(style.arrow_thead, currentFilter === "resolvedDate" && style.arrow_thead_active)} id='resolvedDate' onClick={() => sortResolvedDate({ data, flag, setFlag, setCurrentFilter })}>
                             <Icon icon='ep:arrow-up-bold' />
                           </Col>

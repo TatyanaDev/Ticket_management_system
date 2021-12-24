@@ -10,8 +10,9 @@ export default function OpenTableRow({ ticket }) {
           Ticket description
         </th>
         <th className={cn(style.wrapper_thead_item_inner, style.text_end)}>Submitted date</th>
-        <th className={cn(style.wrapper_thead_item_inner, style.text_end)}>Followup Ticket</th>
-        <th></th>
+        <th colSpan='2' className={cn(style.wrapper_thead_item_inner, style.text_end)}>
+          Followup Ticket
+        </th>
       </tr>
 
       <tr className={cn(style.wrapper_tbody_inner)}>
@@ -19,10 +20,9 @@ export default function OpenTableRow({ ticket }) {
           {ticket.ticket_description}
         </td>
         <td className={cn(style.wrapper_tbody_item_inner, style.text_end)}>{ticket.submitted_date}</td>
-        <td className={cn(style.wrapper_tbody_item_inner, style.text_end)}>
+        <td colSpan='2' className={cn(style.wrapper_tbody_item_inner, style.text_end)}>
           <ModalOpenButton content='Add ticket' styleButton={style.button_add_ticket} styleIcon={style.icon_plus_add} />
         </td>
-        <td></td>
       </tr>
     </>
   );
