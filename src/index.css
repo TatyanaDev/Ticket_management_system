@@ -25,6 +25,11 @@
   src: url("../src/fonts/Poppins-Bold.ttf");
 }
 
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("../src/fonts/Roboto-Medium.ttf");
+}
+
 a.navbar-expand.navbar-nav.nav-link,
 a.dropdown-toggle.nav-link,
 .dropdown-menu {
