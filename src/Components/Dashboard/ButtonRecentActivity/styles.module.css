@@ -1,0 +1,49 @@
+.button_recent_activity {
+  font-family: "Poppins-Regular";
+  border-radius: 4.8px;
+  font-weight: normal;
+  padding: 8px 26.5px;
+  font-style: normal;
+  line-height: 24px;
+  min-height: 46px;
+  min-width: 259px;
+  font-size: 20px;
+}
+
+.button_recent_activity_active {
+  visibility: hidden;
+}
+
+.wrapper_arrow_button {
+  max-height: 30px;
+  max-width: 30px;
+}
+
+.arrow_button {
+  vertical-align: -2px;
+  font-size: 18px;
+}
+
+.recent_activity {
+  font-family: "Poppins-Regular";
+  font-weight: normal;
+  font-style: normal;
+  line-height: 24px;
+  font-size: 20px;
+}
+
+.value_recent_activity {
+  background-color: var(--bs-white);
+  font-family: "Poppins-Bold";
+  color: var(--bs-danger);
+  margin-right: 17px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 50%;
+  line-height: 24px;
+  font-weight: bold;
+  max-height: 20px;
+  font-size: 12px;
+  max-width: 20px;
+  margin-top: 2px;
+}

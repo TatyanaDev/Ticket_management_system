@@ -1,7 +1,7 @@
 import { Icon } from "@iconify/react/dist/iconify";
 import { useState } from "react";
 import cn from "classnames";
-import style from "../../../../pages/Dashboard/styles.module.css";
+import style from "./styles.module.css";
 
 export default function TableContentContainer({ tableContent, openTableRow }) {
   const [isOpen, setIsOpen] = useState(false);

@@ -1,6 +1,6 @@
 import cn from "classnames";
-import style from "../../../../../pages/Dashboard/styles.module.css";
-import ModalOpenButton from "../../../ModalOpenButton";
+import ModalOpenButton from "../../../../ModalOpenButton";
+import style from "./styles.module.css";
 
 export default function OpenTableRow({ ticket }) {
   return (
