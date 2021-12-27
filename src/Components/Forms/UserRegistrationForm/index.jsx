@@ -1,12 +1,13 @@
 import { Button, Container, Row, Col, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { Formik } from "formik";
+import cn from "classnames";
 import * as Yup from "yup";
-import style from "./styles.module.css";
+import style from "../styles.module.css";
 
-export default function UserRegistrationForm() {
+export default function UserRegistrationForm({ margin }) {
   const validationSchema = Yup.object().shape({
-    email: Yup.string().trim().email('Must contain @ and "."').required("Email is required"),
+    email: Yup.string().trim().email('Must contain @ and "."').required("Email is required!"),
     createPassword: Yup.string().trim().min(6, "Password has to be longer than 6 characters!").required("Create password is required!"),
     repeatPassword: Yup.string()
       .trim()
@@ -36,7 +37,7 @@ export default function UserRegistrationForm() {
               <Form.Group as={Col} className={style.input_container}>
                 <Form.Label className={style.label}>Email</Form.Label>
                 <Form.Control className={style.input} type='text' name='email' value={values.email} onChange={handleChange} isValid={touched.email && !errors.email} isInvalid={errors.email} />
-                <Form.Control.Feedback type='invalid' tooltip>
+                <Form.Control.Feedback className={style.error} type='invalid' tooltip>
                   {errors.email}
                 </Form.Control.Feedback>
               </Form.Group>
@@ -46,7 +47,7 @@ export default function UserRegistrationForm() {
               <Form.Group as={Col} className={style.input_container}>
                 <Form.Label className={style.label}>Create Password </Form.Label>
                 <Form.Control className={style.input} type='password' name='createPassword' value={values.createPassword} onChange={handleChange} isValid={touched.createPassword && !errors.createPassword} isInvalid={errors.createPassword} />
-                <Form.Control.Feedback type='invalid' tooltip>
+                <Form.Control.Feedback className={style.error} type='invalid' tooltip>
                   {errors.createPassword}
                 </Form.Control.Feedback>
               </Form.Group>
@@ -56,13 +57,13 @@ export default function UserRegistrationForm() {
               <Form.Group as={Col} className={style.input_container}>
                 <Form.Label className={style.label}>Repeat Password</Form.Label>
                 <Form.Control className={style.input} type='password' name='repeatPassword' value={values.repeatPassword} onChange={handleChange} isValid={touched.repeatPassword && !errors.repeatPassword} isInvalid={errors.repeatPassword} />
-                <Form.Control.Feedback type='invalid' tooltip>
+                <Form.Control.Feedback className={style.error} type='invalid' tooltip>
                   {errors.repeatPassword}
                 </Form.Control.Feedback>
               </Form.Group>
             </Row>
 
-            <Row className={style.wrapper_button}>
+            <Row className={cn(style.wrapper_button, margin)}>
               <Button className={style.button} type='submit'>
                 Create account
               </Button>

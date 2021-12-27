@@ -1,14 +1,8 @@
 .input_container {
-  margin: 0 auto;
   margin-bottom: 19px;
   position: relative;
   max-width: 350px;
-  padding: 0;
-}
-
-.label {
-  color: #6c757d;
-  margin-bottom: 0;
+  margin: 0 auto;
 }
 
 .input {
@@ -17,22 +11,26 @@
   min-height: 44px;
 }
 
+.error {
+  background-color: var(--bs-white);
+  color: var(--bs-danger);
+  letter-spacing: 0.5px;
+  line-height: 15px;
+  font-size: 12px;
+  margin-top: 1px;
+}
+
+.link_forgot_password,
 .input_container,
-.input,
 .before_link,
-.link_login {
+.remember_me,
+.link_login,
+.input {
   font-family: "Poppins-Regular";
   font-weight: normal;
   font-style: normal;
   line-height: 24px;
   font-size: 14px;
-}
-
-.wrapper_button {
-  margin: 0 auto;
-  margin-bottom: 16px;
-  max-width: 350px;
-  margin-top: 32px;
 }
 
 .button {
@@ -42,11 +40,10 @@
   padding: 16px 111px;
   border-radius: 4px;
   font-style: normal;
+  font-size: 15.5px;
   font-weight: bold;
   line-height: 24px;
-  font-size: 15.5px;
   min-width: 100%;
-  cursor: pointer;
   border: none;
 }
 
@@ -56,12 +53,17 @@
   text-align: end;
 }
 
-.wrapper_link_login {
-  text-align: start;
-  padding: 0;
-}
-
+.link_forgot_password,
 .link_login {
   color: var(--primary-color);
   text-decoration: none;
+}
+
+.remember_me {
+  color: var(--bs-dark);
+}
+
+.link_forgot_password,
+.remember_me {
+  font-size: 16px;
 }

@@ -1,28 +1,7 @@
-import { Container, Row, Col, Image, Card } from "react-bootstrap";
-import cn from "classnames";
-import UserRegistrationForm from "../../Components/UserRegistrationForm";
-import logo from "../../icons/shared/Logo.svg";
-import style from "./styles.module.css";
+import UserRegistrationForm from "../../Components/Forms/UserRegistrationForm";
+import BackgroundOfForms from "../../Components/BackgroundOfForms";
+import { wrapper_form, wrapper_button } from "./styles.module.css";
 
 export default function Register() {
-  return (
-    <Container fluid className={style.wrapper}>
-      <Container>
-        <Row>
-          <Col className={style.wrapper_logo}>
-            <Image className={cn("img-fluid", style.logo)} src={logo} alt='shoplab' />
-            <Col className={style.wrapper_form}>
-              <Card className={style.wrapper_card}>
-                <Card.Body className={style.wrapper_body}>
-                  <Card.Title className={style.heading}>Welcome to</Card.Title>
-                  <Card.Subtitle className={style.sub_heading}>Shoplab ticketing system</Card.Subtitle>
-                  <UserRegistrationForm />
-                </Card.Body>
-              </Card>
-            </Col>
-          </Col>
-        </Row>
-      </Container>
-    </Container>
-  );
+  return <BackgroundOfForms form={<UserRegistrationForm margin={wrapper_button} />} padding={wrapper_form} />;
 }
