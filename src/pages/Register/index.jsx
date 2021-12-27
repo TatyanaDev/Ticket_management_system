@@ -1,5 +1,5 @@
-import UserRegistrationForm from "../../Components/Forms/UserRegistrationForm";
-import BackgroundOfForms from "../../Components/BackgroundOfForms";
+import UserRegistrationForm from "../../Components/Authentication/BackgroundOfForms/Forms/UserRegistrationForm";
+import BackgroundOfForms from "../../Components/Authentication/BackgroundOfForms";
 import { wrapper_form, wrapper_button } from "./styles.module.css";
 
 export default function Register() {
