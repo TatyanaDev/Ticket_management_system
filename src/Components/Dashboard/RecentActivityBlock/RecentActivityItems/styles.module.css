@@ -1,0 +1,110 @@
+.wrapper_recent_activity_ticket {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.075);
+  background-color: var(--bs-white);
+  border-radius: 8px;
+  margin-bottom: 8px;
+  padding: 16px;
+}
+
+.wrapper_recent_activity_ticket_type {
+  font-family: "Roboto-Medium";
+  max-width: max-content;
+  color: var(--bs-white);
+  border-radius: 4px;
+  line-height: 12px;
+  padding: 3px 4px;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.border_take_action {
+  border: 2px solid var(--bs-danger);
+}
+
+.icon_recent_activity_ticket {
+  margin-right: 8px;
+  margin-left: 10px;
+  max-width: 40px;
+  padding: 0;
+}
+
+.wrapper_recent_activity_ticket_name {
+  font-family: "Poppins-Bold";
+  margin-bottom: 7px;
+  line-height: 19px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.design_ticket_color_ticket_name {
+  color: var(--bs-danger);
+}
+
+.take_action_color_ticket_name {
+  color: var(--gray-800-color);
+}
+
+.content_recent_activity_ticket {
+  font-family: "Poppins-Regular";
+  color: var(--gray-800-color);
+  margin-bottom: 10px;
+  font-style: normal;
+  line-height: 24px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.date_recent_activity_ticket {
+  font-family: "Poppins-Regular";
+  font-weight: normal;
+  font-style: normal;
+  line-height: 19px;
+  padding-right: 0;
+  color: #6c757d;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.wrapper_review_link {
+  max-width: 80px;
+  text-align: end;
+  padding-left: 0;
+}
+
+.link_ticket_list:hover {
+  color: var(--primary-color);
+}
+
+.review_link {
+  font-family: "Poppins-Regular";
+  font-weight: normal;
+  font-style: normal;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+.color_reviev_link_design_ticket,
+.color_reviev_link_design_ticket:hover {
+  color: var(--primary-color);
+}
+
+.color_reviev_link_take_action,
+.color_reviev_link_take_action:hover {
+  color: var(--bs-danger);
+}
+
+.arrow_see_all_block {
+  vertical-align: -2px;
+  margin-right: 2px;
+  margin-left: 4px;
+  font-size: 13px;
+}
+
+.background_design_ticket {
+  background-color: var(--primary-color);
+}
+
+.background_take_action {
+  background-color: var(--bs-danger);
+}

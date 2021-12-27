@@ -1,0 +1,13 @@
+.wrapper_thead_item {
+  padding: 16px 12px 16px 16px !important;
+}
+
+.arrow_thead {
+  text-align: end;
+  max-width: 38px;
+  cursor: pointer;
+}
+
+.arrow_thead_active {
+  transform: rotate(180deg);
+}

@@ -1,13 +1,8 @@
 .input_container {
-  margin: 0 auto;
   margin-bottom: 19px;
   position: relative;
   max-width: 350px;
-}
-
-.label {
-  color: #6c757d;
-  margin-bottom: 0;
+  margin: 0 auto;
 }
 
 .input {
@@ -38,13 +33,10 @@
   font-size: 14px;
 }
 
-.wrapper_button {
-  max-width: 350px;
-}
-
 .button {
   background-color: var(--primary-color);
   font-family: "Poppins-Bold";
+  color: var(--bs-white);
   padding: 16px 111px;
   border-radius: 4px;
   font-style: normal;
@@ -58,10 +50,7 @@
 .before_link {
   padding-right: 8px;
   color: #616161;
-}
-
-.wrapper_link_login {
-  text-align: start;
+  text-align: end;
 }
 
 .link_forgot_password,
@@ -74,18 +63,7 @@
   color: var(--bs-dark);
 }
 
-.wrapper_link_forgot_password,
-.before_link {
-  text-align: end;
-}
-
 .link_forgot_password,
 .remember_me {
   font-size: 16px;
-}
-
-.wrapper_link_login,
-.input_container,
-.error {
-  padding: 0;
 }

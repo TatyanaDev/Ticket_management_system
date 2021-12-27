@@ -1,7 +1,7 @@
 import { Button, Container, Row, Col, Form } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 import { Formik } from "formik";
-import cn from "classnames";
+
 import * as Yup from "yup";
 import style from "../styles.module.css";
 
@@ -34,20 +34,24 @@ export default function UserAuthorizationForm({ margin }) {
         {({ handleSubmit, handleChange, values, touched, errors }) => (
           <Form noValidate onSubmit={handleSubmit}>
             <Row>
-              <Form.Group as={Col} className={style.input_container}>
-                <Form.Label className={style.label}>Email</Form.Label>
+              <Form.Group as={Col} className='p-0'>
+                <Form.Label className='mb-0' style={{ color: "#6c757d" }}>
+                  Email
+                </Form.Label>
                 <Form.Control className={style.input} type='text' name='email' value={values.email} onChange={handleChange} isValid={touched.email && !errors.email} isInvalid={errors.email} />
-                <Form.Control.Feedback className={style.error} type='invalid' tooltip>
+                <Form.Control.Feedback className='p-0' type='invalid' tooltip>
                   {errors.email}
                 </Form.Control.Feedback>
               </Form.Group>
             </Row>
 
             <Row>
-              <Form.Group as={Col} className={style.input_container}>
-                <Form.Label className={style.label}>Password </Form.Label>
+              <Form.Group as={Col} className='p-0'>
+                <Form.Label className='mb-0' style={{ color: "#6c757d" }}>
+                  Password
+                </Form.Label>
                 <Form.Control className={style.input} type='password' name='password' value={values.password} onChange={handleChange} isValid={touched.password && !errors.password} isInvalid={errors.password} />
-                <Form.Control.Feedback className={style.error} type='invalid' tooltip>
+                <Form.Control.Feedback className='p-0' type='invalid' tooltip>
                   {errors.password}
                 </Form.Control.Feedback>
               </Form.Group>
@@ -60,14 +64,14 @@ export default function UserAuthorizationForm({ margin }) {
                 </Form.Group>
               </Col>
 
-              <Col className={style.wrapper_link_forgot_password}>
+              <Col style={{ textAlign: "end" }}>
                 <Link className={style.link_forgot_password} to='/login'>
                   Forgot Password?
                 </Link>
               </Col>
             </Row>
 
-            <Row className={cn(style.wrapper_button, margin)}>
+            <Row className={margin} style={{ width: 350 }}>
               <Button className={style.button} type='submit'>
                 Login
               </Button>
@@ -82,7 +86,7 @@ export default function UserAuthorizationForm({ margin }) {
             Dont have an account?
           </Col>
 
-          <Col className={style.wrapper_link_login}>
+          <Col className='p-0' style={{ textAlign: "start" }}>
             <Link className={style.link_login} to='/'>
               Join free today
             </Link>
