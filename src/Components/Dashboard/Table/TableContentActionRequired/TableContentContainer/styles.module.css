@@ -1,0 +1,27 @@
+.wrapper_tbody {
+  box-shadow: inset 0px -2px 0px #dfdfdf;
+  font-family: "Poppins-Regular";
+  font-weight: normal;
+  font-style: normal;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+.background_active_ticket {
+  background-color: var(--blue-gray-color);
+}
+
+.wrapper_arrow_tbody {
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+}
+
+.arrow_tbody {
+  color: var(--gray-800-color);
+  font-size: 12px;
+}
+
+.table_row_active {
+  transform: rotate(180deg);
+}

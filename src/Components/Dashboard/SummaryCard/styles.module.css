@@ -1,0 +1,44 @@
+.wrapper_summary {
+  background-color: var(--bs-white);
+  border-radius: 16px;
+  margin-bottom: 22px;
+  margin-right: 30px;
+  padding: 0;
+}
+
+.wrapper_summary:last-of-type {
+  margin-right: 15px;
+}
+
+.link_summary {
+  font-family: "Poppins-Regular";
+  color: var(--gray-800-color);
+  text-decoration: none;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 24px;
+  font-size: 20px;
+  display: block;
+  padding: 16px;
+}
+
+.wrapper_heading_summary {
+  margin-bottom: 4px;
+}
+
+.wrapper_info_summary {
+  min-height: 76px;
+}
+
+.quantity_summary {
+  font-family: "Poppins-Medium";
+  font-style: normal;
+  line-height: 72px;
+  font-weight: 500;
+  font-size: 48px;
+}
+
+.wrapper_image_summary {
+  padding-top: 13px;
+  text-align: end;
+}

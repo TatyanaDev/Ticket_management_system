@@ -1,0 +1,85 @@
+.wrapper_sidebar {
+  transition: all 0.2s linear;
+  max-width: 220px;
+  padding: 0;
+}
+
+.container_sidebar {
+  background-color: var(--primary-color);
+  justify-content: space-between;
+  transition: all 0.2s linear;
+  flex-direction: column;
+  display: flex;
+  height: 100%;
+}
+
+.container_sidebar_min {
+  transition: all 0.2s linear;
+  max-width: 56px;
+}
+
+.toggle:hover {
+  box-shadow: inset 4px 0 0 #ffda00;
+  background-color: var(--bs-white);
+}
+
+.section_title {
+  font-family: "Poppins-Regular";
+  margin: 11px auto 11px 0px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 120%;
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.container_sidebar,
+.wrapper {
+  padding: 0;
+  margin: 0;
+}
+
+.toggle:hover {
+  color: var(--primary-color);
+}
+
+.section_title,
+.toggle {
+  padding-left: 18px;
+}
+
+.toggle {
+  font-family: "Poppins-Regular";
+  color: var(--bs-white);
+  text-decoration: none;
+  font-weight: normal;
+  align-items: center;
+  font-style: normal;
+  line-height: 120%;
+  column-gap: 16px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  padding: 18px;
+}
+
+.icon {
+  transition: all 0.2s linear;
+  font-size: 20px;
+}
+
+.icon_rotate {
+  transform: rotate(180deg);
+}
+
+.dash_sett_link {
+  padding: 18px 0px;
+}
+
+.item_link {
+  padding: 13px 0px;
+}
+
+.user_list_link {
+  padding: 11px 0px;
+}

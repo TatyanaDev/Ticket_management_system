@@ -1,0 +1,18 @@
+.wrapper_tbody_item {
+  padding: 11px 16px !important;
+  vertical-align: middle;
+  height: 66px;
+}
+
+.content {
+  color: #1c1c28;
+  text-align: end;
+}
+
+.gray {
+  color: var(--gray-800-color);
+}
+
+.tbody_image {
+  max-width: 24px;
+}

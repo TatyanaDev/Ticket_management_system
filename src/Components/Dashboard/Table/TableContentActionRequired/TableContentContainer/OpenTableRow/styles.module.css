@@ -1,0 +1,57 @@
+.wrapper_thead_inner {
+  box-shadow: inset 0px -1px 0px #dfdfdf;
+  background-color: var(--blue-gray-color);
+  color: var(--gray-800-color);
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  line-height: 21px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.wrapper_thead_item_inner {
+  padding: 8px 12px 8px 16px !important;
+}
+
+.text_end {
+  text-align: end;
+}
+
+.wrapper_tbody_inner {
+  box-shadow: inset 0px -1px 0px #a17e7e;
+  background: var(--blue-gray-color);
+  font-family: "Poppins-Regular";
+  color: var(--bs-gray-800);
+  font-weight: normal;
+  font-style: normal;
+  line-height: 21px;
+  font-size: 12px;
+}
+
+.wrapper_tbody_item_inner {
+  padding: 5px 16px !important;
+}
+
+.button_add_ticket {
+  border: 2px solid var(--primary-color);
+  background: var(--blue-gray-color);
+  font-family: "Poppins-Regular";
+  color: var(--primary-color);
+  font-weight: normal;
+  font-style: normal;
+  line-height: 21px;
+  font-size: 14px;
+  padding: 5px;
+}
+
+.button_add_ticket:hover,
+.button_add_ticket:focus {
+  border: 2px solid var(--primary-color);
+  background-color: var(--primary-color);
+  box-shadow: none;
+}
+
+.icon_plus_add {
+  vertical-align: -5px;
+  font-size: 20px;
+}

@@ -1,0 +1,83 @@
+.wrapper_dashboard {
+  background-color: var(--bs-light);
+  padding: 20px 47px;
+  min-height: 95vh;
+}
+
+.wrapper_dashboard_active {
+  padding-right: 30px;
+}
+
+.ticket_summary,
+.ticket_history {
+  color: var(--gray-800-color);
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  line-height: 24px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.button_create_ticket {
+  background-color: var(--primary-color);
+  font-family: "Poppins-Regular";
+  margin-bottom: 12px;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 24px;
+  padding: 8px 16px;
+  font-size: 20px;
+  border: none;
+}
+
+.button_create_ticket:focus {
+  background-color: var(--primary-color);
+  background-color: var(--primary-color);
+  box-shadow: none;
+}
+
+.icon_plus {
+  vertical-align: -3px;
+  color: var(--bs-white);
+}
+
+.info,
+.link_info:hover {
+  color: var(--bs-danger);
+}
+
+.progress,
+.link_progress:hover {
+  color: var(--bs-yellow);
+}
+
+.check,
+.link_check:hover {
+  color: #28a745;
+}
+
+.link_ticket_list {
+  font-family: "Poppins-Regular";
+  color: var(--gray-800-color);
+  text-decoration: none;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 36px;
+  font-size: 16px;
+}
+
+.link_ticket_list:hover {
+  color: var(--primary-color);
+}
+
+.arrow_see_all {
+  vertical-align: -2px;
+  margin-right: 2px;
+  margin-left: 8px;
+  font-size: 15px;
+}
+
+.wrapper_table {
+  background-color: var(--bs-white);
+  margin-bottom: 45px;
+}
