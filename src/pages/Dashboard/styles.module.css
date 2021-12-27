@@ -1,9 +1,10 @@
-.container_dashboard_content {
+.background_dashboard {
+  background-color: var(--bs-light);
   padding: 0;
 }
 
 .wrapper_dashboard {
-  background-color: #f8f9fa;
+  background-color: var(--bs-light);
   padding: 20px 47px;
   min-height: 95vh;
 }
@@ -14,11 +15,12 @@
 
 .ticket_summary,
 .ticket_history {
+  color: var(--gray-800-color);
   font-family: "Poppins-Bold";
   font-style: normal;
   line-height: 24px;
   font-weight: bold;
-  color: #1f2937;
+
   font-size: 20px;
 }
 
@@ -74,11 +76,11 @@
 
 .link_ticket_list {
   font-family: "Poppins-Regular";
+  color: var(--gray-800-color);
   text-decoration: none;
   font-weight: normal;
   font-style: normal;
   line-height: 36px;
-  color: #1f2937;
   font-size: 16px;
 }
 
@@ -94,7 +96,6 @@
 }
 
 .wrapper_link_ticket_list_block {
-  margin-right: 10px;
   text-align: end;
   max-width: 75px;
   padding: 0;
@@ -160,11 +161,11 @@
 
 .content_recent_activity_ticket {
   font-family: "Poppins-Regular";
+  color: var(--gray-800-color);
   margin-bottom: 10px;
   font-style: normal;
   line-height: 24px;
   font-weight: bold;
-  color: #1f2937;
   font-size: 14px;
 }
 
@@ -204,7 +205,7 @@
 }
 
 .take_action_color_ticket_name {
-  color: #1f2937;
+  color: var(--gray-800-color);
 }
 
 .wrapper_table {
@@ -246,30 +247,32 @@
 }
 
 .recent_activity_block {
-  background-color: #f8f9fa;
+  background-color: var(--bs-light);
   transition: all 0.2s linear;
-  display: none;
   max-width: 0;
   padding: 0;
 }
 
 .recent_activity_block_active {
   padding: 36px 47px 0px 0px;
-  max-width: 289px;
-  display: block;
+  position: absolute;
+  overflow-y: auto;
+  max-width: 306px;
+  height: 100%;
+  right: 0;
+  top: 0;
 }
 
 .button_recent_activity_block {
+  color: var(--gray-800-color);
   font-family: "Poppins-Bold";
   margin-bottom: 14px;
   font-style: normal;
   line-height: 24px;
   font-weight: bold;
-  color: #1f2937;
   margin-top: 6px;
   cursor: pointer;
-  font-size: 20px;
-  text-align: end;
+  font-size: 17px;
   padding: 0;
 }
 
@@ -307,18 +310,18 @@
 }
 
 .arrow_tbody {
-  color: #1f2937;
+  color: var(--gray-800-color);
   font-size: 12px;
 }
 
 .wrapper_thead_inner {
   box-shadow: inset 0px -1px 0px #dfdfdf;
-  background-color: #f1f3f6;
+  background-color: var(--blue-gray-color);
+  color: var(--gray-800-color);
   font-family: "Poppins-Bold";
   font-style: normal;
   line-height: 21px;
   font-weight: bold;
-  color: #1f2937;
   font-size: 14px;
 }
 
@@ -328,12 +331,12 @@
 
 .wrapper_tbody_inner {
   box-shadow: inset 0px -1px 0px #a17e7e;
+  background: var(--blue-gray-color);
   font-family: "Poppins-Regular";
-  background: #f1f3f6;
+  color: var(--bs-gray-800);
   font-weight: normal;
   font-style: normal;
   line-height: 21px;
-  color: #343a40;
   font-size: 12px;
 }
 
@@ -343,8 +346,8 @@
 
 .button_add_ticket {
   border: 2px solid var(--primary-color);
+  background: var(--blue-gray-color);
   font-family: "Poppins-Regular";
-  background-color: #f1f3f6;
   color: var(--primary-color);
   font-weight: normal;
   font-style: normal;
@@ -371,11 +374,11 @@
 }
 
 .gray {
-  color: #1f2937;
+  color: var(--gray-800-color);
 }
 
 .width_1 {
-  width: 11%;
+  width: 13%;
 }
 
 .width_2 {
@@ -383,7 +386,7 @@
 }
 
 .width_3 {
-  width: 15%;
+  width: 18%;
 }
 
 .width_4 {
@@ -456,33 +459,9 @@
 }
 
 .background_active_ticket {
-  background-color: #f1f3f6;
+  background-color: var(--blue-gray-color);
 }
 
 .table_row_active {
   transform: rotate(180deg);
-}
-
-.flex {
-  /* display: flex;
-  gap: 1rem;
-  border: 1px solid red; */
-}
-
-.rc {
-  /* position: relative; */
-  overflow: auto;
-  /* border: 1px solid violet;
-  flex: 1; */
-}
-
-/* .rc_content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}  */
-
-.test {
 }
