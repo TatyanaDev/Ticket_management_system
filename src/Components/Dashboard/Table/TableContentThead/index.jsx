@@ -1,4 +1,4 @@
-import { sortTicketId, sortTicketName, sortApprover, sortResolvedDate } from "../../../../pages/sortingFunctions";
+import { sortTicketId, sortTicketName, sortApprover, sortResolvedDate } from "../../../../pages/sortingFunction";
 import style from "./styles.module.css";
 import TheadItem from "../TableContentThead/TheadItem";
 

@@ -47,7 +47,7 @@ export default function UserRegistrationForm({ margin }) {
             <Row>
               <Form.Group as={Col} className='p-0'>
                 <Form.Label className='mb-0' style={{ color: "#6c757d" }}>
-                  Create Password{" "}
+                  Create Password
                 </Form.Label>
                 <Form.Control className={style.input} type='password' name='createPassword' value={values.createPassword} onChange={handleChange} isValid={touched.createPassword && !errors.createPassword} isInvalid={errors.createPassword} />
                 <Form.Control.Feedback className='p-0' type='invalid' tooltip>
