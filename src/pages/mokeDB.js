@@ -1,4 +1,6 @@
-export const ticketSummaryCard = {
+//Dashboard Page
+
+export const ticketSummary = {
   data: {
     action_required: 10,
     tickets_in_progress: 10,
@@ -6,7 +8,7 @@ export const ticketSummaryCard = {
   }
 }
 
-export const tickets = {
+export const ticketHistory = {
   data: [{
     ticket_id: 7,
     ticket_name: 'Ehange color of primary button',
@@ -91,7 +93,7 @@ export const tickets = {
   ]
 }
 
-export const recentActivityTickets = {
+export const recentActivity = {
   data: [{
     ticket_id: 11,
     type: 'Design ticket',

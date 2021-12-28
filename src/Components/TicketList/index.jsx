@@ -7,8 +7,9 @@ import SearchInput from "../Shared/SearchInput/index";
 import FilterSwitches from "./FilterSwitches/index";
 import CustomPagination from "../Shared/Pagination";
 import style from "./styles.module.css";
+import { tickets } from "../../pages/TicketList/data";
 
-export default function TicketList({ tickets = [] }) {
+export default function TicketListLayout() {
   const [ticketsList, setTicketsList] = useState(tickets);
 
   const filteringHandlerByStatus = (e) => {
@@ -16,30 +17,32 @@ export default function TicketList({ tickets = [] }) {
   };
 
   return (
-    <Container fluid className={style.container}>
-      <Stack gap={3}>
-        <Row className={cn("title", style.title)}>Action required</Row>
-        <Row>
-          <TableActionRequired tickets={tickets} />
-        </Row>
-        <Row>
-          <Col xxl={{ span: 1 }} xs={{ span: 2 }} className='title'>
-            Ticket list
-          </Col>
-          <Col xxl={{ span: 3 }} xs={{ span: 6 }}>
-            <SearchInput data={tickets} onSearch={setTicketsList} />
-          </Col>
-          <Col xxl={{ span: 8 }} className={style.switch_wrapper}>
-            <FilterSwitches filteringHandler={filteringHandlerByStatus} />
-          </Col>
-        </Row>
-        <Row>
-          <TableTicketList tickets={ticketsList} />
-        </Row>
-        <Row>
-          <CustomPagination />
-        </Row>
-      </Stack>
-    </Container>
+    <Col>
+      <Container fluid className={style.container}>
+        <Stack gap={3}>
+          <Row className={cn("title", style.title)}>Action required</Row>
+          <Row>
+            <TableActionRequired tickets={tickets} />
+          </Row>
+          <Row>
+            <Col xxl={{ span: 1 }} xs={{ span: 2 }} className='title'>
+              Ticket list
+            </Col>
+            <Col xxl={{ span: 3 }} xs={{ span: 6 }}>
+              <SearchInput data={tickets} onSearch={setTicketsList} />
+            </Col>
+            <Col xxl={{ span: 8 }} className={style.switch_wrapper}>
+              <FilterSwitches filteringHandler={filteringHandlerByStatus} />
+            </Col>
+          </Row>
+          <Row>
+            <TableTicketList tickets={ticketsList} />
+          </Row>
+          <Row>
+            <CustomPagination />
+          </Row>
+        </Stack>
+      </Container>
+    </Col>
   );
 }

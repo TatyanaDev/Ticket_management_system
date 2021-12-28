@@ -1,11 +1,6 @@
-import TicketList from "../../Components/TicketList";
-// import Layout from "../../Components/Layout";
-import { tickets } from "./data";
+import TicketListLayout from "../../Components/TicketList";
+import Layout from "../../Components/Layout";
 
 export default function TicketListPage() {
-  return (
-    // <Layout>
-    <TicketList tickets={tickets} />
-    // </Layout>
-  );
+  return <Layout activePageTitle='Ticket list' children={<TicketListLayout />} />;
 }
