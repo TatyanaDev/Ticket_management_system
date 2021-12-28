@@ -1,0 +1,31 @@
+.wrap_icon {
+  border: 1px solid #dee2e6;
+  border-right: none;
+  cursor: pointer;
+}
+
+.wrap_icon,
+.input {
+  background-color: var(--blue-gray-color);
+}
+
+.search_icon {
+  color: var(--icon-default-color);
+  font-size: 1.25rem;
+}
+
+.input {
+  border-left: 1px solid var(--blue-gray-color);
+  border: 1px solid #dee2e6;
+  font-size: 0.875rem;
+  line-height: 143%;
+}
+
+.input .wrap_icon {
+  border: 1px solid #dee2e6;
+}
+
+.input:focus {
+  border: 1px solid var(--blue-500-color);
+  box-shadow: none;
+}

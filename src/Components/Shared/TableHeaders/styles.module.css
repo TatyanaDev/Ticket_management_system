@@ -1,0 +1,21 @@
+.column_name {
+  font-family: Poppins-Bold, sans-serif;
+  color: var(--primary-color);
+  font-size: 0.875rem;
+  line-height: 171%;
+}
+
+.wrap_icon {
+  cursor: pointer;
+  text-align: end;
+}
+
+.icon {
+  color: var(--primary-color);
+  margin-right: 1.5rem;
+  font-size: 0.75rem;
+}
+
+.active .icon {
+  transform: rotate(180deg);
+}
