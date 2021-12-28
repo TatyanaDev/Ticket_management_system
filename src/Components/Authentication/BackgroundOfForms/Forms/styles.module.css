@@ -1,8 +1,8 @@
 .input_container {
-  margin-bottom: 19px;
   position: relative;
   max-width: 350px;
   margin: 0 auto;
+  margin-bottom: 19px;
 }
 
 .input {
