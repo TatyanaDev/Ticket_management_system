@@ -1,0 +1,55 @@
+.recent_activity_block {
+  background-color: var(--bs-light);
+  transition: all 0.2s linear;
+  max-width: 0;
+}
+
+.recent_activity_block_active {
+  padding: 36px 47px 0px 0px;
+  position: absolute;
+  overflow-y: auto;
+  max-width: 306px;
+  height: 100%;
+  right: 0;
+  top: 0;
+}
+
+.button_recent_activity_block {
+  color: var(--gray-800-color);
+  font-family: "Poppins-Bold";
+  margin-bottom: 14px;
+  font-style: normal;
+  line-height: 24px;
+  font-weight: bold;
+  margin-top: 6px;
+  cursor: pointer;
+  font-size: 17px;
+  padding: 0;
+}
+
+.wrapper_link_ticket_list_block {
+  text-align: end;
+  max-width: 75px;
+  padding: 0;
+}
+
+.link_ticket_list {
+  font-family: "Poppins-Regular";
+  color: var(--gray-800-color);
+  text-decoration: none;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 36px;
+  font-size: 16px;
+}
+
+.link_ticket_list:hover {
+  color: var(--primary-color);
+}
+
+.arrow_see_all_block {
+  vertical-align: -2px;
+  margin-right: 2px;
+  margin-left: 4px;
+  font-size: 13px;
+}

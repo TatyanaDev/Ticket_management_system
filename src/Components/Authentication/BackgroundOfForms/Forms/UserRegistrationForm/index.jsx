@@ -1,7 +1,6 @@
 import { Button, Container, Row, Col, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import { Formik } from "formik";
-import cn from "classnames";
 import * as Yup from "yup";
 import style from "../styles.module.css";
 
@@ -34,36 +33,42 @@ export default function UserRegistrationForm({ margin }) {
         {({ handleSubmit, handleChange, values, touched, errors }) => (
           <Form noValidate onSubmit={handleSubmit}>
             <Row>
-              <Form.Group as={Col} className={style.input_container}>
-                <Form.Label className={style.label}>Email</Form.Label>
+              <Form.Group as={Col} className='p-0'>
+                <Form.Label className='mb-0' style={{ color: "#6c757d" }}>
+                  Email
+                </Form.Label>
                 <Form.Control className={style.input} type='text' name='email' value={values.email} onChange={handleChange} isValid={touched.email && !errors.email} isInvalid={errors.email} />
-                <Form.Control.Feedback className={style.error} type='invalid' tooltip>
+                <Form.Control.Feedback className='p-0' type='invalid' tooltip>
                   {errors.email}
                 </Form.Control.Feedback>
               </Form.Group>
             </Row>
 
             <Row>
-              <Form.Group as={Col} className={style.input_container}>
-                <Form.Label className={style.label}>Create Password </Form.Label>
+              <Form.Group as={Col} className='p-0'>
+                <Form.Label className='mb-0' style={{ color: "#6c757d" }}>
+                  Create Password{" "}
+                </Form.Label>
                 <Form.Control className={style.input} type='password' name='createPassword' value={values.createPassword} onChange={handleChange} isValid={touched.createPassword && !errors.createPassword} isInvalid={errors.createPassword} />
-                <Form.Control.Feedback className={style.error} type='invalid' tooltip>
+                <Form.Control.Feedback className='p-0' type='invalid' tooltip>
                   {errors.createPassword}
                 </Form.Control.Feedback>
               </Form.Group>
             </Row>
 
             <Row>
-              <Form.Group as={Col} className={style.input_container}>
-                <Form.Label className={style.label}>Repeat Password</Form.Label>
+              <Form.Group as={Col} className='p-0'>
+                <Form.Label className='mb-0' style={{ color: "#6c757d" }}>
+                  Repeat Password
+                </Form.Label>
                 <Form.Control className={style.input} type='password' name='repeatPassword' value={values.repeatPassword} onChange={handleChange} isValid={touched.repeatPassword && !errors.repeatPassword} isInvalid={errors.repeatPassword} />
-                <Form.Control.Feedback className={style.error} type='invalid' tooltip>
+                <Form.Control.Feedback className='p-0' type='invalid' tooltip>
                   {errors.repeatPassword}
                 </Form.Control.Feedback>
               </Form.Group>
             </Row>
 
-            <Row className={cn(style.wrapper_button, margin)}>
+            <Row className={margin} style={{ width: 350 }}>
               <Button className={style.button} type='submit'>
                 Create account
               </Button>
@@ -78,7 +83,7 @@ export default function UserRegistrationForm({ margin }) {
             Already have an account?
           </Col>
 
-          <Col className={style.wrapper_link_login}>
+          <Col className='p-0' style={{ textAlign: "start" }}>
             <Link className={style.link_login} to='/login'>
               Login here
             </Link>
