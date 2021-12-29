@@ -1,15 +1,12 @@
 import { Table } from "react-bootstrap";
 import { useState } from "react";
 import TableContentTickedList from "./TableContentTickedList";
-import { actionRequired } from "../../../../pages/mokeDB";
 import TableContentThead from "./TableContentThead";
 import style from "../../styles.module.css";
 
-export default function TableTicketList() {
+export default function TableTicketList({ data }) {
   const [currentFilter, setCurrentFilter] = useState(null);
   const [flag, setFlag] = useState(false);
-
-  const { data } = actionRequired;
 
   return (
     <Table responsive className='p-0' style={{ marginBottom: 24 }}>

@@ -1,13 +1,15 @@
 import { Col, Container, Row } from "react-bootstrap";
 import TableActionRequired from "./Tables/ActionRequired";
-import TableTicketList from "./Tables/TicketList";
 import SearchInput from "../Shared/SearchInput/index";
 import { actionRequired } from "../../pages/mokeDB";
 import FilterSwitches from "./FilterSwitches/index";
 import CustomPagination from "../Shared/Pagination";
+import TableTicketList from "./Tables/TicketList";
 import style from "./styles.module.css";
 
 export default function TicketListLayout() {
+  const { data } = actionRequired;
+
   return (
     <Col className={style.container}>
       <Container fluid className='p-0'>
@@ -15,7 +17,7 @@ export default function TicketListLayout() {
           <Row className={style.title} style={{ marginBottom: 18, marginLeft: 1 }}>
             Action required
           </Row>
-          <TableActionRequired />
+          <TableActionRequired data={data} />
         </Row>
         <Row>
           <Col xxl={{ span: 1 }} xs={{ span: 2 }} className={style.title}>
@@ -29,7 +31,7 @@ export default function TicketListLayout() {
           </Col>
         </Row>
         <Row style={{ marginTop: 8 }}>
-          <TableTicketList />
+          <TableTicketList data={data} />
         </Row>
         <CustomPagination />
       </Container>
