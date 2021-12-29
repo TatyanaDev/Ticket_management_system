@@ -3,7 +3,7 @@ import { Icon } from "@iconify/react/dist/iconify";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import cn from "classnames";
-import TableContentActionRequired from "../../Components/Dashboard/Table/TableContentActionRequired";
+import TableContentTicketHistory from "../../Components/Dashboard/Table/TableContentTicketHistory";
 import { ticketSummary, ticketHistory, recentActivity } from "../../pages/mokeDB";
 import ButtonRecentActivity from "../../Components/Dashboard/ButtonRecentActivity";
 import TableContentThead from "../../Components/Dashboard/Table/TableContentThead";
@@ -63,7 +63,7 @@ export default function DashboardLayout() {
                 <TableContentThead data={data} currentFilter={currentFilter} setCurrentFilter={setCurrentFilter} flag={flag} setFlag={setFlag} />
                 <tbody>
                   {data.map((ticket) => (
-                    <TableContentActionRequired ticket={ticket} key={ticket.ticket_id} />
+                    <TableContentTicketHistory ticket={ticket} key={ticket.ticket_id} />
                   ))}
                 </tbody>
               </Table>

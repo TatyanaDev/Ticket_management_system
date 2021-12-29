@@ -4,7 +4,7 @@ import OpenTableRow from "./TableContentContainer/OpenTableRow";
 import TableContentContainer from "./TableContentContainer";
 import style from "./styles.module.css";
 
-export default function TableContentActionRequired({ ticket }) {
+export default function TableContentTicketHistory({ ticket }) {
   return (
     <TableContentContainer
       tableContent={
