@@ -1,7 +1,9 @@
 .wrapper_tbody_item {
+  border-bottom-width: 0 !important;
   padding: 11px 16px !important;
   vertical-align: middle;
   height: 66px;
+
 }
 
 .content {
