@@ -1,47 +1,37 @@
-import { Col, Container, Row, Stack } from "react-bootstrap";
-import { useState } from "react";
-import cn from "classnames";
-import TableActionRequired from "./Tables/TableActionRequired";
-import TableTicketList from "./Tables/TableTicketList";
+import { Col, Container, Row } from "react-bootstrap";
+import TableActionRequired from "./Tables/ActionRequired";
+import TableTicketList from "./Tables/TicketList";
 import SearchInput from "../Shared/SearchInput/index";
+import { actionRequired } from "../../pages/mokeDB";
 import FilterSwitches from "./FilterSwitches/index";
 import CustomPagination from "../Shared/Pagination";
 import style from "./styles.module.css";
-import { tickets } from "../../pages/TicketList/data";
 
 export default function TicketListLayout() {
-  const [ticketsList, setTicketsList] = useState(tickets);
-
-  const filteringHandlerByStatus = (e) => {
-    setTicketsList(tickets.filter((ticket) => e.target.id === "All" || ticket.status.includes(e.target.id)));
-  };
-
   return (
-    <Col>
-      <Container fluid className={style.container}>
-        <Stack gap={3}>
-          <Row className={cn("title", style.title)}>Action required</Row>
-          <Row>
-            <TableActionRequired tickets={tickets} />
+    <Col className={style.container}>
+      <Container fluid className='p-0'>
+        <Row>
+          <Row className={style.title} style={{ marginBottom: 18, marginLeft: 1 }}>
+            Action required
           </Row>
-          <Row>
-            <Col xxl={{ span: 1 }} xs={{ span: 2 }} className='title'>
-              Ticket list
-            </Col>
-            <Col xxl={{ span: 3 }} xs={{ span: 6 }}>
-              <SearchInput data={tickets} onSearch={setTicketsList} />
-            </Col>
-            <Col xxl={{ span: 8 }} className={style.switch_wrapper}>
-              <FilterSwitches filteringHandler={filteringHandlerByStatus} />
-            </Col>
-          </Row>
-          <Row>
-            <TableTicketList tickets={ticketsList} />
-          </Row>
-          <Row>
-            <CustomPagination />
-          </Row>
-        </Stack>
+          <TableActionRequired />
+        </Row>
+        <Row>
+          <Col xxl={{ span: 1 }} xs={{ span: 2 }} className={style.title}>
+            Ticket list
+          </Col>
+          <Col xxl={{ span: 3 }} xs={{ span: 6 }}>
+            <SearchInput data={actionRequired} onSearch={"setTicketActionRequired"} />
+          </Col>
+          <Col xxl={{ span: 8 }} className={style.switch_wrapper}>
+            <FilterSwitches filteringHandler={"filteringHandlerByStatus"} />
+          </Col>
+        </Row>
+        <Row style={{ marginTop: 8 }}>
+          <TableTicketList />
+        </Row>
+        <CustomPagination />
       </Container>
     </Col>
   );

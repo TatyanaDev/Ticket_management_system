@@ -1,33 +1,37 @@
 .container {
-  padding: 0 3rem;
+  background-color: var(--bs-light);
+  padding: 20px 47px;
 }
 
 .title {
-  margin-top: 1.5rem;
+  font-family: "Poppins-Bold";
+  color: var(--gray-800-color);
+  font-style: normal;
+  font-weight: bold;
+  line-height: 24px;
+  font-size: 20px;
+}
+
+.wrapper_column_name {
+  padding: 16px 13px 16px 16px !important;
+  vertical-align: middle;
+  height: 56px;
 }
 
 .open {
   transform: rotate(180deg);
 }
 
-.progress_bar {
-  background-color: var(--gray-100-color);
-  max-width: 5.85rem;
-}
-
-.progress_bar > div {
-  background-color: var(--primary-color);
+.wrap_icon {
+  margin-right: 15px;
+  cursor: pointer;
+  max-width: 14px;
+  text-align: end;
+  padding: 0;
 }
 
 .center {
   text-align: center;
-}
-
-.text_bold {
-  font-family: Poppins-Bold, sans-serif;
-  color: var(--gray-800-color);
-  font-size: 0.875rem;
-  line-height: 150%;
 }
 
 .switch_wrapper {
@@ -35,22 +39,36 @@
 }
 
 .background {
-  background-color: var(--white-color);
   box-shadow: inset 0 -2px 0 #dfdfdf;
+  background-color: var(--bs-white);
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: bold;
+  line-height: 24px;
+  font-size: 14px;
+  color: var(--primary-color);
 }
 
-.action_required {
-  font-family: Poppins-Regular, sans-serif;
+.background_dropdown {
+  padding: 7px 12px 7px 16px !important;
   color: var(--gray-800-color);
-  font-size: 0.875rem;
-  line-height: 171%;
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: bold;
+  line-height: 21px;
+  font-size: 14px;
 }
 
 .description {
-  font-family: Poppins-Regular, sans-serif;
-  color: var(--dark-color);
-  font-size: 0.75rem;
-  line-height: 175%;
+  font-family: "Poppins-Regular";
+  padding: 8px 16px !important;
+  color: var(--bs-gray-800);
+  vertical-align: middle;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 21px;
+  font-size: 12px;
+  max-width: 1px;
 }
 
 .background_dropdown,
@@ -84,27 +102,16 @@
   font-size: 1.25rem;
 }
 
-.caret_icon,
-.caret_icon_active {
+.arrow_thead_active {
+  transform: rotate(180deg);
+}
+
+.caret_icon {
   font-family: Poppins-Bold, sans-serif;
   color: var(--primary-color);
   font-size: 0.875rem;
   position: relative;
   line-height: 171%;
-}
-
-.caret_icon::after,
-.caret_icon_active::after {
-  position: absolute;
-  right: 1.5rem;
-}
-
-.caret_icon::after {
-  content: url("/src/icons/ph_caret-up-bold.svg");
-}
-
-.caret_icon_active::after {
-  content: url("/src/icons/ph_caret-down-bold.svg");
 }
 
 .table_content {
@@ -157,19 +164,32 @@
 .low,
 .backlog,
 .success {
-  padding: 0.1875rem 0.25rem;
-  border-radius: 0.25rem;
   display: inline-block;
+  border-radius: 4px;
+  padding: 3px 4px;
 }
 
-.column_priority {
-  text-align: center;
+.wrapper_avatar {
+  margin-right: -7px;
+  padding-right: 0;
+  max-width: 36px;
 }
 
-.column_center {
-  text-align: center;
+.wrapper_tbody_item {
+  box-shadow: inset 0px -1px 0px #dfdfdf;
+  border-bottom-width: 2px !important;
+  font-family: "Poppins-Regular";
+  padding: 11px 16px !important;
+  color: var(--gray-800-color);
+  vertical-align: middle;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 24px;
+  text-align: end;
+  font-size: 14px;
+  height: 66px;
 }
 
-.avatar {
-  padding: 0;
+.wrapper_progress_bar > div > div {
+  background-color: var(--primary-color) !important;
 }
