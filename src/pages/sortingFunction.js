@@ -1,35 +1,25 @@
-export const sortTicketId = ({ data, flag, setFlag, setCurrentFilter }) => {
+export const sortByNumbers = ({ data, flag, setFlag, setCurrentFilter, field }) => {
   data.sort((a, b) => [
-    flag ? a.ticket_id - b.ticket_id : b.ticket_id - a.ticket_id
+    flag ? a[field] - b[field] : b[field] - a[field]
   ]);
-  setCurrentFilter('ticketId')
+  setCurrentFilter(field)
   setFlag(flag => !flag);
 };
 
-export const sortTicketName = ({ data, flag, setFlag, setCurrentFilter }) => {
+export const sortAlphabetically = ({ data, flag, setFlag, setCurrentFilter, field }) => {
   data.sort((a, b) => [
     flag
-      ? a.ticket_name.localeCompare(b.ticket_name)
-      : b.ticket_name.localeCompare(a.ticket_name),
+      ? a[field].localeCompare(b[field])
+      : b[field].localeCompare(a[field]),
   ]);
-  setCurrentFilter('ticketName')
+  setCurrentFilter(field)
   setFlag(flag => !flag);
 };
 
-export const sortApprover = ({ data, flag, setFlag, setCurrentFilter }) => {
+export const sortByDate = ({ data, flag, setFlag, setCurrentFilter, field }) => {
   data.sort((a, b) => [
-    flag
-      ? a.approver.localeCompare(b.approver)
-      : b.approver.localeCompare(a.approver),
+    flag ? new Date(a[field]) - new Date(b[field]) : new Date(b[field]) - new Date(a[field])
   ]);
-  setCurrentFilter('approver')
-  setFlag(flag => !flag);
-};
-
-export const sortResolvedDate = ({ data, flag, setFlag, setCurrentFilter }) => {
-  data.sort((a, b) => [
-    flag ? new Date(a.resolved_date) - new Date(b.resolved_date) : new Date(b.resolved_date) - new Date(a.resolved_date)
-  ]);
-  setCurrentFilter('resolvedDate')
+  setCurrentFilter(field)
   setFlag(flag => !flag);
 };
