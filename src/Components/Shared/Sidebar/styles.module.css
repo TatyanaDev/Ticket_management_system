@@ -8,6 +8,7 @@
   background-color: var(--primary-color);
   justify-content: space-between;
   transition: all 0.2s linear;
+  min-height: 100%;
   height: calc(100vh - 57px);
   flex-direction: column;
   display: flex;

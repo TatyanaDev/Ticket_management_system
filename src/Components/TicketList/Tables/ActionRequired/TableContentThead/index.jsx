@@ -1,10 +1,10 @@
-import { sortByNumbers, sortAlphabetically, sortByDate } from "../../../../../pages/sortingFunction";
+import { sortByNumbers, sortAlphabetically, sortByDate } from "../../../../../pages/helpersFunction";
 import style from "../../../../TicketList/styles.module.css";
 import TheadItem from "./TheadItem";
 
 export default function TableContentThead({ data, currentFilter, setCurrentFilter, flag, setFlag }) {
   return (
-    <thead className={style.background}>
+    <thead className={style.background} style={{ color: "var(--bs-red)" }}>
       <tr>
         <th style={{ width: 44 }}></th>
         <TheadItem content='Ticket ID' currentFilter={currentFilter} field='ticket_id' sortFunction={sortByNumbers} data={data} flag={flag} setFlag={setFlag} setCurrentFilter={setCurrentFilter} />
