@@ -1,7 +1,7 @@
 import { Icon } from "@iconify/react/dist/iconify";
 import { Col, Row } from "react-bootstrap";
 import cn from "classnames";
-import style from "../../../../../TicketList/styles.module.css";
+import style from "../../../../Components/TicketList/styles.module.css";
 
 export default function TheadItem({ content, currentFilter, sortFunction, data, flag, setFlag, setCurrentFilter, field }) {
   return (

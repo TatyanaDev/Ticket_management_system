@@ -4,7 +4,7 @@ import TableContentTickedList from "./TableContentTickedList";
 import TableContentThead from "./TableContentThead";
 import style from "../../styles.module.css";
 
-export default function TableTicketList({ data }) {
+export default function TableActionRequired({ data }) {
   const [currentFilter, setCurrentFilter] = useState(null);
   const [flag, setFlag] = useState(false);
 

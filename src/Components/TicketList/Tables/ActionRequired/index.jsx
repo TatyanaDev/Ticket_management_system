@@ -1,6 +1,6 @@
 import { Table } from "react-bootstrap";
 import { useState } from "react";
-import TableContentActionRequired from "./TableContentActionRequired/index";
+import TableContentActionRequired from "./TableContentActionRequired";
 import TableContentThead from "./TableContentThead";
 import style from "../../styles.module.css";
 
