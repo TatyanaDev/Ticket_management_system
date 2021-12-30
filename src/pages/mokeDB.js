@@ -1,4 +1,4 @@
-import approver from "../icons/shared/approver.svg"
+import "../icons/shared/approver.svg"
 
 //Dashboard Page
 
@@ -180,7 +180,7 @@ export const recentActivity = {
 
 //Ticket List Page
 
-export const actionRequired = {
+export const actionRequired = {  //and Ticket list
   data: [{
     type: 'task',
     ticket_id: 7,
