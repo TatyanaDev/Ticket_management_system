@@ -4,7 +4,7 @@ import TableActionRequired from "./Tables/ActionRequired";
 import SearchInput from "../Shared/SearchInput/index";
 import { actionRequired } from "../../pages/mokeDB";
 import FilterSwitches from "./FilterSwitches/index";
-import CustomPagination from "../Shared/Pagination";
+import PaginatedItems from "../Shared/Pagination";
 import TableTicketList from "./Tables/TicketList";
 import style from "./styles.module.css";
 
@@ -25,7 +25,7 @@ export default function TicketListLayout() {
           <Col xxl={{ span: 1 }} xs={{ span: 2 }} className={style.title} style={{ marginTop: 5 }}>
             Ticket list
           </Col>
-          <Col xxl={{ span: 3 }} xs={{ span: 6 }}>
+          <Col xxl={{ span: 3 }} xs={{ span: 6 }} style={{ marginLeft: -50 }}>
             <SearchInput data={data} setTicketsList={setTicketsList} />
           </Col>
           <Col xxl={{ span: 8 }} className={style.switch_wrapper}>
@@ -35,7 +35,7 @@ export default function TicketListLayout() {
         <Row style={{ marginTop: 8 }}>
           <TableTicketList data={ticketsList} />
         </Row>
-        <CustomPagination />
+        <PaginatedItems itemsPerPage={6} data={data} setTicketsList={setTicketsList} />
       </Container>
     </Col>
   );

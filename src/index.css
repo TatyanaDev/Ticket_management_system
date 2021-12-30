@@ -47,6 +47,11 @@
   src: url("../src/fonts/Lato-Regular.ttf");
 }
 
+@font-face {
+  font-family: "SFProDisplay-Regular";
+  src: url("../src/fonts/SFProDisplay-Regular.OTF");
+}
+
 a.navbar-expand.navbar-nav.nav-link,
 a.dropdown-toggle.nav-link,
 .dropdown-menu {
@@ -65,4 +70,9 @@ a.dropdown-toggle.nav-link,
 
 .table > :not(:first-child) {
   border-top: 2px solid #dfdfdf;
+}
+
+.page-item.active .page-link {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
 }
