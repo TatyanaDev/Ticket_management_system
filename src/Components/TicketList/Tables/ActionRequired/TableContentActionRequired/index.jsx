@@ -1,6 +1,6 @@
 import { Col, Image, Row } from "react-bootstrap";
 import TableContentContainer from "../../TableContentContainer";
-import { styleSelection } from "../../../../../pages/helpersFunction";
+import { styleSelection } from "../../../../../utils/helpersFunction";
 import task from "../../../../../icons/ticketList/task.svg";
 import bug from "../../../../../icons/ticketList/bug.svg";
 import OpenTableRow from "../../OpenTableRow";

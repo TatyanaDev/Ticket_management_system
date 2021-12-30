@@ -1,6 +1,6 @@
 import { Col, Image, Row, ProgressBar } from "react-bootstrap";
 import cn from "classnames";
-import { styleSelection } from "../../../../../pages/helpersFunction";
+import { styleSelection } from "../../../../../utils/helpersFunction";
 import TableContentContainer from "../../TableContentContainer";
 import style from "../../../styles.module.css";
 import OpenTableRow from "../../OpenTableRow";

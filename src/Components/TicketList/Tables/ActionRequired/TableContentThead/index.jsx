@@ -1,4 +1,4 @@
-import { sortByNumbers, sortAlphabetically, sortByDate } from "../../../../../pages/helpersFunction";
+import { sortByNumbers, sortAlphabetically, sortByDate } from "../../../../../utils/helpersFunction";
 import style from "../../../../TicketList/styles.module.css";
 import TheadItem from "../../TheadItem";
 

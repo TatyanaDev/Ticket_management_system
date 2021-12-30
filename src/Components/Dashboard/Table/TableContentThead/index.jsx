@@ -1,4 +1,4 @@
-import { sortByNumbers, sortAlphabetically, sortByDate } from "../../../../pages/helpersFunction";
+import { sortByNumbers, sortAlphabetically, sortByDate } from "../../../../utils/helpersFunction";
 import TheadItem from "../TableContentThead/TheadItem";
 import style from "./styles.module.css";
 
