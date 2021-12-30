@@ -8,7 +8,7 @@ export default function NavItem({ content, icon, href, minimize, padding, font }
   const { pathname } = useLocation();
 
   return (
-    <Nav.Item className={cn(style.nav_link, ` ${pathname === href && style.nav_link_active}`)}>
+    <Nav.Item className={cn(style.nav_link, pathname === href && style.nav_link_active)}>
       <Link to={href} className={cn(style.link, padding, font)}>
         <Icon icon={icon} className={style.icon} />
         {minimize || content}
