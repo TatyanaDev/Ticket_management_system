@@ -3,18 +3,19 @@ import { useState } from "react";
 import cn from "classnames";
 import style from "./styles.module.css";
 
-export default function FilterSwitches({ filteringHandler }) {
+export default function FilterSwitches({ data, setTicketsList }) {
   const [activeFilter, setActiveFilter] = useState("All");
 
-  const switches = ["All", "Backlog", "Estimation", "Scheduled", "In Progress", "On Hold", "Pending", "Completed"];
+  const switches = [...new Set(data.map((ticket) => ticket.status))].slice();
+  switches.unshift("All");
 
-  const handleFilterSwitchClick = (e) => {
-    setActiveFilter(e.target.id);
-    filteringHandler(e);
+  const handleFilterSwitchClick = ({ target }) => {
+    setTicketsList(data.filter((ticket) => target.id === "All" || ticket.status.includes(target.id)));
+    setActiveFilter(target.id);
   };
 
   return (
-    <ButtonGroup aria-label='Basic example' size='sm' className={style.switches}>
+    <ButtonGroup size='sm' className={style.switches}>
       {switches.map((title) => (
         <Button variant='light' key={title} id={title} onClick={handleFilterSwitchClick} className={cn(style.switch, activeFilter.includes(title) && style.switch_active)}>
           {title}

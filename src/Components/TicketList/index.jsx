@@ -1,4 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap";
+import { useState } from "react";
 import TableActionRequired from "./Tables/ActionRequired";
 import SearchInput from "../Shared/SearchInput/index";
 import { actionRequired } from "../../pages/mokeDB";
@@ -9,6 +10,7 @@ import style from "./styles.module.css";
 
 export default function TicketListLayout() {
   const { data } = actionRequired;
+  const [ticketsList, setTicketsList] = useState(data);
 
   return (
     <Col className={style.container}>
@@ -24,14 +26,14 @@ export default function TicketListLayout() {
             Ticket list
           </Col>
           <Col xxl={{ span: 3 }} xs={{ span: 6 }}>
-            <SearchInput data={actionRequired} onSearch={"setTicketActionRequired"} />
+            {/* <SearchInput data={ticketsList} onSearch={setTicketsList} /> */}
           </Col>
           <Col xxl={{ span: 8 }} className={style.switch_wrapper}>
-            <FilterSwitches filteringHandler={"filteringHandlerByStatus"} />
+            <FilterSwitches data={data} setTicketsList={setTicketsList} />
           </Col>
         </Row>
         <Row style={{ marginTop: 8 }}>
-          <TableTicketList data={data} />
+          <TableTicketList data={ticketsList} />
         </Row>
         <CustomPagination />
       </Container>
