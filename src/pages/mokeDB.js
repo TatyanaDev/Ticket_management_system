@@ -1,4 +1,4 @@
-import "../icons/shared/approver.svg"
+import approver from "../icons/shared/approver.svg"
 
 //Dashboard Page
 
