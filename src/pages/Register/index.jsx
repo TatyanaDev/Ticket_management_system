@@ -1,4 +1,4 @@
-import UserRegistrationForm from "../../Components/Forms/UserRegistrationForm";
+import UserRegistrationForm from "../../Components/BackgroundOfForms/Forms/UserRegistrationForm";
 import BackgroundOfForms from "../../Components/BackgroundOfForms";
 import { wrapper_form, wrapper_button } from "./styles.module.css";
 

@@ -10,7 +10,7 @@ export default function Sidebar() {
   const [minimize, setMinimize] = useState(false);
 
   return (
-    <Col className={cn(style.wrapper_sidebar, ` ${minimize && style.container_sidebar_min}`)}>
+    <Col className={cn(style.wrapper_sidebar, minimize && style.container_sidebar_min)}>
       <Row className={style.container_sidebar}>
         <Container className={style.container_sidebar}>
           <Nav defaultActiveKey='/dashboard' className='flex-column'>
@@ -35,7 +35,7 @@ export default function Sidebar() {
             </Nav>
 
             <Col className={style.toggle} onClick={() => setMinimize(!minimize)}>
-              <Icon icon='fluent:caret-left-24-filled' className={cn(style.icon, ` ${minimize && style.icon_rotate}`)} />
+              <Icon icon='fluent:caret-left-24-filled' className={cn(style.icon, minimize && style.icon_rotate)} />
               {minimize || "Minimize"}
             </Col>
           </Container>

@@ -1,8 +1,17 @@
 :root {
+  --yellow-500-color: #f59e0b;
+  --yellow-100-color: #fef3c7;
+  --green-600-color: #059669;
+  --green-100-color: #d1fae5;
   --blue-gray-color: #f1f3f6;
+  --gray-500-color: #6b7280;
+  --gray-100-color: #f3f4f6;
+  --blue-500-color: #3b82f6;
+  --blue-100-color: #dbeafe;
   --gray-800-color: #1f2937;
   --primary-color: #001689;
-  --primary-color: #001689;
+  --red-500-color: #ef4444;
+  --red-100-color: #fee2e2;
 }
 
 *,
@@ -33,6 +42,16 @@
   src: url("../src/fonts/Roboto-Medium.ttf");
 }
 
+@font-face {
+  font-family: "Lato-Regular";
+  src: url("../src/fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: "SFProDisplay-Regular";
+  src: url("../src/fonts/SFProDisplay-Regular.OTF");
+}
+
 a.navbar-expand.navbar-nav.nav-link,
 a.dropdown-toggle.nav-link,
 .dropdown-menu {
@@ -45,7 +64,7 @@ a.dropdown-toggle.nav-link,
 }
 
 .dropdown-menu[data-bs-popper] {
-  top: 150%;
+  top: 135%;
   left: 18%;
 }
 
@@ -53,6 +72,7 @@ a.dropdown-toggle.nav-link,
   border-top: 2px solid #dfdfdf;
 }
 
-.table > :not(caption) > * > * {
-  border-bottom-width: 0;
+.page-item.active .page-link {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
 }
