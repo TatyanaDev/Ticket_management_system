@@ -12,9 +12,12 @@
 }
 
 .wrapper_arrow_tbody {
+  border-bottom-width: 0 !important;
+  padding: 11px 16px !important;
   vertical-align: middle;
   text-align: center;
   cursor: pointer;
+  height: 66px;
 }
 
 .arrow_tbody {

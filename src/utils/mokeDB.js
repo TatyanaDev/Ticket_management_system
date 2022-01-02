@@ -1,4 +1,8 @@
-export const ticketSummaryCard = {
+import approver from "../icons/shared/approver.svg"
+
+//Dashboard Page
+
+export const ticketSummary = {
   data: {
     action_required: 10,
     tickets_in_progress: 10,
@@ -6,7 +10,7 @@ export const ticketSummaryCard = {
   }
 }
 
-export const tickets = {
+export const ticketHistory = {
   data: [{
     ticket_id: 7,
     ticket_name: 'Ehange color of primary button',
@@ -91,7 +95,7 @@ export const tickets = {
   ]
 }
 
-export const recentActivityTickets = {
+export const recentActivity = {
   data: [{
     ticket_id: 11,
     type: 'Design ticket',
@@ -173,3 +177,127 @@ export const recentActivityTickets = {
     on: 'Change color of primary button'
   }]
 }
+
+//Ticket List Page
+
+export const actionRequired = {  //and Ticket list
+  data: [{
+    type: 'task',
+    ticket_id: 7,
+    ticket_name: 'Ehange color of primary button',
+    approver: 'Mattulga Enkhtur',
+    src: '/static/media/approver.a7b36459.svg',
+    complexity: 73,
+    priority: 'Highest',
+    date_created: '2013-07-25',
+    status: 'In Progress',
+    ticket_description: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it lookIt is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here, making it look',
+  },
+  {
+    type: 'task',
+    ticket_id: 1,
+    ticket_name: 'Dhange color of primary button',
+    approver: 'Nattulga Enkhtur',
+    src: '/static/media/approver.a7b36459.svg',
+    complexity: 50,
+    priority: 'Medium',
+    date_created: '2015-04-14',
+    status: 'To Be Released',
+    ticket_description: 'There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. If you are going to There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. If you are going to There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable. If you are going to ',
+  },
+  {
+    type: 'task',
+    ticket_id: 6,
+    ticket_name: 'Lhange color of primary button',
+    approver: 'Kattulga Enkhtur',
+    src: '/static/media/approver.a7b36459.svg',
+    complexity: 45,
+    priority: 'Low',
+    date_created: '2037-11-23',
+    status: 'Backlog',
+    ticket_description: 'Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.',
+  },
+  {
+    type: 'bug',
+    ticket_id: 9,
+    ticket_name: 'Change color of primary button',
+    approver: 'Rattulga Enkhtur',
+    src: '/static/media/approver.a7b36459.svg',
+    complexity: 60,
+    priority: 'Medium',
+    date_created: '2037-11-23',
+    status: 'In Estimation',
+    ticket_description: 'The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" byThe standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by ',
+  },
+  {
+    type: 'task',
+    ticket_id: 2,
+    ticket_name: 'Khange color of primary button',
+    approver: 'Oattulga Enkhtur',
+    src: '/static/media/approver.a7b36459.svg',
+    complexity: 81,
+    priority: 'Lowest',
+    date_created: '2009-04-11',
+    status: 'Success',
+    ticket_description: 'In vel lorem non neque maximus cursus sed a lacus. Vestibulum suscipit feugiat quam eget fermentum. In eget leo odio. Nam nec elit leo. Phasellus fermentum feugiat odio at luctus. Pellentesque vehicula semper diam, in dictum tortor lobortis imperdiet. Etiam ut justo urna. Sed tempus sodales orci et ornare.In vel lorem non neque maximus cursus sed a lacus. Vestibulum suscipit feugiat quam eget fermentum. In eget leo odio. Nam nec elit leo. Phasellus fermentum feugiat odio at luctus. Pellentesque vehicula semper diam, in dictum tortor lobortis imperdiet. Etiam ut justo urna. Sed tempus sodales orci et ornare.In vel lorem non neque maximus cursus sed a lacus. Vestibulum suscipit feugiat quam eget fermentum. In eget leo odio. Nam nec elit leo. Phasellus fermentum feugiat odio at luctus. Pellentesque vehicula semper diam, in dictum tortor lobortis imperdiet. Etiam ut justo urna. Sed tempus sodales orci et ornare. ',
+  },
+  {
+    type: 'bug',
+    ticket_id: 5,
+    ticket_name: 'Mhange color of primary button',
+    approver: 'Cattulga Enkhtur',
+    src: '/static/media/approver.a7b36459.svg',
+    complexity: 30,
+    priority: 'Low',
+    date_created: '2004-01-31',
+    status: 'Action Required',
+    ticket_description: 'Morbi lorem lorem, iaculis vitae tempus sit amet, egestas in orci. Proin ultrices, magna vel molestie pellentesque, sem orci placerat neque, eu sollicitudin dui ligula vitae sapien. Integer semper, metus vitae semper ornare, massa leo lacinia odio, sit amet ullamcorper ex est hendrerit ligula.Morbi lorem lorem, iaculis vitae tempus sit amet, egestas in orci. Proin ultrices, magna vel molestie pellentesque, sem orci placerat neque, eu sollicitudin dui ligula vitae sapien. Integer semper, metus vitae semper ornare, massa leo lacinia odio, sit amet ullamcorper ex est hendrerit ligula.Morbi lorem lorem, iaculis vitae tempus sit amet, egestas in orci. Proin ultrices, magna vel molestie pellentesque, sem orci placerat neque, eu sollicitudin dui ligula vitae sapien. Integer semper, metus vitae semper ornare, massa leo lacinia odio, sit amet ullamcorper ex est hendrerit ligula.',
+  },
+  {
+    type: 'bug',
+    ticket_id: 10,
+    ticket_name: 'Bhange color of primary button',
+    approver: 'Dattulga Enkhtur',
+    src: '/static/media/approver.a7b36459.svg',
+    complexity: 45,
+    priority: 'High',
+    date_created: '2015-12-04',
+    status: 'Action Required',
+    ticket_description: 'Phasellus condimentum tellus eleifend vehicula fermentum. Ut quis elementum dui. Duis sed sodales leo. Curabitur et ante sollicitudin, volutpat diam in, efficitur erat. Praesent posuere, sem eu gravida mattis, erat metus volutpat risus, sed molestie urna diam vel nisi.Phasellus condimentum tellus eleifend vehicula fermentum. Ut quis elementum dui. Duis sed sodales leo. Curabitur et ante sollicitudin, volutpat diam in, efficitur erat. Praesent posuere, sem eu gravida mattis, erat metus volutpat risus, sed molestie urna diam vel nisi.',
+  }, {
+    type: 'task',
+    ticket_id: 8,
+    ticket_name: 'Fhange color of primary button',
+    approver: 'Eattulga Enkhtur',
+    src: '/static/media/approver.a7b36459.svg',
+    complexity: 25,
+    priority: 'Lowest',
+    date_created: '2019-12-11',
+    status: 'Backlog',
+    ticket_description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla tincidunt massa id commodo. Vivamus quis mi nisl. Phasellus quis egestas leo. Nulla facilisi. Nam laoreet nisi id eros bibendum efficitur. Pellentesque ultrices justo vel metus pretium pretium. Integer vestibulum interdum metus at lobortis. Vivamus rhoncus varius eros, sit amet commodo ante venenatis sit amet. Donec eget sollicitudin tellus, sed finibus magnaLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla tincidunt massa id commodo. Vivamus quis mi nisl. Phasellus quis egestas leo. Nulla facilisi. Nam laoreet nisi id eros bibendum efficitur. Pellentesque ultrices justo vel metus pretium pretium. Integer vestibulum interdum metus at lobortis. Vivamus rhoncus varius eros, sit amet commodo ante venenatis sit amet. Donec eget sollicitudin tellus, sed finibus magna',
+  }, {
+    type: 'bug',
+    ticket_id: 3,
+    ticket_name: 'Ghange color of primary button',
+    approver: 'Aattulga Enkhtur',
+    src: '/static/media/approver.a7b36459.svg',
+    complexity: 90,
+    priority: 'High',
+    date_created: '2020-12-09',
+    status: 'In Progress',
+    ticket_description: 'Donec sit amet luctus nisi. Donec quis odio a sem maximus bibendum. Nunc vitae ligula quis purus pellentesque congue. Aenean vulputate volutpat turpis. Ut ornare lacus pellentesque cursus bibendum. Phasellus placerat, libero eget imperdiet hendrerit, ante leo hendrerit elit, id vehicula enim erat a orci.Donec sit amet luctus nisi. Donec quis odio a sem maximus bibendum. Nunc vitae ligula quis purus pellentesque congue. Aenean vulputate volutpat turpis. Ut ornare lacus pellentesque cursus bibendum. Phasellus placerat, libero eget imperdiet hendrerit, ante leo hendrerit elit, id vehicula enim erat a orci.',
+  }, {
+    type: 'bug',
+    ticket_id: 4,
+    ticket_name: 'Ahange color of primary button',
+    approver: 'Battulga Enkhtur',
+    src: '/static/media/approver.a7b36459.svg',
+    complexity: 10,
+    priority: 'Highest',
+    date_created: '2020-10-11',
+    status: 'Success',
+    ticket_description: 'lacus fermentum quis. Fusce vitae fringilla ipsum, id pulvinar dolor. Donec malesuada varius consectetur. Mauris magna enim, aliquam vitae justo ut, faucibus lacinia ligula. Donec ac porta odio, a molestie magna. Vivamus metus arcu, volutpat vel turpis at, placerat molestie est. Praesent cursus nisl purus, ac laoreet ipsum tempus vitae.lacus fermentum quis. Fusce vitae fringilla ipsum, id pulvinar dolor. Donec malesuada varius consectetur. Mauris magna enim, aliquam vitae justo ut, faucibus lacinia ligula. Donec ac porta odio, a molestie magna. Vivamus metus arcu, volutpat vel turpis at, placerat molestie est. Praesent cursus nisl purus, ac laoreet ipsum tempus vitae.',
+  }
+  ]
+}
+

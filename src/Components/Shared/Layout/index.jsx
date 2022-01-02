@@ -1,6 +1,6 @@
 import { Container, Row } from "react-bootstrap";
-import Sidebar from "../Shared/Sidebar";
-import Header from "../Shared/Header";
+import Sidebar from "../Sidebar";
+import Header from "../Header";
 
 export default function Layout({ activePageTitle, children }) {
   return (

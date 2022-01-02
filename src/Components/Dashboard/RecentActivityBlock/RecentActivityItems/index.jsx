@@ -18,7 +18,21 @@ export default function RecentActivityItems({ ticket }) {
       </Row>
 
       <Row className='me-0 ms-0'>
-        <Col className={style.content_recent_activity_ticket}>{ticket.type === "Design ticket" ? `${ticket.user_name} submitted a new ticket "${ticket.ticket_name}".` : `${ticket.user_name} asked a new question: "${ticket.question}" on ${ticket.on} ticket.`}</Col>
+        <Col className={style.content_recent_activity_ticket}>
+          {ticket.type === "Design ticket" ? (
+            <>
+              {ticket.user_name}
+              <span style={{ fontWeight: "normal" }}> submitted a new ticket </span>“{ticket.ticket_name}”.
+            </>
+          ) : (
+            <>
+              {ticket.user_name}
+              <span style={{ fontWeight: "normal" }}>asked a new question: </span>“{ticket.question}”<span style={{ fontWeight: "normal" }}> on </span>
+              {ticket.on}
+              <span style={{ fontWeight: "normal" }}> ticket.</span>
+            </>
+          )}
+        </Col>
       </Row>
       <Row>
         <Col className={style.date_recent_activity_ticket}>{ticket.submitted_date}</Col>

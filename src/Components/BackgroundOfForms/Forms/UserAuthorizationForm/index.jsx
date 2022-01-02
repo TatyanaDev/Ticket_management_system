@@ -1,7 +1,7 @@
 import { Button, Container, Row, Col, Form } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 import { Formik } from "formik";
-
+import cn from "classnames";
 import * as Yup from "yup";
 import style from "../styles.module.css";
 
@@ -33,25 +33,25 @@ export default function UserAuthorizationForm({ margin }) {
       <Formik validationSchema={validationSchema} onSubmit={checkUser} initialValues={initialValues}>
         {({ handleSubmit, handleChange, values, touched, errors }) => (
           <Form noValidate onSubmit={handleSubmit}>
-            <Row>
+            <Row className={style.input_container}>
               <Form.Group as={Col} className='p-0'>
                 <Form.Label className='mb-0' style={{ color: "#6c757d" }}>
                   Email
                 </Form.Label>
                 <Form.Control className={style.input} type='text' name='email' value={values.email} onChange={handleChange} isValid={touched.email && !errors.email} isInvalid={errors.email} />
-                <Form.Control.Feedback className='p-0' type='invalid' tooltip>
+                <Form.Control.Feedback type='invalid' tooltip className={cn(style.error, "p-0")}>
                   {errors.email}
                 </Form.Control.Feedback>
               </Form.Group>
             </Row>
 
-            <Row>
+            <Row className={style.input_container}>
               <Form.Group as={Col} className='p-0'>
                 <Form.Label className='mb-0' style={{ color: "#6c757d" }}>
                   Password
                 </Form.Label>
                 <Form.Control className={style.input} type='password' name='password' value={values.password} onChange={handleChange} isValid={touched.password && !errors.password} isInvalid={errors.password} />
-                <Form.Control.Feedback className='p-0' type='invalid' tooltip>
+                <Form.Control.Feedback type='invalid' tooltip className={cn(style.error, "p-0")}>
                   {errors.password}
                 </Form.Control.Feedback>
               </Form.Group>
