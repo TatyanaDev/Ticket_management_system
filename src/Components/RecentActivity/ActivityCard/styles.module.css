@@ -1,0 +1,56 @@
+.ticket {
+  background-color: var(--primary-color) !important;
+}
+
+.action {
+  background-color: var(--bs-red) !important;
+}
+
+.ticket,
+.action {
+  font-family: "Roboto-Medium";
+  color: var(--bs-white);
+  font-style: normal;
+  line-height: 12px;
+  font-weight: 500;
+  font-size: 12px;
+}
+
+.title {
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  line-height: 19px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.title_default {
+  color: var(--gray-800-color);
+}
+
+.title_danger {
+  color: var(--bs-red);
+}
+
+.date {
+  font-family: "Poppins-Regular";
+  color: var(--bs-gray-600);
+  font-weight: normal;
+  font-style: normal;
+  line-height: 19px;
+  font-size: 12px;
+}
+
+.description {
+  color: var(--gray-800-color);
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  line-height: 24px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.fw_normal {
+  font-family: "Poppins-Regular";
+  font-weight: normal;
+}
