@@ -28,7 +28,7 @@ export default function TicketListLayout() {
           <Col xxl={{ span: 3 }} xs={{ span: 6 }} style={{ marginLeft: -50 }}>
             <SearchInput data={data} setTicketsList={setTicketsList} />
           </Col>
-          <Col xxl={{ span: 8 }} className={style.switch_wrapper}>
+          <Col xxl={{ span: 8 }} style={{ textAlign: "right" }}>
             <FilterSwitches data={data} setTicketsList={setTicketsList} />
           </Col>
         </Row>

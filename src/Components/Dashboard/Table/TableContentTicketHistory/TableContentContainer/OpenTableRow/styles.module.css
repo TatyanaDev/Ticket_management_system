@@ -1,5 +1,5 @@
 .wrapper_thead_inner {
-  box-shadow: inset 0px -1px 0px #dfdfdf;
+  box-shadow: inset 0 -2px 4px rgb(0 0 0 / 10%), inset 0 2px 4px rgb(0 0 0 / 10%);
   background-color: var(--blue-gray-color);
   color: var(--gray-800-color);
   font-family: "Poppins-Bold";
@@ -13,12 +13,8 @@
   padding: 8px 12px 8px 16px !important;
 }
 
-.text_end {
-  text-align: end;
-}
-
 .wrapper_tbody_inner {
-  box-shadow: inset 0px -1px 0px #a17e7e;
+  box-shadow: inset 0 -2px 4px rgb(0 0 0 / 10%), inset 0 2px 4px rgb(0 0 0 / 10%);
   background: var(--blue-gray-color);
   font-family: "Poppins-Regular";
   color: var(--bs-gray-800);

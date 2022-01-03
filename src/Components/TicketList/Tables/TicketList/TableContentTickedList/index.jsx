@@ -35,7 +35,9 @@ export default function TableContentTickedList({ ticket }) {
             <ProgressBar now={ticket.complexity} style={{ backgroundColor: "var(--gray-100-color)" }} />
           </td>
 
-          <td className={style.wrapper_tbody_item}>{ticket.date_created}</td>
+          <td className={style.wrapper_tbody_item} style={{ color: "#1c1c28" }}>
+            {ticket.date_created}
+          </td>
 
           <td className={style.wrapper_tbody_item} style={{ textAlign: "start" }}>
             <Row className={styleSelection(ticket.status)}>{ticket.status}</Row>

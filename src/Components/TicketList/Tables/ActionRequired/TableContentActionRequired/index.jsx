@@ -1,10 +1,10 @@
 import { Col, Image, Row } from "react-bootstrap";
-import TableContentContainer from "../../TableContentContainer";
 import { styleSelection } from "../../../../../utils/helpersFunction";
+import TableContentContainer from "../../TableContentContainer";
 import task from "../../../../../icons/ticketList/task.svg";
 import bug from "../../../../../icons/ticketList/bug.svg";
-import OpenTableRow from "../../OpenTableRow";
 import style from "../../../styles.module.css";
+import OpenTableRow from "../../OpenTableRow";
 
 export default function TableContentActionRequired({ ticket }) {
   return (
