@@ -8,8 +8,8 @@ export default function PaginatedItems({ itemsPerPage, data, setTicketsList }) {
 
   useEffect(() => {
     const endOffset = itemOffset + itemsPerPage;
-    setTicketsList(data.slice(itemOffset, endOffset));
-    setPageCount(Math.ceil(data.length / itemsPerPage));
+    endOffset && setTicketsList(data.slice(itemOffset, endOffset));
+    data && setPageCount(Math.ceil(data.length / itemsPerPage));
   }, [itemOffset, itemsPerPage]);
 
   const handlePageClick = (event) => {
