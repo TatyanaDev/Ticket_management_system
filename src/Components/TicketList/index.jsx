@@ -1,7 +1,7 @@
 import { Col, Container, Row } from "react-bootstrap";
 import { useState } from "react";
 import TableActionRequired from "./Tables/ActionRequired";
-import SearchInput from "../Shared/SearchInput/index";
+import SearchInput from "../Shared/SearchBar/SearchInput";
 import { actionRequired } from "../../utils/mokeDB";
 import FilterSwitches from "./FilterSwitches/index";
 import PaginatedItems from "../Shared/Pagination";

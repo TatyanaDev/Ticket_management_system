@@ -11,7 +11,7 @@ export default function SearchInput({ data, setTicketsList }) {
   };
 
   return (
-    <InputGroup>
+    <InputGroup style={{ maxWidth: 270 }}>
       <InputGroup.Text id='basic-addon1' onClick={handleSearchInput} className={style.wrap_icon}>
         <Icon icon='fluent:search-20-filled' className={style.search_icon} />
       </InputGroup.Text>

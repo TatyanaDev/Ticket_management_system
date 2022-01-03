@@ -10,8 +10,8 @@
 }
 
 .search_icon {
-  font-size: 1.25rem;
-  color: #5c5f62;
+  color: var(--icon-default-color);
+  font-size: 20px;
 }
 
 .input {
