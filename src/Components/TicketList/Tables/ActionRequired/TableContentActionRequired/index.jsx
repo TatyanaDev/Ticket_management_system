@@ -28,7 +28,7 @@ export default function TableContentActionRequired({ ticket }) {
               <Col className={style.wrapper_avatar}>
                 <Image src={ticket.src} />
               </Col>
-              <Col style={{ textAlign: "start" }}>{ticket.approver}</Col>
+              <Col style={{ textAlign: "start", marginTop: 2 }}>{ticket.approver}</Col>
             </Row>
           </td>
 

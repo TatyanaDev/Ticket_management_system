@@ -3,7 +3,6 @@
   padding: 11px 16px !important;
   vertical-align: middle;
   height: 66px;
-
 }
 
 .content {
@@ -16,5 +15,6 @@
 }
 
 .tbody_image {
+  margin-right: -20px;
   max-width: 24px;
 }

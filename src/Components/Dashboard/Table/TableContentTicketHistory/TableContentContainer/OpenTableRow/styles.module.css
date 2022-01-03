@@ -10,7 +10,7 @@
 }
 
 .wrapper_thead_item_inner {
-  padding: 8px 12px 8px 16px !important;
+  padding: 8px 44px 8px 16px !important;
 }
 
 .wrapper_tbody_inner {
@@ -25,7 +25,7 @@
 }
 
 .wrapper_tbody_item_inner {
-  padding: 5px 16px !important;
+  padding: 5px 44px 5px 16px !important;
 }
 
 .button_add_ticket {
