@@ -21,7 +21,7 @@ export default function OpenTableRow({ ticket, description, rightDescription }) 
           <Link to='#'>
             <Button variant='outline-primary' className={style.button}>
               Go to ticket
-              <Icon icon='ph:caret-right-bold' className={style.icon_caret_right} />
+              <Icon icon='ph:caret-right-bold' style={{ fontSize: 20 }} />
             </Button>
           </Link>
         </td>

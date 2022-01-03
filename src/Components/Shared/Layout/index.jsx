@@ -2,10 +2,10 @@ import { Container, Row } from "react-bootstrap";
 import Sidebar from "../Sidebar";
 import Header from "../Header";
 
-export default function Layout({ activePageTitle, children }) {
+export default function Layout({ children }) {
   return (
     <Container fluid>
-      <Header activePageTitle={activePageTitle} />
+      <Header />
       <Row>
         <Sidebar />
         {children}

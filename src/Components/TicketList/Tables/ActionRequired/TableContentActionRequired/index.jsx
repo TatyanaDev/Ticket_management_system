@@ -1,10 +1,10 @@
 import { Col, Image, Row } from "react-bootstrap";
-import TableContentContainer from "../../TableContentContainer";
 import { styleSelection } from "../../../../../utils/helpersFunction";
+import TableContentContainer from "../../TableContentContainer";
 import task from "../../../../../icons/ticketList/task.svg";
 import bug from "../../../../../icons/ticketList/bug.svg";
-import OpenTableRow from "../../OpenTableRow";
 import style from "../../../styles.module.css";
+import OpenTableRow from "../../OpenTableRow";
 
 export default function TableContentActionRequired({ ticket }) {
   return (
@@ -28,7 +28,7 @@ export default function TableContentActionRequired({ ticket }) {
               <Col className={style.wrapper_avatar}>
                 <Image src={ticket.src} />
               </Col>
-              <Col style={{ textAlign: "start" }}>{ticket.approver}</Col>
+              <Col style={{ textAlign: "start", marginTop: 2 }}>{ticket.approver}</Col>
             </Row>
           </td>
 

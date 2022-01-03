@@ -1,0 +1,27 @@
+.wrapper_tickets_blocks {
+  background-color: var(--light-color);
+  padding: 24px 47px 50px 47px;
+}
+
+.activity_card_wrap {
+  background-color: var(--blue-gray-color);
+}
+
+.title {
+  color: var(--gray-800-color);
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  line-height: 24px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.unread_activity_card_wrap {
+  border: 2px solid var(--bs-red);
+}
+
+.activity_card_wrap,
+.unread_activity_card_wrap {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.075);
+  border-radius: 8px;
+}

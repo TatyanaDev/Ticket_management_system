@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import RecentActivityPage from './pages/RecentActivity'
 import TicketListPage from './pages/TicketList'
 import DashboardPage from './pages/Dashboard';
 import Register from './pages/Register'
@@ -12,6 +13,7 @@ export default function App() {
         <Route exact path='/login' element={<Login />} />
         <Route exact path='/dashboard' element={<DashboardPage />} />
         <Route exact path='/ticket_list' element={<TicketListPage />} />
+        <Route exact path='/recent_activity' element={<RecentActivityPage />} />
       </Routes >
     </BrowserRouter >
   );
