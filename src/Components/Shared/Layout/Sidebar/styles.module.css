@@ -1,27 +1,22 @@
-.wrapper_sidebar {
-  transition: all 0.2s linear;
-  max-width: 220px;
-  padding: 0;
-}
-
 .container_sidebar {
   background-color: var(--primary-color);
   justify-content: space-between;
   transition: all 0.2s linear;
+  flex-direction: column;
   min-height: 100%;
   height: calc(100vh - 57px);
-  flex-direction: column;
   display: flex;
 }
 
-.container_sidebar_min {
+.container {
   transition: all 0.2s linear;
-  max-width: 56px;
+  min-width: 220px;
 }
 
 .toggle:hover {
   box-shadow: inset 4px 0 0 #ffda00;
   background-color: var(--bs-white);
+  color: var(--primary-color);
 }
 
 .section_title {
@@ -34,19 +29,10 @@
   font-size: 12px;
 }
 
-.container_sidebar,
-.wrapper {
-  padding: 0;
-  margin: 0;
-}
-
-.toggle:hover {
-  color: var(--primary-color);
-}
-
 .section_title,
 .toggle {
   padding-left: 18px;
+  padding-right: 18px;
 }
 
 .toggle {
