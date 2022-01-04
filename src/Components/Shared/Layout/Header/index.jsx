@@ -1,8 +1,8 @@
 import { Col, Navbar, Row, Image } from "react-bootstrap";
-import { useLocation } from "react-router-dom";
-import headerAvatar from "../../../icons/shared/HeaderAvatar.svg";
 import { Icon } from "@iconify/react/dist/iconify";
-import logo from "../../../icons/shared/Logo.svg";
+import { useLocation } from "react-router-dom";
+import headerAvatar from "../../../../icons/shared/HeaderAvatar.svg";
+import logo from "../../../../icons/shared/Logo.svg";
 import ProfileDropdown from "./ProfileDropdown/";
 import style from "./styles.module.css";
 
