@@ -66,7 +66,7 @@ a.dropdown-toggle.nav-link,
 
 .dropdown-menu[data-bs-popper] {
   top: 135%;
-  left: 18%;
+  left: 15%;
 }
 
 .table > :not(:first-child) {

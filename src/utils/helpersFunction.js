@@ -39,3 +39,7 @@ export const styleSelection = (value) => {
     return style.success
   }
 }
+
+export const namePreparation = (strName) => {
+  return strName.split(" ").map((n) => n[0]).join().replace(',', '');
+} 
