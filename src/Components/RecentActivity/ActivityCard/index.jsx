@@ -1,7 +1,7 @@
 import { Badge, Col, Row, Image } from "react-bootstrap";
 import cn from "classnames";
 import { namePreparation } from "../../../utils/helpersFunction";
-import bug from "../../../icons/dashboard/bug.svg";
+import bug from "../../../icons/shared/bug.svg";
 import style from "./styles.module.css";
 
 export default function ActivityCard({ activity }) {

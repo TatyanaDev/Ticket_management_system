@@ -3,7 +3,7 @@ import { Icon } from "@iconify/react/dist/iconify";
 import { Link } from "react-router-dom";
 import cn from "classnames";
 import { namePreparation } from "../../../../utils/helpersFunction";
-import bug from "../../../../icons/dashboard/bug.svg";
+import bug from "../../../../icons/shared/bug.svg";
 import style from "./styles.module.css";
 
 export default function RecentActivityItems({ ticket }) {
