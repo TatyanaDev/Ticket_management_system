@@ -29,16 +29,6 @@
   padding: 0;
 }
 
-.icon_recent_activity_ticket_name {
-  font-family: "Poppins-Bold";
-  color: var(--bs-white);
-  font-style: normal;
-  text-align: center;
-  line-height: 24px;
-  font-weight: bold;
-  font-size: 16px;
-}
-
 .wrapper_recent_activity_ticket_name {
   font-family: "Poppins-Bold";
   margin-bottom: 7px;

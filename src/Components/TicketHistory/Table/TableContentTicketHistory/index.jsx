@@ -14,7 +14,7 @@ export default function TicketHistoryTable({ data }) {
       <TableContentThead data={data} currentFilter={currentFilter} setCurrentFilter={setCurrentFilter} flag={flag} setFlag={setFlag} />
       <tbody>
         {data.map((ticket) => (
-          <TableContentLayout ticket={ticket} />
+          <TableContentLayout ticket={ticket} key={ticket.ticket_id} />
         ))}
       </tbody>
     </Table>

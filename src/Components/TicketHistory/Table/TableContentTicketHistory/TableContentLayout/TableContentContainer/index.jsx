@@ -10,7 +10,7 @@ export default function TableContentContainer({ ticket }) {
       </td>
       <td>{ticket.ticket_name}</td>
       <td>
-        <FullNameAvatar userName={ticket.approver} src={ticket.src} />
+        <FullNameAvatar userName={ticket.approver} src={ticket.src} styles='primary_24' />
       </td>
       <td className='text-end' style={{ color: "#1c1c28" }}>
         {ticket.resolved_date}

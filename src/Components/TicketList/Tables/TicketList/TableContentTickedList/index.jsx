@@ -1,6 +1,7 @@
 import { Col, Row, ProgressBar } from "react-bootstrap";
 import cn from "classnames";
-import { styleSelection, namePreparation } from "../../../../../utils/helpersFunction";
+import FullNameAvatar from "../../../../../Components/Shared/FullNameAvatar";
+import { styleSelection } from "../../../../../utils/helpersFunction";
 import TableContentContainer from "../../TableContentContainer";
 import style from "../../../styles.module.css";
 import OpenTableRow from "../../OpenTableRow";
@@ -20,10 +21,7 @@ export default function TableContentTickedList({ ticket }) {
 
           <td className={style.wrapper_tbody_item}>
             <Row>
-              <Col className={style.wrapper_avatar}>
-                <Col className={style.avatar}>{namePreparation(ticket.approver)}</Col>
-              </Col>
-              <Col style={{ textAlign: "start", marginTop: 2 }}>{ticket.approver}</Col>
+              <FullNameAvatar userName={ticket.approver} src={ticket.src} styles='primary_24' />
             </Row>
           </td>
 

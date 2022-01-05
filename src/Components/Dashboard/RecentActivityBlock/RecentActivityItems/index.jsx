@@ -2,7 +2,7 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 import { Icon } from "@iconify/react/dist/iconify";
 import { Link } from "react-router-dom";
 import cn from "classnames";
-import { namePreparation } from "../../../../utils/helpersFunction";
+import DefaultAvatar from "../../../../Components/Shared/FullNameAvatar/DefaultAvatar";
 import bug from "../../../../icons/shared/bug.svg";
 import style from "./styles.module.css";
 
@@ -11,8 +11,8 @@ export default function RecentActivityItems({ ticket }) {
     <Container className={cn(style.wrapper_recent_activity_ticket, ticket.type === "Take Action" && style.border_take_action)}>
       <Row className='me-0 ms-0'>
         {ticket.type === "Design ticket" ? (
-          <Col className={cn(style.icon_recent_activity_ticket, style.background_design_ticket)} style={{ paddingTop: 8 }}>
-            <Col className={style.icon_recent_activity_ticket_name}>{namePreparation(ticket.user_name)}</Col>
+          <Col className={cn(style.icon_recent_activity_ticket)}>
+            <DefaultAvatar userName={ticket.user_name} styles='primary_40' />
           </Col>
         ) : (
           <Col className={style.icon_recent_activity_ticket}>

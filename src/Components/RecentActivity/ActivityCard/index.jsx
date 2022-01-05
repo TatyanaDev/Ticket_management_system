@@ -1,6 +1,6 @@
 import { Badge, Col, Row, Image } from "react-bootstrap";
 import cn from "classnames";
-import { namePreparation } from "../../../utils/helpersFunction";
+import DefaultAvatar from "../../Shared/FullNameAvatar/DefaultAvatar";
 import bug from "../../../icons/shared/bug.svg";
 import style from "./styles.module.css";
 
@@ -9,11 +9,11 @@ export default function ActivityCard({ activity }) {
     <>
       <Row className='pb-2'>
         {activity.type === "Design ticket" ? (
-          <Col xs='auto' className={cn(style.icon_recent_activity_ticket, style.ticket)} style={{ paddingTop: 8, marginLeft: 12 }}>
-            <Col className={style.icon_recent_activity_ticket_name}>{namePreparation(activity.user_name)}</Col>
+          <Col xs='auto'>
+            <DefaultAvatar userName={activity.user_name} styles='primary_40' />
           </Col>
         ) : (
-          <Col xs='auto' className={style.icon_recent_activity_ticket} style={{ marginLeft: 12 }}>
+          <Col xs='auto'>
             <Image src={bug} />
           </Col>
         )}
