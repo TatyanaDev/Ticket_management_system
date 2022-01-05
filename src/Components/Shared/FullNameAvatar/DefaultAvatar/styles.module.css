@@ -1,0 +1,41 @@
+.white_30 {
+  background-color: var(--bs-white);
+  font-family: "Poppins-Bold";
+  color: var(--primary-color);
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 0.75rem;
+  line-height: 30px;
+  flex-wrap: nowrap;
+  display: flex;
+  height: 30px;
+  width: 30px;
+}
+
+.primary_24 {
+  background-color: var(--primary-color);
+  font-family: "Poppins-Bold";
+  justify-content: center;
+  color: var(--bs-white);
+  font-size: 0.625rem;
+  border-radius: 50%;
+  line-height: 24px;
+  flex-wrap: nowrap;
+  display: flex;
+  height: 24px;
+  width: 24px;
+}
+
+.primary_40 {
+  background-color: var(--primary-color);
+  font-family: "Poppins-Bold";
+  justify-content: center;
+  color: var(--bs-white);
+  border-radius: 50%;
+  flex-wrap: nowrap;
+  line-height: 40px;
+  font-size: 1rem;
+  display: flex;
+  height: 40px;
+  width: 40px;
+}
