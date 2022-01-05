@@ -8,7 +8,7 @@ export const ticketSummary = {
   }
 }
 
-export const ticketHistory = {
+export const ticketHistory = { //and Ticket History page
   data: [{
     ticket_id: 7,
     ticket_name: 'Ehange color of primary button',
