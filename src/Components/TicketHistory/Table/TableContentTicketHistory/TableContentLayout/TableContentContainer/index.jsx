@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react/dist/iconify";
 import { Button } from "react-bootstrap";
-import FullNameAvatar from "../../../../Shared/FullNameAvatar";
+import FullNameAvatar from "../../../../../Shared/FullNameAvatar";
 import style from "./styles.module.css";
 
 export default function TableContentContainer({ ticket }) {

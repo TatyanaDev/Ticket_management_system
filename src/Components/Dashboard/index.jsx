@@ -8,7 +8,7 @@ import ButtonRecentActivity from "../../Components/Dashboard/ButtonRecentActivit
 import TableContentThead from "../../Components/Dashboard/Table/TableContentThead";
 import { ticketSummary, ticketHistory, recentActivity } from "../../utils/mokeDB";
 import RecentActivityBlock from "../../Components/Dashboard/RecentActivityBlock";
-import ModalOpenButton from "../../Components/Dashboard/ModalOpenButton";
+import ModalOpenButton from "../../Components/Shared/ModalOpenButton";
 import SummaryCard from "../../Components/Dashboard/SummaryCard";
 import progress from "../../icons/dashboard/progress.svg";
 import check from "../../icons/dashboard/check.svg";

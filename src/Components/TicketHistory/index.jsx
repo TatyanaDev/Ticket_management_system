@@ -1,6 +1,6 @@
 import { Container } from "react-bootstrap";
 import { useState } from "react";
-import ModalOpenButton from "../../Components/Dashboard/ModalOpenButton";
+import ModalOpenButton from "../../Components/Shared/ModalOpenButton";
 import TicketHistoryTable from "./Table/TableContentTicketHistory";
 import { ticketHistory } from "../../utils/mokeDB";
 import PaginatedItems from "../Shared/Pagination";
