@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 import SearchInput from "./SearchInput";
 import style from "./styles.module.css";
 
-export default function SearchBar({ setTicketsList, data }) {
+export default function SearchBar({ children = null, setTicketsList, data, link }) {
   return (
     <Row className={style.background}>
       <Col xs='auto' className='ps-0'>
-        <Link to='/ticket_list'>
+        <Link to={link}>
           <Button variant='link' className={style.button}>
             <Icon icon='ph:caret-left-bold' className={style.icon_btn} />
             Back
@@ -18,6 +18,11 @@ export default function SearchBar({ setTicketsList, data }) {
       <Col xs={{ span: 3 }}>
         <SearchInput data={data} setTicketsList={setTicketsList} />
       </Col>
+      {children && (
+        <Col className='text-end' style={{ paddingRight: 47 }}>
+          {children}
+        </Col>
+      )}
     </Row>
   );
 }

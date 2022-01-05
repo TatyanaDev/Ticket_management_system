@@ -30,7 +30,7 @@ export default function DashboardLayout() {
         <Container className={cn(style.wrapper_dashboard, recentActivityShow && style.wrapper_dashboard_active)} fluid>
           <Row>
             <Col className={style.ticket_summary}>Ticket Summary</Col>
-            <Col style={{ textAlign: "end" }}>
+            <Col style={{ textAlign: "end", marginBottom: 12 }}>
               <ModalOpenButton content='Create New Ticket' styleButton={style.button_create_ticket} styleIcon={style.icon_plus} />
             </Col>
           </Row>
