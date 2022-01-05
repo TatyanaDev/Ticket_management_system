@@ -1,0 +1,12 @@
+.button_outline {
+  border-color: var(--primary-color);
+  font-family: "Poppins-Regular";
+  color: var(--primary-color);
+  line-height: 21px;
+  font-size: 14px;
+}
+
+.button_outline:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}

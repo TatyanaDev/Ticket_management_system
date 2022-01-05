@@ -1,0 +1,15 @@
+.button_create_ticket {
+  background-color: var(--primary-color);
+  font-family: "Poppins-Regular";
+  font-weight: normal;
+  font-style: normal;
+  line-height: 24px;
+  padding: 5px 12px;
+  font-size: 16px;
+  border: none;
+}
+
+.icon_plus {
+  color: var(--bs-white);
+  vertical-align: -3px;
+}

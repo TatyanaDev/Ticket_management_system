@@ -77,3 +77,8 @@ a.dropdown-toggle.nav-link,
   background-color: var(--primary-color);
   border-color: var(--primary-color);
 }
+
+button:focus,
+button:active {
+  box-shadow: none !important;
+}
