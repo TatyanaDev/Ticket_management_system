@@ -1,12 +1,23 @@
-.button_outline {
-  border-color: var(--primary-color);
+.button_add_ticket {
+  border: 1px solid var(--primary-color);
   font-family: "Poppins-Regular";
   color: var(--primary-color);
+  font-weight: normal;
+  background: inherit;
+  font-style: normal;
   line-height: 21px;
   font-size: 14px;
+  padding: 5px;
 }
 
-.button_outline:hover {
+.button_add_ticket:hover,
+.button_add_ticket:focus {
+  border: 1px solid var(--primary-color);
   background-color: var(--primary-color);
-  border-color: var(--primary-color);
+  box-shadow: none;
+}
+
+.icon_plus_add {
+  vertical-align: -5px;
+  font-size: 20px;
 }

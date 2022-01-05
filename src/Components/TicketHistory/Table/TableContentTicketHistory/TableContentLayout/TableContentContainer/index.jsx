@@ -1,5 +1,4 @@
-import { Icon } from "@iconify/react/dist/iconify";
-import { Button } from "react-bootstrap";
+import ModalOpenButton from "../../../../../Shared/ModalOpenButton";
 import FullNameAvatar from "../../../../../Shared/FullNameAvatar";
 import style from "./styles.module.css";
 
@@ -17,10 +16,7 @@ export default function TableContentContainer({ ticket }) {
         {ticket.resolved_date}
       </td>
       <td className='text-center'>
-        <Button variant='outline-primary' className={style.button_outline}>
-          <Icon icon='akar-icons:plus' className='fs-6 me-2' />
-          Add Ticket
-        </Button>
+        <ModalOpenButton content='Add ticket' styleButton={style.button_add_ticket} styleIcon={style.icon_plus_add} />
       </td>
     </>
   );
