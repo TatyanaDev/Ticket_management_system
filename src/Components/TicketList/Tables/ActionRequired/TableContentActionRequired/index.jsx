@@ -1,4 +1,5 @@
 import { Col, Image, Row } from "react-bootstrap";
+import FullNameAvatar from "../../../../../Components/Shared/FullNameAvatar";
 import { styleSelection } from "../../../../../utils/helpersFunction";
 import TableContentContainer from "../../TableContentContainer";
 import task from "../../../../../icons/ticketList/task.svg";
@@ -25,10 +26,7 @@ export default function TableContentActionRequired({ ticket }) {
 
           <td className={style.wrapper_tbody_item}>
             <Row>
-              <Col className={style.wrapper_avatar}>
-                <Image src={ticket.src} />
-              </Col>
-              <Col style={{ textAlign: "start", marginTop: 2 }}>{ticket.approver}</Col>
+              <FullNameAvatar userName={ticket.approver} src={ticket.src} styles='primary_24' />
             </Row>
           </td>
 

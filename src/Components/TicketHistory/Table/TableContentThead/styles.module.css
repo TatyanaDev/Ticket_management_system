@@ -1,0 +1,9 @@
+.wrapper_thead {
+  box-shadow: inset 0px -2px 0px #dfdfdf;
+  color: var(--primary-color);
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  line-height: 24px;
+  font-weight: bold;
+  font-size: 14px;
+}

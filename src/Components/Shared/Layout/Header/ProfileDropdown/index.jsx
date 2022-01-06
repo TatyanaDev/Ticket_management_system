@@ -1,18 +1,20 @@
-import { Container, Image, NavDropdown, Nav } from "react-bootstrap";
+import { Container, Row, NavDropdown, Nav } from "react-bootstrap";
 import { Icon } from "@iconify/react/dist/iconify";
+import FullNameAvatar from "../../../../../Components/Shared/FullNameAvatar";
 import cn from "classnames";
 import { text } from "../styles.module.css";
 import style from "./styles.module.css";
 
-export default function ProfileDropdown({ avatar, userName }) {
+export default function ProfileDropdown({ userName }) {
   return (
     <Nav>
       <NavDropdown
         className={style.dropdown}
         title={
           <Container className={cn(text, style.button_dropdown)}>
-            <Image src={avatar} className={style.avatar} />
-            {userName}
+            <Row className='p-0 m-0'>
+              <FullNameAvatar userName={userName} styles='white_30' />
+            </Row>
           </Container>
         }
       >
