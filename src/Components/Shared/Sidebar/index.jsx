@@ -26,7 +26,7 @@ export default function Sidebar() {
 
             {minimize || <Row className={style.section_title}>Users</Row>}
 
-            <NavItem content='Users List' icon='uil:users-alt' href='/user_list' minimize={minimize} padding={style.user_list_link} font={user_list} />
+            <NavItem content='Users List' icon='uil:users-alt' href='/users_list-client-admin' minimize={minimize} padding={style.user_list_link} font={user_list} />
           </Nav>
 
           <Container className={style.wrapper}>

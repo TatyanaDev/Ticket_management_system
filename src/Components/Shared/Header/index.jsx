@@ -14,7 +14,7 @@ export default function Header({ userName = "Battulga Enkhtur", avatar = headerA
     "/ticket_history": "Ticket history",
     "/ticket_list": "Ticket list",
     "/recent_activity": "Recent Activity",
-    "/users_list": "Users List",
+    "/users_list-client-admin": "Users List",
     "/settings": "Settings",
   };
 
