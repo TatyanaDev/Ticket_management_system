@@ -1,7 +1,6 @@
-import { Button, Container, Row, Col, Form } from "react-bootstrap";
+import { Button, Container, Row, Col } from "react-bootstrap";
+import { Formik, Form, Field, ErrorMessage } from "formik";
 import { Link } from "react-router-dom";
-import { Formik } from "formik";
-import cn from "classnames";
 import * as Yup from "yup";
 import style from "../styles.module.css";
 
@@ -30,52 +29,37 @@ export default function UserRegistrationForm({ margin }) {
 
   return (
     <>
-      <Formik validationSchema={validationSchema} onSubmit={createUser} initialValues={initialValues}>
-        {({ handleSubmit, handleChange, values, touched, errors }) => (
-          <Form noValidate onSubmit={handleSubmit}>
-            <Row className={style.input_container}>
-              <Form.Group as={Col} className={cn("p-0")}>
-                <Form.Label className='mb-0' style={{ color: "#6c757d" }}>
-                  Email
-                </Form.Label>
-                <Form.Control className={style.input} type='text' name='email' value={values.email} onChange={handleChange} isValid={touched.email && !errors.email} isInvalid={errors.email} />
-                <Form.Control.Feedback type='invalid' tooltip className={cn(style.error, "p-0")}>
-                  {errors.email}
-                </Form.Control.Feedback>
-              </Form.Group>
-            </Row>
+      <Formik validateOnChange={false} initialValues={initialValues} validationSchema={validationSchema} onSubmit={createUser}>
+        <Form>
+          <Row className={style.input_container}>
+            <label className='p-0' style={{ color: "#6c757d" }}>
+              Email
+            </label>
+            <Field name='email' className={style.input} type='text' />
+            <ErrorMessage name='email' component='div' className={style.error} />
+          </Row>
 
-            <Row className={style.input_container}>
-              <Form.Group as={Col} className='p-0'>
-                <Form.Label className='mb-0' style={{ color: "#6c757d" }}>
-                  Create Password{" "}
-                </Form.Label>
-                <Form.Control className={style.input} type='password' name='createPassword' value={values.createPassword} onChange={handleChange} isValid={touched.createPassword && !errors.createPassword} isInvalid={errors.createPassword} />
-                <Form.Control.Feedback type='invalid' tooltip className={cn(style.error, "p-0")}>
-                  {errors.createPassword}
-                </Form.Control.Feedback>
-              </Form.Group>
-            </Row>
+          <Row className={style.input_container}>
+            <label className='p-0' style={{ color: "#6c757d" }}>
+              Create Password
+            </label>
+            <Field name='createPassword' className={style.input} type='password' />
+            <ErrorMessage name='createPassword' component='div' className={style.error} />
+          </Row>
 
-            <Row className={style.input_container}>
-              <Form.Group as={Col} className='p-0'>
-                <Form.Label className='mb-0' style={{ color: "#6c757d" }}>
-                  Repeat Password
-                </Form.Label>
-                <Form.Control className={style.input} type='password' name='repeatPassword' value={values.repeatPassword} onChange={handleChange} isValid={touched.repeatPassword && !errors.repeatPassword} isInvalid={errors.repeatPassword} />
-                <Form.Control.Feedback type='invalid' tooltip className={cn(style.error, "p-0")}>
-                  {errors.repeatPassword}
-                </Form.Control.Feedback>
-              </Form.Group>
-            </Row>
-
-            <Row className={margin} style={{ width: 350 }}>
-              <Button className={style.button} type='submit'>
-                Create account
-              </Button>
-            </Row>
-          </Form>
-        )}
+          <Row className={style.input_container}>
+            <label className='p-0' style={{ color: "#6c757d" }}>
+              Repeat Password
+            </label>
+            <Field name='repeatPassword' className={style.input} type='password' />
+            <ErrorMessage name='repeatPassword' component='div' className={style.error} />
+          </Row>
+          <Row className={margin} style={{ width: 350 }}>
+            <Button className={style.button} type='submit'>
+              Create account
+            </Button>
+          </Row>
+        </Form>
       </Formik>
 
       <Container>

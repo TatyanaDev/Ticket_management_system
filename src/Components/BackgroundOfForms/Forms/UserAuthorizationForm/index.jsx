@@ -1,7 +1,6 @@
-import { Button, Container, Row, Col, Form } from "react-bootstrap";
+import { Button, Container, Row, Col } from "react-bootstrap";
+import { Formik, Form, Field, ErrorMessage } from "formik";
 import { Link, useNavigate } from "react-router-dom";
-import { Formik } from "formik";
-import cn from "classnames";
 import * as Yup from "yup";
 import style from "../styles.module.css";
 
@@ -30,54 +29,42 @@ export default function UserAuthorizationForm({ margin }) {
 
   return (
     <>
-      <Formik validationSchema={validationSchema} onSubmit={checkUser} initialValues={initialValues}>
-        {({ handleSubmit, handleChange, values, touched, errors }) => (
-          <Form noValidate onSubmit={handleSubmit}>
-            <Row className={style.input_container}>
-              <Form.Group as={Col} className='p-0'>
-                <Form.Label className='mb-0' style={{ color: "#6c757d" }}>
-                  Email
-                </Form.Label>
-                <Form.Control className={style.input} type='text' name='email' value={values.email} onChange={handleChange} isValid={touched.email && !errors.email} isInvalid={errors.email} />
-                <Form.Control.Feedback type='invalid' tooltip className={cn(style.error, "p-0")}>
-                  {errors.email}
-                </Form.Control.Feedback>
-              </Form.Group>
-            </Row>
+      <Formik validateOnChange={false} initialValues={initialValues} validationSchema={validationSchema} onSubmit={checkUser}>
+        <Form>
+          <Row className={style.input_container}>
+            <label className='p-0' style={{ color: "#6c757d" }}>
+              Email
+            </label>
+            <Field name='email' className={style.input} type='text' />
+            <ErrorMessage name='email' component='div' className={style.error} />
+          </Row>
 
-            <Row className={style.input_container}>
-              <Form.Group as={Col} className='p-0'>
-                <Form.Label className='mb-0' style={{ color: "#6c757d" }}>
-                  Password
-                </Form.Label>
-                <Form.Control className={style.input} type='password' name='password' value={values.password} onChange={handleChange} isValid={touched.password && !errors.password} isInvalid={errors.password} />
-                <Form.Control.Feedback type='invalid' tooltip className={cn(style.error, "p-0")}>
-                  {errors.password}
-                </Form.Control.Feedback>
-              </Form.Group>
-            </Row>
+          <Row className={style.input_container}>
+            <label className='p-0' style={{ color: "#6c757d" }}>
+              Password
+            </label>
+            <Field name='password' className={style.input} type='password' />
+            <ErrorMessage name='password' component='div' className={style.error} />
+          </Row>
 
-            <Row>
-              <Col>
-                <Form.Group>
-                  <Form.Check className={style.remember_me} name='rememberMe' label='Remember me' onChange={handleChange} />
-                </Form.Group>
-              </Col>
+          <Row className={style.input_container}>
+            <Col className='p-0'>
+              <Field name='rememberMe' type='checkbox' style={{ marginRight: 7 }} />
+              <label style={{ color: "var(--bs-dark)", fontSize: 16 }}>Remember Me</label>
+            </Col>
+            <Col style={{ textAlign: "end", paddingBottom: 1 }}>
+              <Link className={style.link_forgot_password} style={{ fontSize: 16 }} to='/login'>
+                Forgot Password?
+              </Link>
+            </Col>
+          </Row>
 
-              <Col style={{ textAlign: "end" }}>
-                <Link className={style.link_forgot_password} to='/login'>
-                  Forgot Password?
-                </Link>
-              </Col>
-            </Row>
-
-            <Row className={margin} style={{ width: 350 }}>
-              <Button className={style.button} type='submit'>
-                Login
-              </Button>
-            </Row>
-          </Form>
-        )}
+          <Row className={margin} style={{ width: 350 }}>
+            <Button className={style.button} type='submit'>
+              Login
+            </Button>
+          </Row>
+        </Form>
       </Formik>
 
       <Container>
