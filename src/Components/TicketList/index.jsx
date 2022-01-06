@@ -25,10 +25,10 @@ export default function TicketListLayout() {
           <Col xxl={{ span: 1 }} xs={{ span: 2 }} className={style.title} style={{ marginTop: 5 }}>
             Ticket list
           </Col>
-          <Col xxl={{ span: 3 }} xs={{ span: 6 }} style={{ marginLeft: -50 }}>
+          <Col xxl={{ span: 3 }} xs={{ span: 6 }}>
             <SearchInput data={data} setTicketsList={setTicketsList} />
           </Col>
-          <Col xxl={{ span: 8 }} style={{ textAlign: "right" }}>
+          <Col xxl={{ span: 8 }} style={{ textAlign: "end", paddingRight: 62 }}>
             <FilterSwitches data={data} setTicketsList={setTicketsList} />
           </Col>
         </Row>

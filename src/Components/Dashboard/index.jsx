@@ -8,7 +8,7 @@ import ButtonRecentActivity from "../../Components/Dashboard/ButtonRecentActivit
 import TableContentThead from "../../Components/Dashboard/Table/TableContentThead";
 import { ticketSummary, ticketHistory, recentActivity } from "../../utils/mokeDB";
 import RecentActivityBlock from "../../Components/Dashboard/RecentActivityBlock";
-import ModalOpenButton from "../../Components/Dashboard/ModalOpenButton";
+import ModalOpenButton from "../../Components/Shared/ModalOpenButton";
 import SummaryCard from "../../Components/Dashboard/SummaryCard";
 import progress from "../../icons/dashboard/progress.svg";
 import check from "../../icons/dashboard/check.svg";
@@ -30,7 +30,7 @@ export default function DashboardLayout() {
         <Container className={cn(style.wrapper_dashboard, recentActivityShow && style.wrapper_dashboard_active)} fluid>
           <Row>
             <Col className={style.ticket_summary}>Ticket Summary</Col>
-            <Col style={{ textAlign: "end" }}>
+            <Col style={{ textAlign: "end", marginBottom: 12 }}>
               <ModalOpenButton content='Create New Ticket' styleButton={style.button_create_ticket} styleIcon={style.icon_plus} />
             </Col>
           </Row>

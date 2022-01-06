@@ -1,0 +1,14 @@
+.background {
+  box-shadow: inset 0 -2px 0 #DFDFDF;
+  background-color: var(--bs-white);
+  font-family: "Poppins-Regular";
+  color: var(--gray-800-color);
+  margin-bottom: 20px;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+.headers {
+  box-shadow: inset 0 -2px 0 #DFDFDF;
+  color: var(--primary-color);
+}

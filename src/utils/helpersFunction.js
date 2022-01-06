@@ -26,6 +26,40 @@ export const sortByDate = ({ data, flag, setFlag, setCurrentFilter, field }) => 
   setFlag(flag => !flag);
 };
 
+
+export const sortByPriority = ({ data, flag, setFlag, setCurrentFilter }) => {
+  const options = {
+    "Lowest": 0,
+    "Low": 1,
+    "Medium": 2,
+    "High": 3,
+    "Highest": 4
+  }
+
+  data.sort((a, b) => [
+    flag ? options[a.priority] - options[b.priority] : options[b.priority] - options[a.priority]
+  ]);
+  setCurrentFilter('priority')
+  setFlag(flag => !flag);
+};
+
+export const sortByStatus = ({ data, flag, setFlag, setCurrentFilter }) => {
+  const options = {
+    "Action Required": 0,
+    "Backlog": 1,
+    "In Progress": 2,
+    "In Estimation": 3,
+    "To Be Released": 4,
+    "Success": 5
+  }
+
+  data.sort((a, b) => [
+    flag ? options[a.status] - options[b.status] : options[b.status] - options[a.status]
+  ]);
+  setCurrentFilter('status')
+  setFlag(flag => !flag);
+};
+
 export const styleSelection = (value) => {
   if (['Highest', 'High', 'Action Required'].includes(value)) {
     return style.highest

@@ -1,7 +1,7 @@
 import { Icon } from "@iconify/react/dist/iconify";
 import { Button } from "react-bootstrap";
 import { useState } from "react";
-import CreateNewTicketModal from "../CreateNewTicketModal";
+import CreateNewTicketModal from "./CreateNewTicketModal";
 
 export default function ModalOpenButton({ content, styleButton, styleIcon }) {
   const [modalShow, setModalShow] = useState(false);

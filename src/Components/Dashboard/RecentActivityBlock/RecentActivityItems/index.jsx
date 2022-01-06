@@ -2,15 +2,23 @@ import { Container, Row, Col, Image } from "react-bootstrap";
 import { Icon } from "@iconify/react/dist/iconify";
 import { Link } from "react-router-dom";
 import cn from "classnames";
+import DefaultAvatar from "../../../../Components/Shared/FullNameAvatar/DefaultAvatar";
+import bug from "../../../../icons/shared/bug.svg";
 import style from "./styles.module.css";
 
 export default function RecentActivityItems({ ticket }) {
   return (
     <Container className={cn(style.wrapper_recent_activity_ticket, ticket.type === "Take Action" && style.border_take_action)}>
       <Row className='me-0 ms-0'>
-        <Col className={style.icon_recent_activity_ticket}>
-          <Image src={ticket.src} />
-        </Col>
+        {ticket.type === "Design ticket" ? (
+          <Col className={cn(style.icon_recent_activity_ticket)}>
+            <DefaultAvatar userName={ticket.user_name} styles='primary_40' />
+          </Col>
+        ) : (
+          <Col className={style.icon_recent_activity_ticket}>
+            <Image src={bug} />
+          </Col>
+        )}
         <Col>
           <Row className={cn(style.wrapper_recent_activity_ticket_name, ticket.type === "Take Action" ? style.design_ticket_color_ticket_name : style.take_action_color_ticket_name)}>{ticket.ticket_name}</Row>
           <Row className={cn(style.wrapper_recent_activity_ticket_type, ticket.type === "Design ticket" ? style.background_design_ticket : style.background_take_action)}>{ticket.type}</Row>

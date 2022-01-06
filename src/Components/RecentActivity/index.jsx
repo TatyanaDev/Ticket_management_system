@@ -15,7 +15,7 @@ export default function RecentActivityLayout() {
 
   return (
     <Col className='p-0' style={{ backgroundColor: "#f8f9fa" }}>
-      <SearchBar data={data} setTicketsList={setTicketsListUnreadActivity} />
+      <SearchBar data={data} setTicketsList={setTicketsListUnreadActivity} link='/ticket_list' />
       <Container fluid className={style.wrapper_tickets_blocks}>
         <Row className={cn(style.title, "ms-0 me-0 mb-2")}>Unread Activity</Row>
         <UnreadActivityList data={ticketsListUnreadActivity} />
