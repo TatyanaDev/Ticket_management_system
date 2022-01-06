@@ -1,0 +1,14 @@
+.background {
+  box-shadow: inset 0 -2px 0 #dfdfdf;
+  background-color: var(--bs-white);
+  font-family: "Poppins-Regular";
+  color: var(--gray-800-color);
+  font-weight: normal;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+.table_row {
+  box-shadow: inset 0 -1px 0 #dfdfdf;
+  vertical-align: middle;
+}

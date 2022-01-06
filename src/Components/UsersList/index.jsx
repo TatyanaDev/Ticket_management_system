@@ -8,7 +8,7 @@ import SearchBar from "../Shared/SearchBar";
 import Moderator from "./Tables/Moderator";
 import UserModal from "./UserModal";
 
-export default function UsersListLayout({ role = "" }) {
+export default function UsersListLayout({ role = "moderator" }) {
   const { data } = usersList;
   const [ticketList, setTicketsList] = useState(data);
   const [show, setShow] = useState(false);
