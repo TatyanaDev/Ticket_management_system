@@ -77,3 +77,75 @@ a.dropdown-toggle.nav-link,
   background-color: var(--primary-color);
   border-color: var(--primary-color);
 }
+
+button:focus,
+button:active {
+  box-shadow: none !important;
+}
+
+.dropdown_green > button,
+.dropdown_green > button:hover,
+.dropdown_blue > button,
+.dropdown_blue > button:hover,
+.dropdown_gray > button,
+.dropdown_gray > button:hover,
+.dropdown_red > button,
+.dropdown_red > button:hover {
+  font-family: "Poppins-Regular";
+  font-weight: normal;
+  position: relative;
+  line-height: 24px;
+  font-size: 14px;
+  border: none;
+}
+
+.dropdown_green > button {
+  background-color: var(--green-100-color) !important;
+  color: var(--green-600-color) !important;
+}
+
+.dropdown_blue > button,
+.dropdown_blue > button:hover {
+  background-color: var(--blue-100-color) !important;
+  color: var(--blue-500-color) !important;
+}
+
+.dropdown_gray > button {
+  background-color: var(--gray-100-color) !important;
+  color: var(--gray-500-color) !important;
+}
+
+.dropdown_red > button {
+  background-color: var(--red-100-color) !important;
+  color: var(--red-500-color) !important;
+}
+
+.dropdown_green > button:after {
+  border: solid var(--green-600-color);
+}
+
+.dropdown_blue > button:after {
+  border: solid var(--blue-500-color);
+}
+
+.dropdown_gray > button:after {
+  border: solid var(--gray-500-color);
+}
+
+.dropdown_red > button:after {
+  border: solid var(--red-500-color);
+}
+
+.dropdown_green > button:after,
+.dropdown_blue > button:after,
+.dropdown_gray > button:after,
+.dropdown_red > button:after {
+  transform: rotate(45deg) translateY(50%);
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  position: absolute;
+  padding: 3px;
+  content: "";
+  right: 4px;
+  top: 25%;
+}

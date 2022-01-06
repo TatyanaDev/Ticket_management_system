@@ -1,0 +1,10 @@
+.background_thead_items {
+  box-shadow: inset 0 -2px 0 #dfdfdf;
+  background-color: var(--bs-white);
+  color: var(--primary-color);
+  font-family: "Poppins-Bold";
+  font-style: normal;
+  font-weight: bold;
+  line-height: 24px;
+  font-size: 14px;
+}
