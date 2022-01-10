@@ -28,4 +28,4 @@ jobs:
         cache: 'npm'
     - run: yarn install
     - run: npm install -g create-react-app
-    - run: yarn run
+    - run: yarn build
