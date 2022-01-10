@@ -10,7 +10,7 @@ export default function PaginatedItems({ itemsPerPage, data, setTicketsList }) {
     const endOffset = itemOffset + itemsPerPage;
     endOffset && setTicketsList(data.slice(itemOffset, endOffset));
     data && setPageCount(Math.ceil(data.length / itemsPerPage));
-  }, [itemOffset, itemsPerPage]);
+  }, [data, setTicketsList, itemOffset, itemsPerPage]);
 
   const handlePageClick = (event) => {
     const newOffset = (event.selected * itemsPerPage) % data.length;
