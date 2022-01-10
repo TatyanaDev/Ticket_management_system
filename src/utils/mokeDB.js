@@ -269,3 +269,14 @@ export const actionRequired = {  //and Ticket list
   ]
 }
 
+// Settings page
+
+export const currentUser = {
+  data: [{
+    id: "1",
+    first_name: "Battulga",
+    last_name: "Enkhtur",
+    email: "aslkdjasd@gaa.cc",
+  }
+  ]
+}
