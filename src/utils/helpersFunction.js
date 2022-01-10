@@ -39,6 +39,7 @@ export const sortByUserRole = ({ data, flag, setFlag, setCurrentFilter }) => {
     flag ? options[a.user_role[0]] - options[b.user_role[0]] : options[b.user_role[0]] - options[a.user_role[0]]
   ]);
   setCurrentFilter('user_role')
+  setFlag(flag => !flag);
 }
 
 
