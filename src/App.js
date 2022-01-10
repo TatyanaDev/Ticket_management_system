@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import UsersListPage from './pages/UsersList'
 import RecentActivityPage from './pages/RecentActivity'
 import TicketHistoryPage from './pages/TicketHistory'
 import TicketListPage from './pages/TicketList'
@@ -16,6 +17,7 @@ export default function App() {
         <Route exact path='/ticket_history' element={<TicketHistoryPage />} />
         <Route exact path='/ticket_list' element={<TicketListPage />} />
         <Route exact path='/recent_activity' element={<RecentActivityPage />} />
+        <Route exact path='/users_list' element={<UsersListPage />} />
       </Routes >
     </BrowserRouter >
   );
