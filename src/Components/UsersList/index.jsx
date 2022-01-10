@@ -16,7 +16,7 @@ export default function UsersListLayout({ role = "" }) {
 
   return (
     <Col className='p-0' style={{ backgroundColor: "#f8f9fa" }}>
-      <SearchBar setTicketsList={setTicketsList} data={ticketList} link='/recent_activity'>
+      <SearchBar setTicketsList={setTicketsList} data={ticketList}>
         <Button variant='primary' className={style.button_add_user} onClick={() => setShow(true)}>
           <Icon icon='akar-icons:plus' className='fs-6 me-2' style={{ verticalAlign: "top" }} />
           Add User

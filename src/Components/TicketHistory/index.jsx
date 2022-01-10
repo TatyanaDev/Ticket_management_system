@@ -13,7 +13,7 @@ export default function TicketHistoryLayout() {
 
   return (
     <>
-      <SearchBar data={data} setTicketsList={setTicketsList} link='/dashboard'>
+      <SearchBar data={data} setTicketsList={setTicketsList}>
         <ModalOpenButton content='Create a new ticket' styleButton={style.button_create_ticket} styleIcon={style.icon_plus} />
       </SearchBar>
       <Container fluid className='pe-5 ps-5 pt-4 pb-4'>
