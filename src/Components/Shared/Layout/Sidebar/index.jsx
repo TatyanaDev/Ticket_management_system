@@ -24,7 +24,7 @@ export default function Sidebar({ minimize, toggleMinimize }) {
         <NavItem content='Users List' icon='uil:users-alt' href='/users_list' minimize={minimize} padding={style.user_list_link} font={user_list} />
       </Nav>
 
-      <Nav className='flex-column'>
+      <Nav className='flex-column' style={{ position: "sticky", bottom: 0 }}>
         <NavItem content='Settings' icon='ic:baseline-settings' href='/settings' minimize={minimize} padding={style.dash_sett_link} />
         <Col className={style.toggle} onClick={toggleMinimize}>
           <Icon icon='fluent:caret-left-24-filled' className={cn(style.icon, minimize && style.icon_rotate)} />

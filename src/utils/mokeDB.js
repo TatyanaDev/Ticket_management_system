@@ -269,6 +269,112 @@ export const actionRequired = {  //and Ticket list
   ]
 }
 
+//Users List Pages
+
+export const usersList = {
+  data: [{
+    id: 1,
+    ticket_name: 'Nattulga',
+    last_name: 'Ankhtur',
+    email: 'Cample@gmail.com',
+    user_role: ['Approver', 'User'],
+    total_ticket: '-',
+    ticket: []
+  },
+  {
+    id: 2,
+    ticket_name: 'Oattulga',
+    last_name: 'Gnkhtur',
+    email: 'Fample@gmail.com',
+    user_role: ['User'],
+    total_ticket: '2',
+    ticket: [{ id: 1, name: 'Change color of primary button', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla tincidunt massa id commodo. Vivamus quis mi nisl. Phasellus quis egestas leo. Nulla facilisi. Nam laoreet nisi id eros bibendum efficitur. Pellentesque ultrices justo vel metus pretium pretium. Integer vestibulum interdum metus at lobortis. Vivamus rhoncus varius eros, sit amet commodo ante venenatis sit amet. Donec eget sollicitudin tellus, sed finibus magnaLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla tincidunt massa id commodo. Vivamus quis mi nisl. Phasellus quis egestas leo. Nulla facilisi. Nam laoreet nisi id eros bibendum efficitur. Pellentesque ultrices justo vel metus pretium pretium. Integer vestibulum interdum metus at lobortis. Vivamus rhoncus varius eros, sit amet commodo ante venenatis sit amet. Donec eget sollicitudin tellus, sed finibus magna', status: 'To Be Released' },
+    { id: 2, name: 'Change color of primary button', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla tincidunt massa id commodo. Vivamus quis mi nisl. Phasellus quis egestas leo. Nulla facilisi. Nam laoreet nisi id eros bibendum efficitur. Pellentesque ultrices justo vel metus pretium pretium. Integer vestibulum interdum metus at lobortis. Vivamus rhoncus varius eros, sit amet commodo ante venenatis sit amet. Donec eget sollicitudin tellus, sed finibus magnaLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla tincidunt massa id commodo. Vivamus quis mi nisl. Phasellus quis egestas leo. Nulla facilisi. Nam laoreet nisi id eros bibendum efficitur. Pellentesque ultrices justo vel metus pretium pretium. Integer vestibulum interdum metus at lobortis. Vivamus rhoncus varius eros, sit amet commodo ante venenatis sit amet. Donec eget sollicitudin tellus, sed finibus magna', status: 'In Progress' }]
+  },
+  {
+    id: 3,
+    ticket_name: 'Aattulga',
+    last_name: 'Ffvrrg',
+    email: 'Dample@gmail.com',
+    user_role: ['Admin'],
+    total_ticket: '2',
+    ticket: [{ id: 11, name: 'Change color of primary button', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla tincidunt massa id commodo. Vivamus quis mi nisl. Phasellus quis egestas leo. Nulla facilisi. Nam laoreet nisi id eros bibendum efficitur. Pellentesque ultrices justo vel metus pretium pretium. Integer vestibulum interdum metus at lobortis. Vivamus rhoncus varius eros, sit amet commodo ante venenatis sit amet. Donec eget sollicitudin tellus, sed finibus magnaLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla tincidunt massa id commodo. Vivamus quis mi nisl. Phasellus quis egestas leo. Nulla facilisi. Nam laoreet nisi id eros bibendum efficitur. Pellentesque ultrices justo vel metus pretium pretium. Integer vestibulum interdum metus at lobortis. Vivamus rhoncus varius eros, sit amet commodo ante venenatis sit amet. Donec eget sollicitudin tellus, sed finibus magna', status: 'To Be Released' },
+    { id: 12, name: 'Change color of primary button', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla tincidunt massa id commodo. Vivamus quis mi nisl. Phasellus quis egestas leo. Nulla facilisi. Nam laoreet nisi id eros bibendum efficitur. Pellentesque ultrices justo vel metus pretium pretium. Integer vestibulum interdum metus at lobortis. Vivamus rhoncus varius eros, sit amet commodo ante venenatis sit amet. Donec eget sollicitudin tellus, sed finibus magnaLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla tincidunt massa id commodo. Vivamus quis mi nisl. Phasellus quis egestas leo. Nulla facilisi. Nam laoreet nisi id eros bibendum efficitur. Pellentesque ultrices justo vel metus pretium pretium. Integer vestibulum interdum metus at lobortis. Vivamus rhoncus varius eros, sit amet commodo ante venenatis sit amet. Donec eget sollicitudin tellus, sed finibus magna', status: 'In Progress' }]
+  },
+  {
+    id: 4,
+    ticket_name: 'Battulga',
+    last_name: 'Enkhtur',
+    email: 'Sample@gmail.com',
+    user_role: ['User', 'Approver'],
+    total_ticket: '2',
+    ticket: [{ id: 111, name: 'Change color of primary button', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla tincidunt massa id commodo. Vivamus quis mi nisl. Phasellus quis egestas leo. Nulla facilisi. Nam laoreet nisi id eros bibendum efficitur. Pellentesque ultrices justo vel metus pretium pretium. Integer vestibulum interdum metus at lobortis. Vivamus rhoncus varius eros, sit amet commodo ante venenatis sit amet. Donec eget sollicitudin tellus, sed finibus magnaLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla tincidunt massa id commodo. Vivamus quis mi nisl. Phasellus quis egestas leo. Nulla facilisi. Nam laoreet nisi id eros bibendum efficitur. Pellentesque ultrices justo vel metus pretium pretium. Integer vestibulum interdum metus at lobortis. Vivamus rhoncus varius eros, sit amet commodo ante venenatis sit amet. Donec eget sollicitudin tellus, sed finibus magna', status: 'To Be Released' },
+    { id: 112, name: 'Change color of primary button', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla tincidunt massa id commodo. Vivamus quis mi nisl. Phasellus quis egestas leo. Nulla facilisi. Nam laoreet nisi id eros bibendum efficitur. Pellentesque ultrices justo vel metus pretium pretium. Integer vestibulum interdum metus at lobortis. Vivamus rhoncus varius eros, sit amet commodo ante venenatis sit amet. Donec eget sollicitudin tellus, sed finibus magnaLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla tincidunt massa id commodo. Vivamus quis mi nisl. Phasellus quis egestas leo. Nulla facilisi. Nam laoreet nisi id eros bibendum efficitur. Pellentesque ultrices justo vel metus pretium pretium. Integer vestibulum interdum metus at lobortis. Vivamus rhoncus varius eros, sit amet commodo ante venenatis sit amet. Donec eget sollicitudin tellus, sed finibus magna', status: 'In Progress' }]
+  },
+  {
+    id: 5,
+    ticket_name: 'Cattulga',
+    last_name: 'Ofdgvf',
+    email: 'Bample@gmail.com',
+    user_role: ['Moderator'],
+    total_ticket: '3',
+    ticket: [{ id: 21, name: 'Change color of primary button', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla tincidunt massa id commodo. Vivamus quis mi nisl. Phasellus quis egestas leo. Nulla facilisi. Nam laoreet nisi id eros bibendum efficitur. Pellentesque ultrices justo vel metus pretium pretium. Integer vestibulum interdum metus at lobortis. Vivamus rhoncus varius eros, sit amet commodo ante venenatis sit amet. Donec eget sollicitudin tellus, sed finibus magnaLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla tincidunt massa id commodo. Vivamus quis mi nisl. Phasellus quis egestas leo. Nulla facilisi. Nam laoreet nisi id eros bibendum efficitur. Pellentesque ultrices justo vel metus pretium pretium. Integer vestibulum interdum metus at lobortis. Vivamus rhoncus varius eros, sit amet commodo ante venenatis sit amet. Donec eget sollicitudin tellus, sed finibus magna', status: 'To Be Released' },
+    { id: 22, name: 'Change color of primary button', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla tincidunt massa id commodo. Vivamus quis mi nisl. Phasellus quis egestas leo. Nulla facilisi. Nam laoreet nisi id eros bibendum efficitur. Pellentesque ultrices justo vel metus pretium pretium. Integer vestibulum interdum metus at lobortis. Vivamus rhoncus varius eros, sit amet commodo ante venenatis sit amet. Donec eget sollicitudin tellus, sed finibus magnaLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla tincidunt massa id commodo. Vivamus quis mi nisl. Phasellus quis egestas leo. Nulla facilisi. Nam laoreet nisi id eros bibendum efficitur. Pellentesque ultrices justo vel metus pretium pretium. Integer vestibulum interdum metus at lobortis. Vivamus rhoncus varius eros, sit amet commodo ante venenatis sit amet. Donec eget sollicitudin tellus, sed finibus magna', status: 'In Progress' },
+    { id: 23, name: 'Change color of primary button', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla tincidunt massa id commodo. Vivamus quis mi nisl. Phasellus quis egestas leo. Nulla facilisi. Nam laoreet nisi id eros bibendum efficitur. Pellentesque ultrices justo vel metus pretium pretium. Integer vestibulum interdum metus at lobortis. Vivamus rhoncus varius eros, sit amet commodo ante venenatis sit amet. Donec eget sollicitudin tellus, sed finibus magnaLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla tincidunt massa id commodo. Vivamus quis mi nisl. Phasellus quis egestas leo. Nulla facilisi. Nam laoreet nisi id eros bibendum efficitur. Pellentesque ultrices justo vel metus pretium pretium. Integer vestibulum interdum metus at lobortis. Vivamus rhoncus varius eros, sit amet commodo ante venenatis sit amet. Donec eget sollicitudin tellus, sed finibus magna', status: 'In Estimation' }]
+  },
+  {
+    id: 6,
+    ticket_name: 'Kattulga',
+    last_name: 'Enkhtur',
+    email: 'Eample@gmail.com',
+    user_role: ['Approver', 'User'],
+    total_ticket: '-',
+    ticket: []
+  },
+  {
+    id: 7,
+    ticket_name: 'Mattulga',
+    last_name: 'Bnkhtur',
+    email: 'Sample@gmail.com',
+    user_role: ['User'],
+    total_ticket: '2',
+    ticket: [{ id: 1, name: 'Change color of primary button', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla tincidunt massa id commodo. Vivamus quis mi nisl. Phasellus quis egestas leo. Nulla facilisi. Nam laoreet nisi id eros bibendum efficitur. Pellentesque ultrices justo vel metus pretium pretium. Integer vestibulum interdum metus at lobortis. Vivamus rhoncus varius eros, sit amet commodo ante venenatis sit amet. Donec eget sollicitudin tellus, sed finibus magnaLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla tincidunt massa id commodo. Vivamus quis mi nisl. Phasellus quis egestas leo. Nulla facilisi. Nam laoreet nisi id eros bibendum efficitur. Pellentesque ultrices justo vel metus pretium pretium. Integer vestibulum interdum metus at lobortis. Vivamus rhoncus varius eros, sit amet commodo ante venenatis sit amet. Donec eget sollicitudin tellus, sed finibus magna', status: 'To Be Released' },
+    { id: 2, name: 'Change color of primary button', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla tincidunt massa id commodo. Vivamus quis mi nisl. Phasellus quis egestas leo. Nulla facilisi. Nam laoreet nisi id eros bibendum efficitur. Pellentesque ultrices justo vel metus pretium pretium. Integer vestibulum interdum metus at lobortis. Vivamus rhoncus varius eros, sit amet commodo ante venenatis sit amet. Donec eget sollicitudin tellus, sed finibus magnaLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla tincidunt massa id commodo. Vivamus quis mi nisl. Phasellus quis egestas leo. Nulla facilisi. Nam laoreet nisi id eros bibendum efficitur. Pellentesque ultrices justo vel metus pretium pretium. Integer vestibulum interdum metus at lobortis. Vivamus rhoncus varius eros, sit amet commodo ante venenatis sit amet. Donec eget sollicitudin tellus, sed finibus magna', status: 'In Progress' }]
+  },
+  {
+    id: 8,
+    ticket_name: 'Eattulga',
+    last_name: 'Mfvrrg',
+    email: 'Hample@gmail.com',
+    user_role: ['Admin'],
+    total_ticket: '2',
+    ticket: [{ id: 11, name: 'Change color of primary button', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla tincidunt massa id commodo. Vivamus quis mi nisl. Phasellus quis egestas leo. Nulla facilisi. Nam laoreet nisi id eros bibendum efficitur. Pellentesque ultrices justo vel metus pretium pretium. Integer vestibulum interdum metus at lobortis. Vivamus rhoncus varius eros, sit amet commodo ante venenatis sit amet. Donec eget sollicitudin tellus, sed finibus magnaLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla tincidunt massa id commodo. Vivamus quis mi nisl. Phasellus quis egestas leo. Nulla facilisi. Nam laoreet nisi id eros bibendum efficitur. Pellentesque ultrices justo vel metus pretium pretium. Integer vestibulum interdum metus at lobortis. Vivamus rhoncus varius eros, sit amet commodo ante venenatis sit amet. Donec eget sollicitudin tellus, sed finibus magna', status: 'To Be Released' },
+    { id: 12, name: 'Change color of primary button', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla tincidunt massa id commodo. Vivamus quis mi nisl. Phasellus quis egestas leo. Nulla facilisi. Nam laoreet nisi id eros bibendum efficitur. Pellentesque ultrices justo vel metus pretium pretium. Integer vestibulum interdum metus at lobortis. Vivamus rhoncus varius eros, sit amet commodo ante venenatis sit amet. Donec eget sollicitudin tellus, sed finibus magnaLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla tincidunt massa id commodo. Vivamus quis mi nisl. Phasellus quis egestas leo. Nulla facilisi. Nam laoreet nisi id eros bibendum efficitur. Pellentesque ultrices justo vel metus pretium pretium. Integer vestibulum interdum metus at lobortis. Vivamus rhoncus varius eros, sit amet commodo ante venenatis sit amet. Donec eget sollicitudin tellus, sed finibus magna', status: 'In Progress' }]
+  },
+  {
+    id: 9,
+    ticket_name: 'Rattulga',
+    last_name: 'Dnkhtur',
+    email: 'Gample@gmail.com',
+    user_role: ['User', 'Approver'],
+    total_ticket: '2',
+    ticket: [{ id: 111, name: 'Change color of primary button', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla tincidunt massa id commodo. Vivamus quis mi nisl. Phasellus quis egestas leo. Nulla facilisi. Nam laoreet nisi id eros bibendum efficitur. Pellentesque ultrices justo vel metus pretium pretium. Integer vestibulum interdum metus at lobortis. Vivamus rhoncus varius eros, sit amet commodo ante venenatis sit amet. Donec eget sollicitudin tellus, sed finibus magnaLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla tincidunt massa id commodo. Vivamus quis mi nisl. Phasellus quis egestas leo. Nulla facilisi. Nam laoreet nisi id eros bibendum efficitur. Pellentesque ultrices justo vel metus pretium pretium. Integer vestibulum interdum metus at lobortis. Vivamus rhoncus varius eros, sit amet commodo ante venenatis sit amet. Donec eget sollicitudin tellus, sed finibus magna', status: 'To Be Released' },
+    { id: 112, name: 'Change color of primary button', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla tincidunt massa id commodo. Vivamus quis mi nisl. Phasellus quis egestas leo. Nulla facilisi. Nam laoreet nisi id eros bibendum efficitur. Pellentesque ultrices justo vel metus pretium pretium. Integer vestibulum interdum metus at lobortis. Vivamus rhoncus varius eros, sit amet commodo ante venenatis sit amet. Donec eget sollicitudin tellus, sed finibus magnaLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla tincidunt massa id commodo. Vivamus quis mi nisl. Phasellus quis egestas leo. Nulla facilisi. Nam laoreet nisi id eros bibendum efficitur. Pellentesque ultrices justo vel metus pretium pretium. Integer vestibulum interdum metus at lobortis. Vivamus rhoncus varius eros, sit amet commodo ante venenatis sit amet. Donec eget sollicitudin tellus, sed finibus magna', status: 'In Progress' }]
+  },
+  {
+    id: 10,
+    ticket_name: 'Dattulga',
+    last_name: 'Cfdgvf',
+    email: 'Aample@gmail.com',
+    user_role: ['Moderator'],
+    total_ticket: '3',
+    ticket: [{ id: 21, name: 'Change color of primary button', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla tincidunt massa id commodo. Vivamus quis mi nisl. Phasellus quis egestas leo. Nulla facilisi. Nam laoreet nisi id eros bibendum efficitur. Pellentesque ultrices justo vel metus pretium pretium. Integer vestibulum interdum metus at lobortis. Vivamus rhoncus varius eros, sit amet commodo ante venenatis sit amet. Donec eget sollicitudin tellus, sed finibus magnaLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla tincidunt massa id commodo. Vivamus quis mi nisl. Phasellus quis egestas leo. Nulla facilisi. Nam laoreet nisi id eros bibendum efficitur. Pellentesque ultrices justo vel metus pretium pretium. Integer vestibulum interdum metus at lobortis. Vivamus rhoncus varius eros, sit amet commodo ante venenatis sit amet. Donec eget sollicitudin tellus, sed finibus magna', status: 'To Be Released' },
+    { id: 22, name: 'Change color of primary button', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla tincidunt massa id commodo. Vivamus quis mi nisl. Phasellus quis egestas leo. Nulla facilisi. Nam laoreet nisi id eros bibendum efficitur. Pellentesque ultrices justo vel metus pretium pretium. Integer vestibulum interdum metus at lobortis. Vivamus rhoncus varius eros, sit amet commodo ante venenatis sit amet. Donec eget sollicitudin tellus, sed finibus magnaLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla tincidunt massa id commodo. Vivamus quis mi nisl. Phasellus quis egestas leo. Nulla facilisi. Nam laoreet nisi id eros bibendum efficitur. Pellentesque ultrices justo vel metus pretium pretium. Integer vestibulum interdum metus at lobortis. Vivamus rhoncus varius eros, sit amet commodo ante venenatis sit amet. Donec eget sollicitudin tellus, sed finibus magna', status: 'In Progress' },
+    { id: 23, name: 'Change color of primary button', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla tincidunt massa id commodo. Vivamus quis mi nisl. Phasellus quis egestas leo. Nulla facilisi. Nam laoreet nisi id eros bibendum efficitur. Pellentesque ultrices justo vel metus pretium pretium. Integer vestibulum interdum metus at lobortis. Vivamus rhoncus varius eros, sit amet commodo ante venenatis sit amet. Donec eget sollicitudin tellus, sed finibus magnaLorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla tincidunt massa id commodo. Vivamus quis mi nisl. Phasellus quis egestas leo. Nulla facilisi. Nam laoreet nisi id eros bibendum efficitur. Pellentesque ultrices justo vel metus pretium pretium. Integer vestibulum interdum metus at lobortis. Vivamus rhoncus varius eros, sit amet commodo ante venenatis sit amet. Donec eget sollicitudin tellus, sed finibus magna', status: 'In Estimation' }]
+  },
+  ]
+}
+
 // Settings page
 
 export const currentUser = {

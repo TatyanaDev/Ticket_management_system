@@ -1,0 +1,85 @@
+.title {
+  font-family: "Poppins-Regular";
+  line-height: 36px;
+  font-weight: 600;
+  color: #464255;
+  font-size: 24px;
+}
+
+.subtitle {
+  font-weight: normal;
+  line-height: 24px;
+  font-size: 16px;
+}
+
+.label {
+  font-family: "Poppins-Bold";
+  font-weight: bold;
+  line-height: 24px;
+  color: #1c1c28;
+  font-size: 16px;
+}
+
+.select,
+.input {
+  height: 3.1875rem;
+}
+
+.select:focus,
+.input:focus {
+  box-shadow: none;
+}
+
+.select {
+  cursor: pointer;
+}
+
+.text {
+  font-family: "Poppins-Regular";
+  font-weight: normal;
+  line-height: 18px;
+  color: #1c1c28;
+  font-size: 12px;
+}
+
+.input::placeholder,
+.select {
+  font-family: "Poppins-Regular";
+  font-weight: normal;
+  line-height: 21px;
+  color: #ced4da;
+  font-size: 14px;
+}
+
+.select > option:first-child {
+  color: #ced4da;
+}
+
+.select > option,
+.select.selected {
+  color: #1c1c28;
+}
+
+.button_outline,
+.button_primary {
+  border-color: var(--primary-color);
+  font-family: "Poppins-Bold";
+  line-height: 30px;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 17px;
+}
+
+.button_outline {
+  color: var(--primary-color);
+}
+
+.button_primary {
+  background-color: var(--primary-color);
+  color: var(--bs-white);
+}
+
+.button_outline:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}

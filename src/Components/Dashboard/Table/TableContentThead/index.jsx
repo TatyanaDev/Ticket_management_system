@@ -1,5 +1,5 @@
 import { sortByNumbers, sortAlphabetically, sortByDate } from "../../../../utils/helpersFunction";
-import TheadItem from "../TableContentThead/TheadItem";
+import TheadItem from "../../../Shared/TheadItem";
 import style from "./styles.module.css";
 
 export default function TableContentThead({ data, currentFilter, setCurrentFilter, flag, setFlag }) {
