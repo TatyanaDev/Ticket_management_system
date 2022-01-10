@@ -1,6 +1,6 @@
 import { sortByNumbers, sortAlphabetically, sortByDate, sortByPriority, sortByStatus } from "../../../../../utils/helpersFunction";
 import style from "../../../../TicketList/styles.module.css";
-import TheadItem from "../../TheadItem";
+import TheadItem from "../../../../Shared/TheadItem"
 
 export default function TableContentThead({ data, currentFilter, setCurrentFilter, flag, setFlag }) {
   return (

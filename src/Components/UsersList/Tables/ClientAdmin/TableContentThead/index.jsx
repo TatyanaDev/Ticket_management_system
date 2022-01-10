@@ -1,6 +1,6 @@
 import { sortAlphabetically, sortByUserRole } from "../../../../../utils/helpersFunction";
-import style from "../../styles.module.css";
-import TheadItem from "../../TheadItem";
+import TheadItem from "../../../../Shared/TheadItem";
+import style from "../../../styles.module.css";
 
 export default function TableContentThead({ data, currentFilter, setCurrentFilter, flag, setFlag }) {
   return (
