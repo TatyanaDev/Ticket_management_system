@@ -1,7 +1,7 @@
 import { Table } from "react-bootstrap";
 import { useState } from "react";
 import TableContentThead from "./TableContentThead";
-import style from "./styles.module.css";
+import style from "../../styles.module.css";
 import TableRow from "./TableRow";
 
 export default function ClientAdmin({ usersList}) {

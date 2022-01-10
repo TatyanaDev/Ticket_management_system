@@ -12,22 +12,8 @@
   font-size: 20px;
 }
 
-.wrapper_column_name {
-  padding: 16px 13px 16px 16px !important;
-  vertical-align: middle;
-  height: 56px;
-}
-
 .open {
   transform: rotate(180deg);
-}
-
-.wrap_icon {
-  margin-right: 15px;
-  cursor: pointer;
-  max-width: 14px;
-  text-align: end;
-  padding: 0;
 }
 
 .background {
@@ -85,10 +71,6 @@
 .button:focus,
 .button:active {
   box-shadow: none !important;
-}
-
-.arrow_thead_active {
-  transform: rotate(180deg);
 }
 
 .table_content {
