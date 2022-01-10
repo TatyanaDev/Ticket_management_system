@@ -1,0 +1,9 @@
+.title {
+  color: var(--gray-800-color);
+  font-family: "Poppins-Bold";
+  line-height: 24px;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0;
+  margin-bottom: 16px;
+}
