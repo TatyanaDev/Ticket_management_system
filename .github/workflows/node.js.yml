@@ -26,6 +26,5 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: npm install -g npm
     - run: npm install
-    - run: npm react-scripts build
+    - run: npm run react-scripts build
