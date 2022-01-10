@@ -1,10 +1,9 @@
 import { Table } from "react-bootstrap";
 import { useState } from "react";
-import DropdownTableRow from "../../../Shared/DropdownTableRow";
 import TableContentThead from "./TableContentThead";
-import OpenTableRow from "./OpenTableRow";
-import style from "./styles.module.css";
-import TableRow from "./TableRow";
+import TableRow from "./DropdownTableRow/TableRow";
+import DropdownTableRow from "./DropdownTableRow";
+import style from "../../styles.module.css";
 
 export default function Moderator({ usersList }) {
   const [currentFilter, setCurrentFilter] = useState(null);
@@ -16,9 +15,7 @@ export default function Moderator({ usersList }) {
       <tbody>
         {usersList.map((user) =>
           user.ticket.length ? (
-            <DropdownTableRow key={user.id} tableRow={<TableRow user={user} />}>
-              <OpenTableRow tickets={user.ticket} />
-            </DropdownTableRow>
+            <DropdownTableRow key={user.id} user={user} />
           ) : (
             <tr key={user.id} className={style.table_row}>
               <TableRow user={user} />
