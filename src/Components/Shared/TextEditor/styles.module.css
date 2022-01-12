@@ -1,0 +1,96 @@
+.wrapper {
+  background-color: var(--bs-white);
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.toolbar {
+  box-shadow: inset 0 -1px 0 #dfdfdf;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 1rem 1.5rem;
+  display: flex;
+}
+
+.editor {
+  min-height: 8.75rem;
+  resize: vertical;
+  color: #6c757d;
+  padding: 0 1rem;
+}
+
+.editor::placeholder,
+.editor {
+  font-family: "Poppins-Regular";
+  font-size: 0.875rem;
+  line-height: 171%;
+  font-weight: 400;
+}
+
+.editor::placeholder {
+  color: #dee2e6;
+}
+
+.toolbar_inline,
+.toolbar_list {
+  display: flex;
+  gap: 1.25rem;
+  margin: 0;
+}
+
+.toolbar_inline > div,
+.toolbar_list > div {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toolbar_inline > div {
+  height: 24px;
+  width: 24px;
+}
+
+.toolbar_list > div {
+  height: 24px;
+  width: 38px;
+}
+
+.toolbar_inline > div:last-child {
+  margin-right: 2.5rem;
+}
+
+.ordered_icon {
+  background-image: url("/src/icons/modal_ticket_create/text_editor/orderedList.svg");
+  background-repeat: no-repeat;
+}
+
+.unordered_icon {
+  background-image: url("/src/icons/modal_ticket_create/text_editor/unorderedList.svg");
+  background-repeat: no-repeat;
+}
+
+.bold_icon {
+  background-image: url("/src/icons/modal_ticket_create/text_editor/bold.svg");
+}
+
+.italic_icon {
+  background-image: url("/src/icons/modal_ticket_create/text_editor/italic.svg");
+}
+
+.underline_icon {
+  background-image: url("/src/icons/modal_ticket_create/text_editor/underline.svg");
+}
+
+.strikethrough_icon {
+  background-image: url("/src/icons/modal_ticket_create/text_editor/strikeThrough.svg");
+}
+
+.limit {
+  font-family: "Poppins-Regular";
+  font-weight: normal;
+  text-align: right;
+  line-height: 18px;
+  color: #1c1c28;
+  font-size: 12px;
+}
