@@ -1,0 +1,107 @@
+.label {
+  font-family: "Poppins-Bold";
+  font-weight: bold;
+  line-height: 24px;
+  color: #1c1c28;
+  font-size: 16px;
+}
+
+.priority {
+  font-family: "Poppins-Regular";
+  justify-content: space-between;
+  margin: 0 0 -0.35rem;
+  font-weight: normal;
+  line-height: 24px;
+  color: #6c757d;
+  font-size: 16px;
+  padding: 0;
+}
+
+.scale {
+  justify-content: space-between;
+  font-family: "Poppins-Regular";
+  line-height: 18px;
+  color: #bbbbbb;
+  font-weight: 500;
+  font-size: 12px;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper_range {
+  background: url("/src/icons/modal_ticket_create/track.svg") no-repeat center;
+  position: relative;
+  padding: 0;
+  margin: 0;
+}
+
+.range_input[type="range"] {
+  background-color: transparent;
+  appearance: none;
+  z-index: 10;
+}
+
+.range_input[type="range"]::-webkit-slider-runnable-track,
+.range_input[type="range"]:focus::-webkit-slider-runnable-track {
+  background-color: transparent;
+  height: 0.25rem;
+}
+
+.range_input[type="range"]:focus::-ms-fill-lower,
+.range_input[type="range"]:focus::-ms-fill-upper,
+.range_input[type="range"]::-ms-fill-lower,
+.range_input[type="range"]::-ms-fill-upper {
+  background-color: transparent;
+  height: 0.25rem;
+}
+
+.range_input[type="range"]::-moz-range-track,
+.range_input[type="range"]::-ms-track {
+  background-color: transparent;
+  height: 0.25rem;
+}
+
+.range_input[type="range"]::-webkit-slider-thumb {
+  background-color: var(--primary-color);
+  -webkit-appearance: none;
+  height: 0.75rem;
+  width: 0.75rem;
+}
+
+.range_input[type="range"]::-moz-range-thumb {
+  background-color: var(--primary-color);
+  appearance: none;
+  height: 0.75rem;
+  width: 0.75rem;
+}
+
+.range_input[type="range"]::-ms-thumb {
+  background-color: var(--primary-color);
+  height: 0.8125rem;
+  width: 0.8125rem;
+  appearance: none;
+}
+
+.range_input[type="range"]:focus::-webkit-slider-thumb {
+  box-shadow: none;
+}
+
+.range_value {
+  background-color: var(--bs-gray-300);
+  font-family: "Roboto-Medium";
+  border-radius: 2px;
+  padding: 10px 13px;
+  line-height: 16px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.color {
+  background-color: var(--primary-color);
+  transform: translateY(-50%);
+  border-radius: 0.125rem;
+  position: absolute;
+  height: 0.25rem;
+  top: 50%;
+}
