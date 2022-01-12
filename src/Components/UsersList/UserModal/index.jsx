@@ -54,7 +54,7 @@ export default function UserModal({ show, handleClose, title, userRole = "", use
                   Cancel
                 </Button>
                 <Button variant='primary' type='submit' className={cn("w-100 text-uppercase", style.button_primary)}>
-                  Invite
+                  Edit
                 </Button>
               </Col>
             </Form>

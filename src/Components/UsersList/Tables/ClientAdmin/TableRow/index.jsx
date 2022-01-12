@@ -24,7 +24,7 @@ export default function TableRow({ user }) {
         </DropdownButton>
       </td>
       <td className='text-center p-3 text-nowrap'>
-        <Icon icon='bx:bx-edit' onClick={() => setEdit(true)} />
+        <Icon icon='bx:bx-edit' onClick={() => setEdit(true)} className={style.edit_icon} />
         <UserModal handleClose={() => setEdit(false)} show={edit} title='Edit User' userEmail={user.email} userRole={user.user_role[0]} userFirstName={user.first_name} userLastName={user.last_name} />
       </td>
       <td>
