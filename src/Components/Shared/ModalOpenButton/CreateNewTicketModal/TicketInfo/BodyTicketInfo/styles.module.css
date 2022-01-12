@@ -1,0 +1,24 @@
+.label {
+  font-family: "Poppins-Bold";
+  line-height: 24px;
+  font-weight: bold;
+  color: #1c1c28;
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+.description {
+  font-family: "Poppins-Regular";
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  font-size: 16px;
+}
+
+.bold {
+  font-family: "Poppins-Bold";
+  margin-right: 4px;
+  line-height: 24px;
+  font-weight: bold;
+  font-size: 16px;
+}
