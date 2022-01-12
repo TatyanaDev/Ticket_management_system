@@ -1,7 +1,7 @@
 import { Container, Row, Col, Image, Card } from "react-bootstrap";
 import cn from "classnames";
 import style from "./styles.module.css";
-import logo from "../../icon/Logo.svg";
+import logo from "../../icons/Logo.svg";
 
 export default function BackgroundOfForms({ form, padding }) {
   return (

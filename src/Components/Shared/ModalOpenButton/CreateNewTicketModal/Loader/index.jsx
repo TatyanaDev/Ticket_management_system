@@ -3,7 +3,7 @@ import { Icon } from "@iconify/react/dist/iconify";
 import React, { useState } from "react";
 import Dropzone from "react-dropzone";
 import cn from "classnames";
-import uploadIcon from "../../../../../icon/Upload.svg";
+import uploadIcon from "../../../../../icons/Upload.svg";
 import style from "./styles.module.css";
 
 export default function Loader() {
