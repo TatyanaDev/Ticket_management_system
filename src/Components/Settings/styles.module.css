@@ -7,3 +7,35 @@
   margin: 0;
   margin-bottom: 16px;
 }
+
+.background {
+  background-color: var(--bs-white);
+  padding: 6px 47px 6px 20px;
+  margin: 0;
+}
+
+.button {
+  font-family: "Poppins-Regular";
+  color: var(--gray-800-color);
+  text-decoration: none;
+  font-weight: normal;
+  padding-right: 20px;
+  font-style: normal;
+  line-height: 21px;
+  font-size: 14px;
+  padding-left: 0;
+}
+
+.button:hover {
+  color: var(--primary-color);
+}
+
+.button:focus,
+.button:active {
+  box-shadow: none;
+}
+
+.icon_btn {
+  margin-right: 8px;
+  font-size: 18px;
+}
