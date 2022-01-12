@@ -1,0 +1,23 @@
+.header {
+  align-items: flex-start;
+  margin-bottom: 52px;
+  border-bottom: none;
+  padding: 0;
+}
+
+.title {
+  font-family: "Poppins-Regular";
+  line-height: 36px;
+  color: #464255;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.description {
+  font-weight: normal;
+  font-weight: normal;
+  line-height: 24px;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
