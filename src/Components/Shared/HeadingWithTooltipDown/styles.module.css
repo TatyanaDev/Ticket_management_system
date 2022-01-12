@@ -1,0 +1,9 @@
+.wrapper:hover,
+.wrapper {
+  background: none;
+  border: none;
+}
+.wrapper > svg {
+  color: var(--bs-gray);
+  font-size: 16px;
+}
