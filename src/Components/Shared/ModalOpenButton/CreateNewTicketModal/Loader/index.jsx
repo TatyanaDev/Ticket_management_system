@@ -10,9 +10,9 @@ export default function Loader() {
   const [files, setFiles] = useState([]);
   const handleDrop = (acceptedFiles) => setFiles(acceptedFiles.map((file) => ({ fileName: file.name, fileSize: `${Math.trunc(file.size / 1000)}KB` })));
   const removeFile = ({ target }) => setFiles(files.filter((file) => file.fileName !== target.id));
-  
+
   return (
-    <Form style={{ maxWidth: 531 }} method='post' encType='multipart/form-data' action=''>
+    <Container>
       <Dropzone onDrop={handleDrop} accept='.pdf'>
         {({ getRootProps, getInputProps }) => (
           <Container {...getRootProps({ className: style.dropzone })}>
@@ -47,6 +47,6 @@ export default function Loader() {
           </Col>
         ))}
       </Row>
-    </Form>
+    </Container>
   );
 }
