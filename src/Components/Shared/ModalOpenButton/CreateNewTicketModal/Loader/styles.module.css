@@ -1,0 +1,111 @@
+.dropzone {
+  border: 2px dashed var(--bs-gray-400);
+  padding: 28px 20px 27px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  text-align: center;
+  min-height: 185px;
+  max-width: 419px;
+}
+
+.add_file {
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 17px;
+}
+
+.button_add_file {
+  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--bs-gray-400);
+  font-family: "Lato-Regular";
+  background-color: inherit;
+  font-weight: normal;
+  border-radius: 4px;
+  line-height: 20px;
+  padding: 8px 16px;
+  color: #202223;
+  font-size: 14px;
+}
+
+.button_add_file:hover,
+.button_add_file:focus {
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+}
+
+.label {
+  font-family: "Lato-Regular";
+  font-weight: normal;
+  line-height: 20px;
+  color: #6d7175;
+  font-size: 14px;
+}
+
+.container_file {
+  border: 2px dashed var(--bs-gray-400);
+  max-width: fit-content;
+  min-width: fit-content;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  margin-right: 10px;
+  padding: 5px 10px;
+  overflow: hidden;
+}
+
+.container_file:last-of-type {
+  margin-right: 0px;
+}
+
+.wrapper_file_name {
+  margin-left: 5px;
+  max-height: 40px;
+  max-width: 40px;
+  padding: 0;
+}
+
+.wrapper_file_name + div {
+  max-width: 360px;
+  overflow: auto;
+}
+
+.wrapper_file_name + div::-webkit-scrollbar {
+  height: 5px;
+}
+
+.wrapper_file_name + div::-webkit-scrollbar-thumb {
+  background-color: var(--bs-gray-400);
+  border-radius: 10px;
+}
+
+.file_name {
+  font-family: "Poppins-Regular";
+  display: inline-block;
+  white-space: nowrap;
+  font-weight: bold;
+  line-height: 20px;
+  color: #000000;
+  overflow: hidden;
+  font-size: 14px;
+  height: 20px;
+}
+
+.button_remove_file {
+  vertical-align: middle;
+  display: inline-block;
+  margin-right: 5px;
+  margin-left: 5px;
+  max-height: 20px;
+  max-width: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.file_size {
+  font-family: "Poppins-Regular";
+  font-weight: normal;
+  line-height: 20px;
+  color: #000000;
+  font-size: 12px;
+}
