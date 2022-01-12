@@ -1,9 +1,8 @@
-import { Container, Row, Col, Image } from "react-bootstrap";
+import { Container, Row, Col} from "react-bootstrap";
 import { Icon } from "@iconify/react/dist/iconify";
 import { Link } from "react-router-dom";
 import cn from "classnames";
 import DefaultAvatar from "../../../../Components/Shared/FullNameAvatar/DefaultAvatar";
-import bug from "../../../../icons/shared/bug.svg";
 import style from "./styles.module.css";
 
 export default function RecentActivityItems({ ticket }) {
@@ -16,7 +15,7 @@ export default function RecentActivityItems({ ticket }) {
           </Col>
         ) : (
           <Col className={style.icon_recent_activity_ticket}>
-            <Image src={bug} />
+            <Icon icon='carbon:warning-filled' style={{ fontSize: 40, color: "var(--bs-red)" }} />
           </Col>
         )}
         <Col>

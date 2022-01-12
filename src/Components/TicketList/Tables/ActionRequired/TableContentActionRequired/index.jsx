@@ -1,9 +1,8 @@
-import { Col, Image, Row } from "react-bootstrap";
+import { Icon } from "@iconify/react/dist/iconify";
+import { Col, Row } from "react-bootstrap";
 import FullNameAvatar from "../../../../../Components/Shared/FullNameAvatar";
 import { styleSelection } from "../../../../../utils/helpersFunction";
 import TableContentContainer from "../../TableContentContainer";
-import task from "../../../../../icons/ticketList/task.svg";
-import bug from "../../../../../icons/ticketList/bug.svg";
 import style from "../../../styles.module.css";
 import OpenTableRow from "../../OpenTableRow";
 
@@ -12,9 +11,7 @@ export default function TableContentActionRequired({ ticket }) {
     <TableContentContainer
       tableContent={
         <>
-          <td className={style.wrapper_tbody_item}>
-            <Image src={ticket.type === "bug" ? bug : task} />
-          </td>
+          <td className={style.wrapper_tbody_item}>{ticket.type === "bug" ? <Icon icon='carbon:warning-filled' style={{ fontSize: 24, color: "var(--bs-red)" }} /> : <Icon icon='bi:question-circle-fill' style={{ fontSize: 24, color: "var(--gray-800-color)" }} />}</td>
 
           <td className={style.wrapper_tbody_item} style={{ color: "#1c1c28" }}>
             {ticket.ticket_id}

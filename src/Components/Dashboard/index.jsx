@@ -10,9 +10,6 @@ import { ticketSummary, ticketHistory, recentActivity } from "../../utils/mokeDB
 import RecentActivityBlock from "../../Components/Dashboard/RecentActivityBlock";
 import ModalOpenButton from "../../Components/Shared/ModalOpenButton";
 import SummaryCard from "../../Components/Dashboard/SummaryCard";
-import progress from "../../icons/dashboard/progress.svg";
-import check from "../../icons/dashboard/check.svg";
-import info from "../../icons/dashboard/info.svg";
 import style from "./styles.module.css";
 
 export default function DashboardLayout() {
@@ -37,12 +34,12 @@ export default function DashboardLayout() {
 
           <Row>
             <Col>
-              <SummaryCard header='Action Required' quantity={summary.action_required} color={style.info} color_link={style.link_info} src={info} />
+              <SummaryCard header='Action Required' quantity={summary.action_required} color={style.info} color_link={style.link_info} icon='entypo:info-with-circle' />
             </Col>
 
-            <SummaryCard header='Tickets In Progress' quantity={summary.tickets_in_progress} color={style.progress} color_link={style.link_progress} src={progress} />
+            <SummaryCard header='Tickets In Progress' quantity={summary.tickets_in_progress} color={style.progress} color_link={style.link_progress} icon='carbon:in-progress' />
 
-            <SummaryCard header='To be Released' quantity={summary.to_be_released} color={style.check} color_link={style.link_check} src={check} />
+            <SummaryCard header='To be Released' quantity={summary.to_be_released} color={style.check} color_link={style.link_check} icon='bx:bx-check-circle' />
           </Row>
 
           <Row>

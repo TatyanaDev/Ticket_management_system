@@ -22,23 +22,10 @@
   padding: 16px;
 }
 
-.wrapper_heading_summary {
-  margin-bottom: 4px;
-}
-
-.wrapper_info_summary {
-  min-height: 76px;
-}
-
 .quantity_summary {
   font-family: "Poppins-Medium";
   font-style: normal;
   line-height: 72px;
   font-weight: 500;
   font-size: 48px;
-}
-
-.wrapper_image_summary {
-  padding-top: 13px;
-  text-align: end;
 }

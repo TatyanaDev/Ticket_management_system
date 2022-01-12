@@ -1,7 +1,7 @@
-import { Badge, Col, Row, Image } from "react-bootstrap";
+import { Badge, Col, Row } from "react-bootstrap";
+import { Icon } from "@iconify/react/dist/iconify";
 import cn from "classnames";
 import DefaultAvatar from "../../Shared/FullNameAvatar/DefaultAvatar";
-import bug from "../../../icons/shared/bug.svg";
 import style from "./styles.module.css";
 
 export default function ActivityCard({ activity }) {
@@ -14,7 +14,7 @@ export default function ActivityCard({ activity }) {
           </Col>
         ) : (
           <Col xs='auto'>
-            <Image src={bug} />
+            <Icon icon='carbon:warning-filled' style={{ fontSize: 40, color: "var(--bs-red)" }} />
           </Col>
         )}
         <Col className='ps-0'>

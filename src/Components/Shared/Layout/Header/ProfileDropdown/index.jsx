@@ -1,7 +1,7 @@
 import { Container, Row, NavDropdown, Nav } from "react-bootstrap";
 import { Icon } from "@iconify/react/dist/iconify";
-import FullNameAvatar from "../../../../../Components/Shared/FullNameAvatar";
 import cn from "classnames";
+import FullNameAvatar from "../../../../../Components/Shared/FullNameAvatar";
 import { text } from "../styles.module.css";
 import style from "./styles.module.css";
 

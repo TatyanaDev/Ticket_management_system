@@ -1,19 +1,20 @@
-import { Row, Col, Image } from "react-bootstrap";
+import { Icon } from "@iconify/react/dist/iconify";
+import { Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import cn from "classnames";
 import style from "./styles.module.css";
 
-export default function SummaryCard({ header, quantity, color, color_link, src }) {
+export default function SummaryCard({ header, quantity, color, color_link, icon }) {
   return (
     <Col className={style.wrapper_summary}>
       <Link className={cn(style.link_summary, color_link)} to='/ticket_list'>
-        <Row className={style.wrapper_heading_summary}>
+        <Row style={{ marginBottom: 4 }}>
           <Col>{header}</Col>
         </Row>
-        <Row className={style.wrapper_info_summary}>
+        <Row style={{ minHeight: 76 }}>
           <Col className={cn(style.quantity_summary, color)}>{quantity}</Col>
-          <Col className={style.wrapper_image_summary}>
-            <Image src={src} />
+          <Col style={{ paddingTop: 13, textAlign: "end" }}>
+            <Icon icon={icon} className={color} style={{ fontSize: 46 }} />
           </Col>
         </Row>
       </Link>

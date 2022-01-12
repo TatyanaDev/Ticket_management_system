@@ -1,8 +1,8 @@
 import { Col, Navbar, Row, Image } from "react-bootstrap";
 import { Icon } from "@iconify/react/dist/iconify";
 import { useLocation } from "react-router-dom";
-import logo from "../../../../icons/shared/Logo.svg";
 import ProfileDropdown from "./ProfileDropdown";
+import logo from "../../../../icon/Logo.svg";
 import style from "./styles.module.css";
 
 export default function Header({ userName }) {
