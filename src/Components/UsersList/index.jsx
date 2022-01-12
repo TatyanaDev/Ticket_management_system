@@ -16,7 +16,7 @@ export default function UsersListLayout({ role = "" }) {
 
   return (
     <Col className='p-0' style={{ backgroundColor: "#f8f9fa" }}>
-      <SearchBar setTicketsList={setTicketsList} data={ticketList}>
+      <SearchBar setTicketsList={setTicketsList} data={data}>
         <Button variant='primary' className={style.button_add_user} onClick={() => setShow(true)}>
           <Icon icon='akar-icons:plus' className='fs-6 me-2' style={{ verticalAlign: "top" }} />
           Add User
@@ -24,7 +24,7 @@ export default function UsersListLayout({ role = "" }) {
         <UserModal handleClose={() => setShow(false)} show={show} title='Add New User' />
       </SearchBar>
       <Container fluid style={{ padding: "16px 47px" }}>
-        {role === "moderator" ? <Moderator usersList={ticketList} /> : <ClientAdmin usersList={data.filter((userItem) => userItem.user_role[0] === "User" || userItem.user_role[0] === "Approver")} />}
+        {role === "moderator" ? <Moderator usersList={ticketList} /> : <ClientAdmin usersList={ticketList.filter((userItem) => userItem.user_role[0] === "User" || userItem.user_role[0] === "Approver")} />}
       </Container>
     </Col>
   );
