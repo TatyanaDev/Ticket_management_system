@@ -1,0 +1,8 @@
+.container > div {
+  max-width: 531px;
+}
+
+.container > div > div {
+  padding: 32px 56px 40px;
+  min-height: 968px;
+}

@@ -13,7 +13,7 @@ export default function ModalOpenButton({ content, styleButton, styleIcon }) {
         {content}
       </Button>
 
-      <CreateNewTicketModal show={modalShow} onHide={() => setModalShow(false)} />
+      <CreateNewTicketModal show={modalShow} handleClose={() => setModalShow(false)} />
     </>
   );
 }
