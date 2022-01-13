@@ -2,7 +2,7 @@ import { Col, Form, Modal, Stack } from "react-bootstrap";
 import HeadingWithTooltipDown from "../../../../HeadingWithTooltipDown";
 import TextEditor from "../../../../TextEditor";
 import style from "../styles.module.css";
-import Loader from "../../Loader";
+import Loader from "../Loader";
 import Steps from "../../Steps";
 
 export default function Bug({ activeStep }) {

@@ -1,6 +1,6 @@
 import { Col, Form, Modal, Stack } from "react-bootstrap";
 import HeadingWithTooltipDown from "../../../../HeadingWithTooltipDown";
-import PriorityRange from "../../PriorityRange";
+import PriorityRange from "./PriorityRange";
 import FormikSelect from "./FormikSelect";
 import FormikInput from "./FormikInput";
 import style from "./styles.module.css";
