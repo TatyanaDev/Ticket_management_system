@@ -5,7 +5,7 @@ import style from "../styles.module.css";
 import Loader from "../Loader";
 import Steps from "../../Steps";
 
-export default function Task({ activeStep }) {
+export default function Task({ activeStep, files, setFiles }) {
   return (
     <Modal.Body className='p-0' style={{ marginBottom: 42 }}>
       <Steps activeStep={activeStep} />
@@ -24,7 +24,7 @@ export default function Task({ activeStep }) {
           <Form.Control type='text' placeholder='Please provide link to the source file if any.' className={style.input} />
         </Form.Group>
 
-        <Loader />
+        <Loader files={files} setFiles={setFiles} />
       </Stack>
     </Modal.Body>
   );

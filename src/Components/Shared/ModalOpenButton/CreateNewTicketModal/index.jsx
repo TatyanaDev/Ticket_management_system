@@ -26,6 +26,7 @@ export default function CreateNewTicketModal({ handleClose, show }) {
   const [priority, setPriority] = useState(1);
   const [outcome, setOutcome] = useState("");
   const [issue, setIssue] = useState("");
+  const [files, setFiles] = useState([]);
 
   const resetFilledData = () => {
     setAdditionalRequirements("");
@@ -38,6 +39,7 @@ export default function CreateNewTicketModal({ handleClose, show }) {
     setPriority(1);
     setOutcome("");
     setIssue("");
+    setFiles([]);
   };
 
   const handleOnClickClose = () => {
@@ -73,6 +75,7 @@ export default function CreateNewTicketModal({ handleClose, show }) {
       additionalRequirements,
       stepsReproduce,
       testingEnvironment,
+      files,
     });
     setActiveStep(activeStep + 1);
   };
@@ -84,7 +87,7 @@ export default function CreateNewTicketModal({ handleClose, show }) {
       case steps.decr:
         return <TicketDescription activeStep={activeStep} ticketType={ticketType} ticketDescription={ticketDescription} setTicketDescription={setTicketDescription} userStory={userStory} setUserStory={setUserStory} issue={issue} setIssue={setIssue} outcome={outcome} setOutcome={setOutcome} onNext={handleOnClickNext} onBack={() => setActiveStep(activeStep - 1)} />;
       case steps.outcome:
-        return <TicketOutcome ticketType={ticketType} activeStep={activeStep} outcome={outcome} setOutcome={setOutcome} resources={resources} setResources={setResources} additionalRequirements={additionalRequirements} setAdditionalRequirements={setAdditionalRequirements} stepsReproduce={stepsReproduce} setStepsReproduce={setStepsReproduce} testingEnvironment={testingEnvironment} setTestingEnvironment={setTestingEnvironment} onBack={() => setActiveStep(activeStep - 1)} onCreate={handleOnClickCreate} />;
+        return <TicketOutcome ticketType={ticketType} activeStep={activeStep} outcome={outcome} setOutcome={setOutcome} resources={resources} setResources={setResources} additionalRequirements={additionalRequirements} setAdditionalRequirements={setAdditionalRequirements} stepsReproduce={stepsReproduce} setStepsReproduce={setStepsReproduce} testingEnvironment={testingEnvironment} setTestingEnvironment={setTestingEnvironment} onBack={() => setActiveStep(activeStep - 1)} onCreate={handleOnClickCreate} files={files} setFiles={setFiles} />;
       case steps.submit:
         return <TicketSubmitted handleOnClickClose={handleOnClickClose} />;
       default:

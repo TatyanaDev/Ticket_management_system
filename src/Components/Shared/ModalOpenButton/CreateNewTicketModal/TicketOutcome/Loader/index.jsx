@@ -1,13 +1,11 @@
 import { Row, Col, Form, Button, Container, Image } from "react-bootstrap";
 import { Icon } from "@iconify/react/dist/iconify";
-import React, { useState } from "react";
 import Dropzone from "react-dropzone";
 import cn from "classnames";
 import uploadIcon from "../../../../../../icons/Upload.svg";
 import style from "./styles.module.css";
 
-export default function Loader() {
-  const [files, setFiles] = useState([]);
+export default function Loader({ files, setFiles }) {
   const handleDrop = (acceptedFiles) => setFiles(acceptedFiles.map((file) => ({ fileName: file.name, fileSize: `${Math.trunc(file.size / 1000)}KB` })));
   const removeFile = ({ target }) => setFiles(files.filter((file) => file.fileName !== target.id));
 
