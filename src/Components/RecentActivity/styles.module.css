@@ -1,5 +1,5 @@
 .wrapper_tickets_blocks {
-  background-color: var(--light-color);
+  background-color: var(--bs-gray-100);
   padding: 24px 47px 50px 47px;
 }
 
