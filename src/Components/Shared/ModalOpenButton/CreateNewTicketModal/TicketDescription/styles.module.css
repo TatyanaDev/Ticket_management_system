@@ -1,0 +1,42 @@
+.label {
+  font-family: "Poppins-Bold";
+  margin-bottom: 8px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #1c1c28;
+  font-size: 16px;
+}
+
+.textarea {
+  color: var(--bs-gray-600);
+  height: 126px !important;
+  margin-bottom: 4px;
+  resize: none;
+}
+
+.textarea::placeholder,
+.textarea {
+  font-family: "Poppins-Regular";
+  font-weight: normal;
+  line-height: 171%;
+  font-size: 14px;
+}
+
+.textarea::placeholder {
+  color: var(--bs-gray-300);
+}
+
+.textarea:focus {
+  border-color: var(--bs-gray-400);
+  color: var(--bs-gray-600);
+  box-shadow: none;
+}
+
+.limit {
+  font-family: "Poppins-Regular";
+  font-weight: normal;
+  text-align: right;
+  line-height: 18px;
+  color: #1c1c28;
+  font-size: 12px;
+}
