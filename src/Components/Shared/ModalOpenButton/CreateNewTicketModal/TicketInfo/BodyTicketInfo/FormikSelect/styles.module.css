@@ -1,0 +1,22 @@
+.select {
+  font-family: "Poppins-Regular";
+  font-weight: normal;
+  margin-bottom: 8px;
+  line-height: 24px;
+  color: #ced4da;
+  font-size: 14px;
+  cursor: pointer;
+  height: 51px;
+}
+.select > option:first-child {
+  color: #ced4da;
+}
+
+.select > option,
+.select.selected {
+  color: #1c1c28;
+}
+
+.select:focus {
+  box-shadow: none;
+}

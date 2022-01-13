@@ -1,0 +1,33 @@
+.label {
+  font-family: "Poppins-Bold";
+  line-height: 24px;
+  font-weight: bold;
+  color: #1c1c28;
+  font-size: 16px;
+}
+
+.input {
+  margin-bottom: 4px;
+  min-height: 51px;
+}
+
+.input:focus {
+  box-shadow: none;
+}
+
+.input::placeholder {
+  font-family: "Poppins-Regular";
+  font-weight: normal;
+  line-height: 21px;
+  color: #ced4da;
+  font-size: 14px;
+}
+
+.limit {
+  font-family: "Poppins-Regular";
+  font-weight: normal;
+  line-height: 18px;
+  text-align: right;
+  color: #1c1c28;
+  font-size: 12px;
+}
