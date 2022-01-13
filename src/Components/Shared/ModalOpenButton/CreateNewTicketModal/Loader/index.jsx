@@ -12,7 +12,7 @@ export default function Loader() {
   const removeFile = ({ target }) => setFiles(files.filter((file) => file.fileName !== target.id));
 
   return (
-    <Container>
+    <Container className='p-0'>
       <Dropzone onDrop={handleDrop} accept='.pdf'>
         {({ getRootProps, getInputProps }) => (
           <Container {...getRootProps({ className: style.dropzone })}>
