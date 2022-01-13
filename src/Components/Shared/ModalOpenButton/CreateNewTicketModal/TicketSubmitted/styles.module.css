@@ -9,8 +9,8 @@
 }
 
 .icon_success {
-  color: var(--success-color);
   font-size: 150px;
+  color:#28a745;
 }
 
 .title {
