@@ -1,12 +1,16 @@
+import { convertToRaw, EditorState } from "draft-js";
 import { Editor } from "react-draft-wysiwyg";
-import { EditorState } from "draft-js";
+import draftToHtml from "draftjs-to-html";
 import { Col } from "react-bootstrap";
 import { useState } from "react";
 import style from "./styles.module.css";
 
 export default function TextEditor({ limit, value = "", setValue = () => {} }) {
   const [editorState, setEditorState] = useState(() => EditorState.createEmpty());
-  const onEditorStateChange = (editorState) => setEditorState(editorState);
+  const onEditorStateChange = (editorState) => {
+    setValue(draftToHtml(convertToRaw(editorState.getCurrentContent())));
+    setEditorState(editorState);
+  };
 
   return (
     <>
