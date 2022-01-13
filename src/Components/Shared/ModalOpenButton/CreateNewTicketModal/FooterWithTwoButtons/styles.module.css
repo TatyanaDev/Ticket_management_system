@@ -17,14 +17,14 @@
 }
 
 .button_outline {
-  background-color: var(--white-color);
+  background-color: var(--bs-white);
   color: var(--primary-color);
   margin-right: 16px;
 }
 
 .button_primary {
   background-color: var(--primary-color);
-  color: var(--white-color);
+  color: var(--bs-white);
 }
 
 .button_outline:hover {
