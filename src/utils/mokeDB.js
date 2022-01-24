@@ -89,34 +89,34 @@ export const recentActivity = {  //and Recent Activity page
     type: 'Design ticket',
     ticket_name: 'Change color of primary button',
     user_name: 'Mattulga Enkhtur',
-    submitted_date: '2040-12-25 10:11 AM',
+    submitted_date: '2011-12-25 10:11 AM',
   }, {
     ticket_id: 15,
     type: 'Take Action',
     ticket_name: 'Question from Dev',
     user_name: 'Developer ',
     question: 'What color do you prefer to have on primary button?',
-    submitted_date: '2040-12-25 10:11 AM',
+    submitted_date: '2033-12-25 10:11 AM',
     on: 'Change color of primary button'
   }, {
     ticket_id: 20,
     type: 'Design ticket',
     ticket_name: 'Change color of primary button',
     user_name: 'Nattulga Enkhtur',
-    submitted_date: '2040-12-25 10:11 AM',
+    submitted_date: '2032-12-25 10:11 AM',
   }, {
     ticket_id: 14,
     type: 'Design ticket',
     ticket_name: 'Change color of primary button',
     user_name: 'Kattulga Enkhtur',
-    submitted_date: '2040-12-25 10:11 AM',
+    submitted_date: '1999-12-25 10:11 AM',
   }, {
     ticket_id: 18,
     type: 'Take Action',
     ticket_name: 'Question from Dev',
     user_name: 'Developer ',
     question: 'What color do you prefer to have on primary button?',
-    submitted_date: '2040-12-25 10:11 AM',
+    submitted_date: '2035-12-25 10:11 AM',
     on: 'Change color of primary button'
   }, {
     ticket_id: 19,
@@ -130,7 +130,7 @@ export const recentActivity = {  //and Recent Activity page
     ticket_name: 'Ticket on hold',
     user_name: 'Developer ',
     question: 'What color do you prefer to have on primary button?',
-    submitted_date: '2040-12-25 10:11 AM',
+    submitted_date: '2039-12-25 10:11 AM',
     on: 'Change color of primary button'
   }, {
     ticket_id: 16,
@@ -138,20 +138,20 @@ export const recentActivity = {  //and Recent Activity page
     ticket_name: 'Ticket on hold',
     user_name: 'Developer ',
     question: 'What color do you prefer to have on primary button?',
-    submitted_date: '2040-12-25 10:11 AM',
+    submitted_date: '2021-12-25 10:11 AM',
   }, {
     ticket_id: 12,
     type: 'Design ticket',
     ticket_name: 'Change color of primary button',
     user_name: 'Oattulga Enkhtur',
-    submitted_date: '2040-12-25 10:11 AM',
+    submitted_date: '2018-12-25 10:11 AM',
   }, {
     ticket_id: 17,
     type: 'Take Action',
     ticket_name: 'Ticket on hold',
     user_name: 'Developer ',
     question: 'What color do you prefer to have on primary button?',
-    submitted_date: '2040-12-25 10:11 AM',
+    submitted_date: '2013-12-25 10:11 AM',
     on: 'Change color of primary button'
   }]
 }
