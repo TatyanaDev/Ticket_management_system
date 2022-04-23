@@ -1,12 +1,12 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import UsersListPage from './pages/UsersList'
-import RecentActivityPage from './pages/RecentActivity'
-import TicketHistoryPage from './pages/TicketHistory'
-import TicketListPage from './pages/TicketList'
-import DashboardPage from './pages/Dashboard';
-import Register from './pages/Register'
-import Settings from './pages/Settings'
-import Login from './pages/Login'
+import RecentActivityPage from './Pages/RecentActivity'
+import TicketHistoryPage from './Pages/TicketHistory'
+import TicketListPage from './Pages/TicketList'
+import DashboardPage from './Pages/Dashboard';
+import UsersListPage from './Pages/UsersList'
+import Register from './Pages/Register'
+import Settings from './Pages/Settings'
+import Login from './Pages/Login'
 
 export default function App() {
   return (
