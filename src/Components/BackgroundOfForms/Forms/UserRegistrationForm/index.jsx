@@ -1,10 +1,12 @@
 import { Button, Container, Row, Col } from "react-bootstrap";
 import { Formik, Form, Field, ErrorMessage } from "formik";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import * as Yup from "yup";
 import style from "../styles.module.css";
 
 export default function UserRegistrationForm({ margin }) {
+  const navigate = useNavigate();
+
   const validationSchema = Yup.object().shape({
     email: Yup.string().trim().email('Must contain @ and "."').required("Email is required!"),
     createPassword: Yup.string().trim().min(6, "Password has to be longer than 6 characters!").required("Create password is required!"),
@@ -23,6 +25,8 @@ export default function UserRegistrationForm({ margin }) {
   const createUser = async (values, formikBag) => {
     console.log(values);
     formikBag.resetForm();
+    navigate("/dashboard");
+
     try {
     } catch (err) {}
   };

@@ -23,6 +23,7 @@ export default function UserAuthorizationForm({ margin }) {
     console.log(values);
     formikBag.resetForm();
     navigate("/dashboard");
+
     try {
     } catch (err) {}
   };
@@ -49,7 +50,7 @@ export default function UserAuthorizationForm({ margin }) {
 
           <Row className={style.input_container}>
             <Col className='p-0'>
-              <Field name='rememberMe' type='checkbox' style={{ marginRight: 7 }} />
+              <Field name='rememberMe' type='checkbox' style={{ marginRight: 7, cursor: "pointer" }} />
               <label style={{ color: "var(--bs-dark)", fontSize: 16 }}>Remember Me</label>
             </Col>
             <Col style={{ textAlign: "end", paddingBottom: 1 }}>
